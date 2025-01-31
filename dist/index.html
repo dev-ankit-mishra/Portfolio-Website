@@ -1,32 +1,64 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta content="width=device-width, initial-scale=1" name="viewport" />
     <title>Ankit Mishra</title>
     <link href="./style.css" rel="stylesheet" />
-  </head>
-  <body class="bg-slate-950 text-white">
-    <nav class="w-full h-14 flex items-center justify-between flex bg-violet-600 px-4 py-2">
-        <div>
-            <h4>Ankit Mishra</h4>
+</head>
+<body class="bg-slate-950 text-white">
+<!--navbar starts here-->
+
+<nav
+        class="w-full h-14 flex items-center justify-between bg-violet-600 px-4 py-2"
+>
+    <div>
+        <h4>Ankit Mishra</h4>
+    </div>
+
+    <ul class="flex flex-row items-center">
+        <li class="mx-[10px] cursor-pointer">Home</li>
+        <li class="mx-[10px] cursor-pointer">About</li>
+        <li class="mx-[10px] cursor-pointer">Skills</li>
+        <li class="mx-[10px] cursor-pointer">Projects</li>
+        <li class="mx-[10px] cursor-pointer">Contact</li>
+    </ul>
+
+    <div class="">
+        <a href="https://github.com/dev-ankit-mishra">
+            <img
+                    class="mx-auto block h-10 rounded-full sm:mx-0 sm:shrink-0"
+                    alt="Github"
+                    src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png"
+            />
+        </a>
+    </div>
+</nav>
+
+<!--  navbar ends here-->
+<!--  hero section starts here-->
+<header
+        class="w-full h-screen bg-slate-900 text-white flex items-center justify-center px-6"
+>
+    <div
+            class="container mx-auto flex flex-col md:flex-row items-center text-center md:text-center"
+    >
+        <div class="space-y-2">
+            <h1 class="text-5xl font-extrabold text-white">Ankit Mishra</h1>
+            <h2 class="text-2xl font-semibold text-gray-300">
+                Software Engineer
+            </h2>
         </div>
 
-            <ul class="flex flex-row items-center ">
-                <li class="mx-[10px] cursor-pointer">Home</li>
-                <li class="mx-[10px] cursor-pointer">About</li>
-                <li class="mx-[10px] cursor-pointer">Skills</li>
-                <li class="mx-[10px] cursor-pointer">Projects</li>
-                <li class="mx-[10px] cursor-pointer">Contact</li>
-            </ul>
-
-        <div class="" >
-            <a href="https://github.com/dev-ankit-mishra">
-                <img class="mx-auto block h-10 rounded-full sm:mx-0 sm:shrink-0" alt="Github" src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png">
-            </a>
-
-
+        <!-- Profile Image -->
+        <div class="mt-6 md:mt-0 md:ml-8">
+            <img
+                    src="https://img.freepik.com/free-vector/programming-concept-illustration_114360-1351.jpg?semt=ais_hybrid"
+                    alt="An illustration of a software engineer working on a laptop"
+                    class="w-44 h-44 md:w-56 md:h-56 rounded-full shadow-2xl transition-transform duration-300 hover:scale-105"
+            />
         </div>
-    </nav>
-  </body>
+    </div>
+</header>
+</body>
 </html>
