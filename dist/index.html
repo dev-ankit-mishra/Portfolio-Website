@@ -4,9 +4,10 @@
     <meta charset="UTF-8" />
     <meta content="width=device-width, initial-scale=1" name="viewport" />
     <title>Ankit Mishra</title>
-    <link href="./style.css" rel="stylesheet" />
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
   </head>
   <body class="bg-slate-950 text-white">
+
     <!--navbar starts here-->
 
     <nav
@@ -24,15 +25,15 @@
         <li class="mx-[10px] cursor-pointer"><a href="">Contact</a></li>
       </ul>
 
-      <div class="">
-        <a href="https://github.com/dev-ankit-mishra">
+      
+        <a class="" href="https://github.com/dev-ankit-mishra">
           <img
-            class="mx-auto block h-10 rounded-full sm:mx-0 sm:shrink-0"
+            class="h-10 rounded-full"
             alt="Github"
             src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png"
           />
         </a>
-      </div>
+      
     </nav>
 
     <!--navbar ends here-->
@@ -64,51 +65,18 @@
 
     <!--hero Section Ends Here-->
     <!--About Section-->
-    <div class="w-full h-screen flex flex-col items-center px-8 py-8">
-      <div class="w-full h-auto">
-        <h1 class="text-4xl font-bold text-center">ABOUT ME</h1>
+    <div class="w-full h-screen bg-cyan-800">
+      <div class="w-full h-1/10">
+        <h1 class="text-4xl text-white font-semibold text-center pt-4 ">About Me</h1>
       </div>
-      <div class="container mx-auto flex flex-row items-center justify-center">
-        <div class="container mx-autoflex-col items-center justify-center">
-          <div>
-            <h2 class="text-2xl font-semibold text-center">Background</h2>
-            <p>
-              Hey there! I’m Ankit Mishra, a passionate software engineer
-              skilled in Java, MERN stack, and React. I love solving complex
-              problems, building innovative web applications, and constantly
-              pushing my coding skills to the next level.
-            </p>
+      <div class="w-full h-9/10 grid grid-cols-2 grid-rows-2 gap-4 place-items-center">
+          <div class="w-8/10 h-8/10 row-span-2  bg-slate-800">
+            <h1 class="text-4xl text-white font-semibold text-center">Introduction</h1><br>
+            <p class="text-2xl text-white text-justify">Hey there! I'm Ankit Mishra a passionate software developer with expertise in Java, MERN stack, and React. I love solving complex problems and building scalable web applications</p>
           </div>
-          <div>
-            <h2 class="text-2xl font-semibold text-center">Background</h2>
-            <p>
-              Hey there! I’m Ankit Mishra, a passionate software engineer
-              skilled in Java, MERN stack, and React. I love solving complex
-              problems, building innovative web applications, and constantly
-              pushing my coding skills to the next level.
-            </p>
-          </div>
-        </div>
-        <div class="container mx-autoflex-col items-center justify-center">
-          <div class="container mx-auto flex-row items-center justify-center">
-            <h2 class="text-2xl font-semibold text-center">Background</h2>
-            <p>
-              Hey there! I’m Ankit Mishra, a passionate software engineer
-              skilled in Java, MERN stack, and React. I love solving complex
-              problems, building innovative web applications, and constantly
-              pushing my coding skills to the next level.
-            </p>
-          </div>
-          <div>
-            <h2 class="text-2xl font-semibold text-center">Background</h2>
-            <p>
-              Hey there! I’m Ankit Mishra, a passionate software engineer
-              skilled in Java, MERN stack, and React. I love solving complex
-              problems, building innovative web applications, and constantly
-              pushing my coding skills to the next level.
-            </p>
-          </div>
-        </div>
+          
+          <div class="w-8/10 h-8/10  bg-slate-800"></div>
+          <div class="w-8/10 h-8/10   bg-slate-800"></div>
       </div>
     </div>
   </body>
