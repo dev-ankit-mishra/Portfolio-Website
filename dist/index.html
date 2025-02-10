@@ -10,7 +10,7 @@
     <!--navbar starts here-->
 
     <nav
-      class="w-full h-14 flex items-center justify-between bg-slate-800 px-4 py-2"
+      class="fixed w-full h-14 flex items-center justify-between bg-slate-800 px-4 py-2"
     >
       <div>
         <h4>Ankit Mishra</h4>
@@ -196,39 +196,43 @@
     <!--Skills Ends Here-->
     <!--Contact me-->
     <div class="w-full h-screen bg-purple-950">
-      <div class="w-full h-1/9 bg-amber-800">
+      <div class="w-full h-20 bg-amber-800">
         <h2 class="text-2xl text-white font-medium text-center pt-1">Get in Touch</h2>
         <h1 class="text-3xl text-white font-semibold text-center ">Contact Me</h1>
       </div>
-      <div class="w-full h-9/10 flex flex-row items-center justify-evenly">
+      <div class="w-full h-8/10 flex flex-row items-center justify-evenly">
         <div class="w-3/10 h-4/10 ">
             <img class="rounded-full" src="https://cdn.pixabay.com/photo/2018/05/18/15/30/web-design-3411373_640.jpg" alt="Developer-image">
         </div>
-        <div class="w-4/10 h-8/10 flex flex-col items-center justify-center  ">
+        <div class="w-4/10 h- flex flex-col items-center justify-center  ">
           <form action="">
             <div>
-              <label for="name">Name : </label><br>
-            <input type="text" placeholder="Ankit Mishra"><br>
+              <label for="name" class="text-xl font-medium">Name  </label><br>
+            <input type="text" placeholder="Ankit Mishra" class="border-2 p-1 mt-2 mb-2 rounded-2xl"><br>
             </div>
             <div>
-              <label for="email">Email : </label><br>
-            <input type="text" placeholder="ankitmishra@gmail.com"><br>
+              <label for="email" class="text-xl font-medium">Email  </label><br>
+            <input type="text" placeholder="ankitmishra@gmail.com" class="border-2 p-1 mt-2 mb-2 rounded-2xl"><br>
             </div>
             <div>
-              <label for="Message">Message : </label><br>
-            <textarea name="" id="" cols="30" rows="10" placeholder="Hello, how you are doing?"></textarea><br>
+              <label for="Message" class="text-xl font-medium">Message  </label><br>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Hello, how you are doing?" class="border-2 p-1 mt-2 mb-2 rounded-2xl"></textarea><br>
             </div>
             <div>
               
-            <input type="submit" value="Submit">
+            <input type="submit" value="Submit" class="border-2 p-1 mt-2 mb-2 bg-blue-800 rounded-2xl p-2 cursor-pointer hover:bg-blue-950">
             </div>
             
             
             
           </form>
         </div>
+        
 
       </div>
+      <footer class="fixed bottom-0 left-0 w-full p-3  bg-slate-950">
+          <p class="text-center font-normal ">© 2025 Ankit Mishra</p>
+      </footer>
 
     </div>
 
