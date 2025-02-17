@@ -10,18 +10,20 @@
     <!--navbar starts here-->
 
     <nav
-      class="fixed w-full h-14 flex items-center justify-between bg-slate-950 px-4 py-2"
+      class=" w-full h-14 flex items-center justify-between bg-slate-950 px-4 py-2"
     >
       <div>
         <h4>Ankit Mishra</h4>
       </div>
 
-      <ul class="flex flex-row items-center">
-        <li class="mx-[10px] cursor-pointer"><a href="">Home</a></li>
-        <li class="mx-[10px] cursor-pointer"><a href="">About</a></li>
-        <li class="mx-[10px] cursor-pointer"><a href="">Skills</a></li>
-        <li class="mx-[10px] cursor-pointer"><a href="">Projects</a></li>
-        <li class="mx-[10px] cursor-pointer"><a href="">Contact</a></li>
+      <ul class="flex flex-row items-center justify-evenly">
+        <li class="mx-[10px] cursor-pointer"><a href="#Home">Home</a></li>
+        <li class="mx-[10px] cursor-pointer"><a href="#About">About</a></li>
+        <li class="mx-[10px] cursor-pointer"><a href="#Skills">Skills</a></li>
+        <li class="mx-[10px] cursor-pointer"><a href="#Projects">Projects</a></li>
+        <li class="mx-[10px] cursor-pointer"><a href="#Achievements">Achievements</a></li>
+        <li class="mx-[10px] cursor-pointer"><a href="#Blogs">Blogs</a></li>
+        <li class="mx-[10px] cursor-pointer"><a href="#Contact">Contact</a></li>
       </ul>
 
       <a class="" href="https://github.com/dev-ankit-mishra">
@@ -35,8 +37,9 @@
 
     <!--navbar ends here-->
     <!--hero section starts here-->
-    <header
+    <section
       class="w-full h-screen text-white flex items-center justify-center"
+      id="Home"
     >
       <div
         class="container mx-auto flex flex-col md:flex-row items-center justify-center px-8"
@@ -58,11 +61,11 @@
           />
         </div>
       </div>
-    </header>
+    </section>
 
     <!--hero Section Ends Here-->
     <!--About Section-->
-    <div class="w-full h-screen">
+    <section class="w-full h-screen" id="About">
       <div class="w-full h-14 ">
         <h1 class="text-3xl text-white font-semibold text-center pt-2 ">
           About Me
@@ -114,12 +117,14 @@
           </p>
         </div>
       </div>
-    </div>
+    </section>
+
     <!--About Section Ends Here-->
+
     <!--Skills-->
-    <div class="w-full h-screen">
+    <section class="w-full h-screen" id="Skills">
       <div class="w-full h-14" >
-        <h1 class="text-3xl font-semibold text-center text-white p-2">Tools And Technologies</h1>
+        <h1 class="text-3xl font-semibold text-center text-white p-2">Skills</h1>
       </div>
       <div class="w-full h-9/10 grid grid-rows-4 grid-cols-4 gap-4 place-items-center">
         <div class="w-48 h-18 rounded-full  bg-cyan-100 flex flex-row items-center hover:bg-cyan-300 cursor-pointer">
@@ -187,15 +192,59 @@
           <p class="text-xl font-normal ml-4 text-black">Redux</p>
         </div>
         
-        
-        
-
       </div>
 
-    </div>
+    </section>
     <!--Skills Ends Here-->
+
+    <!--Projects Section-->
+
+    <section class="w-full h-screen bg-slate-800" id="Projects">
+        <h1 class="text-3xl font-semibold text-white text-center p-4">Projects</h1>
+        <div class="w-full h-full">
+          <div class="w-90 h-auto bg-rose-800">
+            <img class="p-4"src="./images/Website.png" alt="">
+            <h1 class="text-xl font-medium text-white pt-2 pl-4 pr-4 pb-2">Portfolio Website</h1>
+            <p class="text-md font-normal text-justify pl-4 pr-4 p-2">This portfolio showcases my expertise in full-stack development,
+               featuring three major projects that highlight my skills in frontend, 
+               backend, and problem-solving. Each project is carefully crafted, 
+               demonstrating my ability to build scalable, efficient, and user-friendly applications. 
+               Explore my work, tech stack, and achievements as I continue my journey in the world of software development.
+            </p>
+            <p class="text-md font-normal text-justify p-2 pl-4">
+              <span>HTML</span>
+              <span>CSS Tailwind</span>
+              <span>JavaScript</span>      
+            </p>
+            <a class="text-md font-normal text-justify pl-4 pb-2" href="">View more</a>
+
+
+          </div>
+          
+
+        </div>
+    </section>
+
+    <!--Projects Section Ends Here-->
+
+    <!--Achievements and Certification Section-->
+
+    <section class="w-full h-screen bg-cyan-950" id="Achievements">
+        <h1 class="text-3xl font-semibold text-white text-center p-4">Achievements & Certifications</h1>
+    </section>
+
+    <!--Achievments and Certification Section Ends Here-->
+
+    <!-- Blogs Section-->
+
+    <section class="w-full h-screen bg-gray-700" id="Blogs">
+      <h1 class="text-3xl font-semibold text-white text-center p-4">Blogs</h1>
+    </section>
+
+    <!--Blogs Section Ends Here-->
+    
     <!--Contact me-->
-    <div class="w-full h-screen">
+    <section class="w-full h-screen" id="Contact">
       <div class="w-full h-20">
         <h2 class="text-2xl text-white font-medium text-center pt-1">Get in Touch</h2>
         <h1 class="text-3xl text-white font-semibold text-center ">Contact Me</h1>
@@ -230,11 +279,11 @@
         
 
       </div>
-      <footer class="fixed bottom-0 left-0 w-full p-3  bg-slate-950">
+      <footer class=" bottom-0 left-0 w-full p-3  bg-slate-950">
           <p class="text-center font-normal ">© 2025 Ankit Mishra</p>
       </footer>
 
-    </div>
+    </section>
 
 
   </body>
