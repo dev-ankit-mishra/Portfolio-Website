@@ -4,9 +4,10 @@
     <meta charset="UTF-8" />
     <meta content="width=device-width, initial-scale=1" name="viewport" />
     <title>Ankit Mishra</title>
+    
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
   </head>
-  <body class="bg-slate-800 text-white">
+  <body class=" text-white bg-slate-800">
     <!--navbar starts here-->
 
     <nav
@@ -26,7 +27,7 @@
         <li class="mx-[10px] cursor-pointer">
           <a href="#Achievements">Achievements</a>
         </li>
-        <li class="mx-[10px] cursor-pointer"><a href="#Blogs">Blogs</a></li>
+        
         <li class="mx-[10px] cursor-pointer"><a href="#Contact">Contact</a></li>
       </ul>
 
@@ -46,18 +47,21 @@
       id="Home"
     >
       <div
-        class="container mx-auto flex flex-col md:flex-row items-center justify-center px-8"
+        class="w-full h-screen flex flex-row "
       >
         <!-- Left Section: Name and Title -->
-        <div class="w-full h-auto flex flex-col items-center justify-center">
-          <h1 class="text-4xl font-bold text-white">Ankit Mishra</h1>
-          <h2 class="text-2xl font-semibold text-gray-300">
+        <div class="w-full h-full flex flex-col justify-center items-center">
+          <h1 class="text-4xl font-bold text-white text-center p-2 ">Ankit Mishra</h1>
+          <h2 class="text-2xl font-semibold text-gray-300 text-center p-2">
             I'm a Software Enthusiast
           </h2>
+          <button class="bg-slate-900 rounded-2xl border-1 border-white mt-8 hover:bg-slate-950 cursor-pointer">
+            <h2 class="text-xl text-white font-medium text-center p-4">Download Resume</h2>
+        </button>
         </div>
 
         <!-- Right Section: Profile Image -->
-        <div class="w-full h-auto flex flex-col items-center justify-center">
+        <div class="w-full h-full flex flex-col justify-center items-center">
           <img
             src="https://img.freepik.com/free-vector/programming-concept-illustration_114360-1351.jpg?semt=ais_hybrid"
             alt="profile-picture"
@@ -142,10 +146,7 @@
         <div class="w-90 h-60 bg-slate-900 rounded-2xl border-1 border-white">
           <p class="text-2xl text-center font-normal text-white p-4">Languages</p>
           <div class=" grid grid-cols-3 grid-rows-2 gap-4 gap-y-5 place-items-center ">
-            <img class="w-16 h-16 "  src="https://cdn-icons-png.flaticon.com/128/226/226777.png" alt="">
-            <img class="w-15 h-15 "  src="https://cdn-icons-png.flaticon.com/128/226/226777.png" alt="">
-            <img class="w-15 h-15 "  src="https://cdn-icons-png.flaticon.com/128/226/226777.png" alt="">
-            <img class="w-15 h-15 "  src="https://cdn-icons-png.flaticon.com/128/226/226777.png" alt="">
+            
             
             
           </div>
@@ -297,51 +298,51 @@
           <div class="">
             <h1 class="text-2xl font-semibold text-center p-4">Milestones</h1>
           </div>
-          <div class="flex flex-col gap-10  mt-6">
+          <div class="flex flex-col gap-15  mt-6">
             <div class="flex flex-row items-center justify-evenly">
               <img
-                class="rounded-2xl h-24 w-24"
+                class="rounded-2xl h-20 w-20"
                 src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHgAAAB4CAMAAAAOusbgAAAA3lBMVEUAAAD/////oRazs7Ompqa+vr4gICD/phf/oxa5ubn/qRf/mgD39/crGwQQEBDs7OzViRP/5Mi6dxDmkxQZDwIlFwPhkhQdEwNEKwaUlJTPz88zMzMrKytjY2MmJibm5uba2tqJiYl/f39zc3NBQUJxZVv9u3LqkQCgZg7/w39vRwpMMAb/y5KVYA3f2tT/1aY5JAXQy8T/3rr/69PynBavqaKBUACXkYf27+Z6UhpYNwczKhyBe3M5MiZIQDVUT0hfW1UiHBVTU1NjQAnOvKb+qTklCwDsvoz/tmGtbg+jxcR/AAADLUlEQVRoge3Za1ubMBgG4EJRQmwrAlZb7erqYa6uWjesblPrcRv//w+NWgsP0AqyN+mH5fkaruu+ciAhL5WKioqKioqKioqKyvw0Wu22sSPf3e1qk3Rku431F1erfZDsTvsbpiUX3pu5miXVbUeuZizJlbq6LHBljrQBblui2wJ3T6L7Edz1/8DtgVtblefuo3sgz+3UwD2U5x6Aqx19so9P5Li76H5e05lp2n0JbiPlTsK4Lb7XXXC/TN0JbQ6W4obhtlD3FNwzdHXddIfi3HNwvybdcLj9RxnuxhoLk6IFTXQV3G/Md23Hdn0TcdMR4V6ga4+mMzrs2ybKTfqJvgT36js09HXoNPN/ELvXeDD8TDTVXew0H4lzb9KtDkeZcqLR1W6z7YPERNPtJYe4QY/nPZGYaE71Wt2hu+AAHsJEsyaNO14H93rhY/Be+XUK9wb7e/nGg0Ekux4FjO7bV6TR6x5qBhQuHoQXOc+e+ObLOUXR4fN3uGECnfsk/cUXWObNbBUW9LlEF0+kU5muF6+s04ZMuBO5V/cyXRjpO6luXNXJLKyHlpGfXlnXi9Z0urbSW6kWiFXdLQffznbL9F20U8gN5ZJVqIcZ3N1MNrSsYnC1Wu72HMOpNW0Uda2HUnA81KmvHdHw1qLFtV90qI2S2050R0udD41ik2yV7DBsIJkv2p61kh+jdGEmLu9kj6bV3JRVw9zHp2KBjwDKwLH41mcefXZqy5LxbipV9rrLksfae+R6n64Okrgo5qxth3POyO7Hl0Vlb3pvo7uZF5Q99/Wm6m9JlSNX53RlkIRcnfvIZjO6K3LCQluuXG9CMYKy5JSzttElrrIl5PT1bRNdojpElEOUVxJNHrousVup3KH8BA1Dn4nr7yT410d7nm0T9QCKuIQlLgyO9hHzncFodGwzWM6mTVJ1mSPHx/PR5EdEmETV2Cbbs9KJS23PeiYC3XiFZX4MCBznacYvfd6Y11+RbJhfv8/O/mT7S1osXpDAZJnu6rTl8QXZdkysTzPTD4ROL9JBk/HwXQrfKK7bA5JibcF42/1jJ8zgUeAPNhUVFRUVFRUVlX/MX/uBP2m+63iBAAAAAElFTkSuQmCC"
                 alt="LeetCodeImg"
               />
               <div class="bg-slate-800 rounded-2xl">
-                <p class="text-xl font-medium text-white p-4">
+                <p class="text-xl font-medium text-white p-3">
                   Solved More than 500 Questions on LeetCode
                 </p>
               </div>
             </div>
             <div class="flex flex-row items-center justify-evenly">
               <div class="bg-slate-800 rounded-2xl">
-                <p class="text-xl font-medium text-white p-4">
+                <p class="text-xl font-medium text-white p-3">
                   Rated Expert on Codeforces
                 </p>
               </div>
               <img
-                class=" rounded-2xl w-60 h-24"
+                class=" rounded-2xl w-50 h-20"
                 src="https://codeforces.org/s/44706/images/codeforces-sponsored-by-ton.png"
                 alt="LeetCodeImg"
               />
             </div>
             <div class="flex flex-row items-center justify-evenly">
               <img
-                class="rounded-2xl "
+                class="rounded-2xl w-50 h-20"
                 src="https://cdn.codechef.com/images/cc-logo.svg"
                 alt="LeetCodeImg"
               />
               <div class="bg-slate-800 rounded-2xl">
-                <p class="text-xl font-medium text-white p-4">
+                <p class="text-xl font-medium text-white p-3">
                  Rated  5 Star Coder on Codechef
                 </p>
               </div>
             </div>
             <div class="flex flex-row items-center justify-evenly">
               <div class="bg-slate-800 rounded-2xl">
-                <p class="text-xl font-medium text-white p-4">
+                <p class="text-xl font-medium text-white p-3">
                   Contributed more than 1000 contributions on Github
                 </p>
               </div>
               <img
-                class="rounded-2xl w-24 h-24"
+                class="rounded-2xl w-20 h-20"
                 src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png"
                 alt="LeetCodeImg"
               />
@@ -369,13 +370,7 @@
 
     <!--Achievments and Certification Section Ends Here-->
 
-    <!-- Blogs Section-->
-
-    <section class="w-full h-screen bg-gray-700" id="Blogs">
-      <h1 class="text-3xl font-semibold text-white text-center p-4">Blogs</h1>
-    </section>
-
-    <!--Blogs Section Ends Here-->
+    
 
     <!--Contact me-->
     <section class="w-full h-screen relative" id="Contact">
@@ -441,5 +436,6 @@
         <p class="text-center font-normal">© 2025 Ankit Mishra</p>
       </footer>
     </section>
+    
   </body>
 </html>
