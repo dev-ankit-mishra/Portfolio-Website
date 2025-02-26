@@ -42,6 +42,51 @@ project3.addEventListener("click",()=>{
 })
 
 
+//MileStones Events
+
+const leetcode=document.querySelector("#leetcode");
+
+const codeforces=document.querySelector("#codeforces");
+
+const codechef=document.querySelector("#codechef");
+
+const github=document.querySelector("#github");
+
+
+//leetcode
+
+leetcode.addEventListener("click",()=>{
+
+    window.open("https://leetcode.com/u/amishra264/","_blank");
+
+})
+
+//CodeForces
+
+codeforces.addEventListener("click",()=>{
+
+    window.open("https://codeforces.com/profile/amishra264","_blank");
+
+})
+
+//CodeChef
+
+codechef.addEventListener("click",()=>{
+
+    window.open("https://www.codechef.com/users/developerankit","_blank");
+
+})
+
+//Github
+
+github.addEventListener("click",()=>{
+
+    window.open("https://github.com/dev-ankit-mishra","_blank");
+
+})
+
+
+
 
 
 
