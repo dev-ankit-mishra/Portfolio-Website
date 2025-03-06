@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta content="width=device-width, initial-scale=1" name="viewport" />
     <title>Ankit Mishra</title>
-    
+
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
   </head>
-  <body class=" text-white bg-slate-800">
+  <body class="text-white bg-slate-800">
     <!--navbar starts here-->
 
     <nav
@@ -18,17 +18,21 @@
       </div>
 
       <ul class="flex flex-row items-center justify-evenly">
-        <li class="mx-[10px] cursor-pointer"><a href="#Home">Home</a></li>
-        <li class="mx-[10px] cursor-pointer"><a href="#About">About</a></li>
-        <li class="mx-[10px] cursor-pointer"><a href="#Skills">Skills</a></li>
         <li class="mx-[10px] cursor-pointer">
-          <a href="#Projects">Projects</a>
+          <a href="#Home" class="navLink">Home</a>
         </li>
         <li class="mx-[10px] cursor-pointer">
-          <a href="#Achievements">Achievements</a>
+          <a href="#About" class="navLink">About</a>
         </li>
-        
-        <li class="mx-[10px] cursor-pointer"><a href="#Contact">Contact</a></li>
+        <li class="mx-[10px] cursor-pointer"><a href="#Skills" class="navLink">Skills</a></li>
+        <li class="mx-[10px] cursor-pointer">
+          <a href="#Projects" class="navLink">Projects</a>
+        </li>
+        <li class="mx-[10px] cursor-pointer">
+          <a href="#Achievements" class="navLink">Achievements</a>
+        </li>
+
+        <li class="mx-[10px] cursor-pointer" ><a href="#Contact" class="navLink">Contact</a></li>
       </ul>
 
       <a class="" href="https://github.com/dev-ankit-mishra">
@@ -43,21 +47,26 @@
     <!--navbar ends here-->
     <!--hero section starts here-->
     <section
-      class="w-full h-screen text-white flex items-center justify-center"
       id="Home"
+      class="w-full h-screen text-white flex items-center justify-center"
     >
-      <div
-        class="w-full h-screen flex flex-row "
-      >
+      <div class="w-full h-screen flex flex-row">
         <!-- Left Section: Name and Title -->
         <div class="w-full h-full flex flex-col justify-center items-center">
-          <h1 class="text-4xl font-bold text-white text-center p-2 ">Ankit Mishra</h1>
+          <h1 class="text-4xl font-bold text-white text-center p-2">
+            Ankit Mishra
+          </h1>
           <h2 class="text-2xl font-semibold text-gray-300 text-center p-2">
             I'm a Software Enthusiast
           </h2>
-          <button class="bg-slate-900 rounded-2xl border-1 border-white mt-8 hover:bg-slate-950 cursor-pointer">
-            <h2 class="text-xl text-white font-medium text-center p-4">Download Resume</h2>
-        </button>
+          <button
+            id="resume"
+            class="bg-slate-900 rounded-2xl border-1 border-white mt-8 hover:bg-slate-950 cursor-pointer"
+          >
+            <h2 class="text-xl text-white font-medium text-center p-4">
+              Download Resume
+            </h2>
+          </button>
         </div>
 
         <!-- Right Section: Profile Image -->
@@ -142,43 +151,43 @@
     <!--Skills-->
     <section class="w-full h-screen box-border" id="Skills">
       <h1 class="h-14 text-3xl font-semibold text-center text-white">Skills</h1>
-      <div class="w-full h-full grid grid-cols-3 grid-rows-2  place-items-center place-content-center pb-10">
+      <div
+        class="w-full h-full grid grid-cols-3 grid-rows-2 place-items-center place-content-center pb-10"
+      >
         <div class="w-90 h-60 bg-slate-900 rounded-2xl border-1 border-white">
-          <p class="text-2xl text-center font-normal text-white p-4">Languages</p>
-          <div class=" grid grid-cols-3 grid-rows-2 gap-4 gap-y-5 place-items-center ">
-            
-            
-            
-          </div>
-          
-
+          <p class="text-2xl text-center font-normal text-white p-4">
+            Languages
+          </p>
+          <div
+            class="grid grid-cols-3 grid-rows-2 gap-4 gap-y-5 place-items-center"
+          ></div>
         </div>
         <div class="w-90 h-60 bg-slate-900 rounded-2xl border-1 border-white">
-          <p class="text-2xl text-center font-normal text-white p-4">Frontend</p>
-          <img src="" alt="">
-
+          <p class="text-2xl text-center font-normal text-white p-4">
+            Frontend
+          </p>
+          <img src="" alt="" />
         </div>
         <div class="w-90 h-60 bg-slate-900 rounded-2xl border-1 border-white">
           <p class="text-2xl text-center font-normal text-white p-4">Backend</p>
-          <img src="" alt="">
-
+          <img src="" alt="" />
         </div>
         <div class="w-90 h-60 bg-slate-900 rounded-2xl border-1 border-white">
-          <p class="text-2xl text-center font-normal text-white p-4">Databases</p>
-          <img src="" alt="">
-
+          <p class="text-2xl text-center font-normal text-white p-4">
+            Databases
+          </p>
+          <img src="" alt="" />
         </div>
         <div class="w-90 h-60 bg-slate-900 rounded-2xl border-1 border-white">
-          <p class="text-2xl text-center font-normal text-white p-4">Libraries and Framework</p>
-          <img src="" alt="">
-
+          <p class="text-2xl text-center font-normal text-white p-4">
+            Libraries and Framework
+          </p>
+          <img src="" alt="" />
         </div>
         <div class="w-90 h-60 bg-slate-900 rounded-2xl border-1 border-white">
           <p class="text-2xl text-center font-normal text-white p-4">Tools</p>
-          <img src="" alt="">
-
+          <img src="" alt="" />
         </div>
-
       </div>
     </section>
     <!--Skills Ends Here-->
@@ -214,10 +223,11 @@
             >
           </p>
           <button
+            id="project1"
             type="button"
             class="w-80 h-10 mx-5 my-2 rounded-xl hover:bg-slate-900 cursor-pointer bg-slate-800"
           >
-            <a href="">View more</a>
+            View more
           </button>
         </div>
         <div class="w-90 h-140 rounded-2xl bg-sky-900">
@@ -244,10 +254,11 @@
             >
           </p>
           <button
+            id="project2"
             type="button"
             class="w-80 h-10 mx-5 my-2 rounded-xl hover:bg-slate-900 cursor-pointer bg-slate-800"
           >
-            <a href="">View more</a>
+            View more
           </button>
         </div>
         <div class="w-90 h-140 rounded-2xl bg-sky-900">
@@ -274,10 +285,11 @@
             >
           </p>
           <button
+            id="project3"
             type="button"
             class="w-80 h-10 mx-5 my-2 rounded-xl hover:bg-slate-900 cursor-pointer bg-slate-800"
           >
-            <a href="">View more</a>
+            View more
           </button>
         </div>
       </div>
@@ -294,14 +306,15 @@
         </h1>
       </div>
       <div class="w-full h-11/12 flex flex-row">
-        <div class="w-full ">
+        <div class="w-full">
           <div class="">
             <h1 class="text-2xl font-semibold text-center p-4">Milestones</h1>
           </div>
-          <div class="flex flex-col gap-15  mt-6">
+          <div class="flex flex-col gap-15 mt-6">
             <div class="flex flex-row items-center justify-evenly">
               <img
-                class="rounded-2xl h-20 w-20"
+                id="leetcode"
+                class="rounded-2xl h-20 w-20 cursor-pointer"
                 src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHgAAAB4CAMAAAAOusbgAAAA3lBMVEUAAAD/////oRazs7Ompqa+vr4gICD/phf/oxa5ubn/qRf/mgD39/crGwQQEBDs7OzViRP/5Mi6dxDmkxQZDwIlFwPhkhQdEwNEKwaUlJTPz88zMzMrKytjY2MmJibm5uba2tqJiYl/f39zc3NBQUJxZVv9u3LqkQCgZg7/w39vRwpMMAb/y5KVYA3f2tT/1aY5JAXQy8T/3rr/69PynBavqaKBUACXkYf27+Z6UhpYNwczKhyBe3M5MiZIQDVUT0hfW1UiHBVTU1NjQAnOvKb+qTklCwDsvoz/tmGtbg+jxcR/AAADLUlEQVRoge3Za1ubMBgG4EJRQmwrAlZb7erqYa6uWjesblPrcRv//w+NWgsP0AqyN+mH5fkaruu+ciAhL5WKioqKioqKioqKyvw0Wu22sSPf3e1qk3Rku431F1erfZDsTvsbpiUX3pu5miXVbUeuZizJlbq6LHBljrQBblui2wJ3T6L7Edz1/8DtgVtblefuo3sgz+3UwD2U5x6Aqx19so9P5Li76H5e05lp2n0JbiPlTsK4Lb7XXXC/TN0JbQ6W4obhtlD3FNwzdHXddIfi3HNwvybdcLj9RxnuxhoLk6IFTXQV3G/Md23Hdn0TcdMR4V6ga4+mMzrs2ybKTfqJvgT36js09HXoNPN/ELvXeDD8TDTVXew0H4lzb9KtDkeZcqLR1W6z7YPERNPtJYe4QY/nPZGYaE71Wt2hu+AAHsJEsyaNO14H93rhY/Be+XUK9wb7e/nGg0Ekux4FjO7bV6TR6x5qBhQuHoQXOc+e+ObLOUXR4fN3uGECnfsk/cUXWObNbBUW9LlEF0+kU5muF6+s04ZMuBO5V/cyXRjpO6luXNXJLKyHlpGfXlnXi9Z0urbSW6kWiFXdLQffznbL9F20U8gN5ZJVqIcZ3N1MNrSsYnC1Wu72HMOpNW0Uda2HUnA81KmvHdHw1qLFtV90qI2S2050R0udD41ik2yV7DBsIJkv2p61kh+jdGEmLu9kj6bV3JRVw9zHp2KBjwDKwLH41mcefXZqy5LxbipV9rrLksfae+R6n64Okrgo5qxth3POyO7Hl0Vlb3pvo7uZF5Q99/Wm6m9JlSNX53RlkIRcnfvIZjO6K3LCQluuXG9CMYKy5JSzttElrrIl5PT1bRNdojpElEOUVxJNHrousVup3KH8BA1Dn4nr7yT410d7nm0T9QCKuIQlLgyO9hHzncFodGwzWM6mTVJ1mSPHx/PR5EdEmETV2Cbbs9KJS23PeiYC3XiFZX4MCBznacYvfd6Y11+RbJhfv8/O/mT7S1osXpDAZJnu6rTl8QXZdkysTzPTD4ROL9JBk/HwXQrfKK7bA5JibcF42/1jJ8zgUeAPNhUVFRUVFRUVlX/MX/uBP2m+63iBAAAAAElFTkSuQmCC"
                 alt="LeetCodeImg"
               />
@@ -318,20 +331,22 @@
                 </p>
               </div>
               <img
-                class=" rounded-2xl w-50 h-20"
+                id="codeforces"
+                class="rounded-2xl h-20 w-40 cursor-pointer"
                 src="https://codeforces.org/s/44706/images/codeforces-sponsored-by-ton.png"
                 alt="LeetCodeImg"
               />
             </div>
             <div class="flex flex-row items-center justify-evenly">
               <img
-                class="rounded-2xl w-50 h-20"
+                id="codechef"
+                class="rounded-2xl h-20 w-40 cursor-pointer"
                 src="https://cdn.codechef.com/images/cc-logo.svg"
                 alt="LeetCodeImg"
               />
               <div class="bg-slate-800 rounded-2xl">
                 <p class="text-xl font-medium text-white p-3">
-                 Rated  5 Star Coder on Codechef
+                  Rated 5 Star Coder on Codechef
                 </p>
               </div>
             </div>
@@ -342,7 +357,8 @@
                 </p>
               </div>
               <img
-                class="rounded-2xl w-20 h-20"
+                id="github"
+                class="rounded-2xl h-20 w-20 cursor-pointer"
                 src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png"
                 alt="LeetCodeImg"
               />
@@ -350,27 +366,32 @@
           </div>
         </div>
 
-        <div class="w-full ">
+        <div class="w-full">
           <div class="w-full h-1/12">
             <h1 class="text-2xl font-semibold text-center p-4">
               Certifications
             </h1>
           </div>
           <div class="w-full h-11/12 flex flex-col justify-evenly items-center">
-             <div>
-                <img class="w-130 h-100 rounded-xl" src="./images/CoreJava.png" alt="">
-             </div>
-             <div class="w-auto h-12 bg-slate-800 flex flex-row items-center justify-center rounded-xl">
-                <p class="text-xl font-medium p-4 text-white ">Internshal Trainings : Core Java</p>
-             </div>
+            <div
+              class="w-130 h-100 rounded-2xl overflow-hidden flex flex-row gap-2"
+            >
+              <img src="./images/CoreJava.png" alt="" />
+              <img src="./images/Android.png" alt="" />
+            </div>
+            <div
+              class="w-auto h-12 bg-slate-800 flex flex-row items-center justify-center rounded-xl"
+            >
+              <p class="text-xl font-medium p-4 text-white">
+                Internshal Trainings : Core Java
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
     <!--Achievments and Certification Section Ends Here-->
-
-    
 
     <!--Contact me-->
     <section class="w-full h-screen relative" id="Contact">
@@ -390,50 +411,46 @@
             alt="Developer-image"
           />
         </div>
-        
-          <form action="" class="w-full h-full flex flex-col items-center justify-center gap-2">
-            
-              <label for="name" class="text-xl font-medium">Name </label>
-              <input
-                type="text"
-                placeholder="Ankit Mishra"
-                class="border-2  mt-2 mb-2 rounded-2xl bg-slate-900 p-2"
-              />
-            
-              <label for="email" class="text-xl font-medium">Email </label
-              >
-              <input
-                type="text"
-                placeholder="ankitmishra@gmail.com"
-                class="border-2  mt-2 mb-2 rounded-2xl bg-slate-900 p-2"
-              />
-            
-              <label for="Message" class="text-xl font-medium">Message </label
-              >
-              <textarea
-                name=""
-                id=""
-                cols="30"
-                rows="10"
-                placeholder="Hello, how you are doing?"
-                class="border-2  mt-2 mb-2 rounded-2xl bg-slate-900 p-2"
-              ></textarea
-              >
-            
-            
-              <input
-                type="submit"
-                value="Submit"
-                class="border-2 p-1 mt-2 mb-2 bg-blue-800 rounded-2xl p-2 cursor-pointer hover:bg-blue-950"
-              />
-            
-          </form>
-        
+
+        <form
+          action=""
+          class="w-full h-full flex flex-col items-center justify-center gap-2"
+        >
+          <label for="name" class="text-xl font-medium">Name </label>
+          <input
+            type="text"
+            placeholder="e.g. Ankit Mishra"
+            class="w-60 border-2 mt-2 mb-2 rounded-2xl bg-slate-900 p-2"
+          />
+
+          <label for="email" class="text-xl font-medium">Email </label>
+          <input
+            type="text"
+            placeholder="e.g. ankitmishra@gmail.com"
+            class="w-60 border-2 mt-2 mb-2 rounded-2xl bg-slate-900 p-2"
+          />
+
+          <label for="Message" class="text-xl font-medium">Message </label>
+          <textarea
+            name=""
+            id=""
+            cols="30"
+            rows="10"
+            placeholder="e.g. Hello, how you are doing?"
+            class=" w-60 border-2 mt-2 mb-2 rounded-2xl bg-slate-900 p-2"
+          ></textarea>
+
+          <input
+            type="submit"
+            value="Submit"
+            class="w-60 border-2  mt-2 mb-2 bg-blue-800 rounded-2xl p-2 cursor-pointer hover:bg-blue-950"
+          />
+        </form>
       </div>
-      <footer class="absolute bottom-0 left-0 w-full h-12 p-3 bg-slate-950">
-        <p class="text-center font-normal">© 2025 Ankit Mishra</p>
+      <footer class="absolute bottom-0 left-0 w-full h-10 flex flex-row items-center justify-center p-3 bg-slate-950">
+        <p class="text-center font-normal">© 2025 Ankit Mishra Development . All rights reserved .</p>
       </footer>
     </section>
-    
+    <script src="./script.js"></script>
   </body>
 </html>
