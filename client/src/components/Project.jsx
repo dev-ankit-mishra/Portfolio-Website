@@ -1,3 +1,5 @@
+import websiteImg from "../assets/Website.png";
+
 export default function Project() {
   return (
     <section className="w-full min-h-screen bg-slate-800 py-8" id="Projects">
@@ -11,11 +13,7 @@ export default function Project() {
             key={index}
             className="w-[22rem] min-h-[34rem] rounded-2xl bg-sky-900 flex flex-col shadow-lg hover:shadow-xl transition"
           >
-            <img
-              className="p-4 rounded-2xl"
-              src="./images/Website.png"
-              alt="Project"
-            />
+            <img className="p-4 rounded-2xl" src={websiteImg} alt="Project" />
             <h1 className="text-lg font-medium text-white px-4 pb-2">
               Portfolio Website
             </h1>

@@ -17,9 +17,7 @@ export default function App() {
       <Skill />
       <Project />
       <Achievements />
-      <Certification />
       <Contact />
-      <Footer />
     </>
   );
 }
