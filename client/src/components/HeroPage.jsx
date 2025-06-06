@@ -1,3 +1,5 @@
+import Resume from "../assets/resume.pdf";
+
 export default function HeroPage() {
   return (
     <section
