@@ -1,5 +1,8 @@
 import resume from "../assets/resume.pdf";
 import NavBar from "./NavBar";
+import { motion } from "framer-motion";
+import { Typewriter } from "react-simple-typewriter";
+import { ExternalLink } from "lucide-react";
 
 export default function HeroPage() {
   const handleDownload = () => {
@@ -15,11 +18,16 @@ export default function HeroPage() {
     <section id="Home" className="w-full h-screen font-Inter">
       <NavBar />
 
-      <main className="w-full h-screen flex flex-row justify-center items-center  text-neutral-200  bg-neutral-950">
+      <main className="w-full h-screen flex flex-row justify-center items-center  text-neutral-200  bg-neutral-950 ">
         {/* Left Section: Name and Title */}
-        <div className="w-1/2 h-full  flex flex-col gap-y-4 justify-center items-center font-Inter">
+        <div className="pl-12 w-1/2 h-full  flex flex-col gap-y-4 justify-center items-center font-Inter">
           <h1 className="text-center tracking-wide text-4xl mt-14 font-bold">
-            Hi, I'm Ankit Mishra
+            <Typewriter
+              words={["Hi, I'm Ankit Mishra"]}
+              cursor
+              cursorStyle="|"
+              typeSpeed={80}
+            />
           </h1>
           <h2 className="text-center tracking-wide text-2xl font-semibold">
             Full-Stack Developer
@@ -31,12 +39,17 @@ export default function HeroPage() {
             collaboration platforms.
           </p>
           <div className="w-12 h-1 bg-blue-500 rounded-full mb-2"></div>
-          <button
+          <motion.a
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
             onClick={handleDownload}
-            className="py-3 px-6  text-xl font-medium border border-blue-600 text-blue-400 hover:bg-blue-800/20 hover:shadow-md hover:shadow-blue-600/30 transition duration-300  rounded-xl mt-8  cursor-pointer"
+            className="py-3 px-6 flex justify-center items-center gap-2  text-xl font-medium border border-blue-600 text-blue-400 hover:bg-blue-800/20 hover:shadow-md hover:shadow-blue-600/30 transition duration-300  rounded-xl mt-8  cursor-pointer"
+            href={resume}
+            target="_blank"
           >
             Download Resume
-          </button>
+            <ExternalLink className="w-5 h-5" />
+          </motion.a>
         </div>
 
         {/* Right Section: Profile Image */}
