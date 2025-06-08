@@ -12,7 +12,7 @@ export default function HeroPage() {
   };
 
   return (
-    <section id="Home" className="w-full h-screen">
+    <section id="Home" className="w-full h-screen font-Inter">
       <NavBar />
 
       <main className="w-full h-screen flex flex-row justify-center items-center  text-neutral-200  bg-neutral-950">
