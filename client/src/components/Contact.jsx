@@ -1,6 +1,9 @@
 export default function Contact() {
   return (
-    <section className="w-full min-h-screen relative bg-slate-800" id="Contact">
+    <section
+      className="scroll-mt-20 w-full min-h-screen relative bg-slate-800"
+      id="Contact"
+    >
       <div className="w-full h-20 p-4">
         <h2 className="text-2xl text-white font-medium text-center pt-1">
           Get in Touch

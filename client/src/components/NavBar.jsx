@@ -1,8 +1,15 @@
 import { Moon, Sun } from "lucide-react";
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 
 export default function NavBar() {
   const [theme, setTheme] = useState(true);
+
+  const [active, setActive] = useState("Home");
+
+  const scrollToSection = (id) => {
+    document.getElementById(id)?.scrollIntoView({ behavior: "auto" });
+    setActive(id);
+  };
 
   const navItemsList = [
     "Home",
@@ -15,14 +22,40 @@ export default function NavBar() {
 
   const navItems = navItemsList.map((item) => (
     <li key={item}>
-      <a
-        href={`#${item}`}
-        className=" hover:text-blue-400 font-normal transition"
+      <button
+        onClick={() => scrollToSection(item)}
+        className={
+          active === item
+            ? "bg-blue-500 rounded px-2"
+            : "hover:text-blue-400 font-normal transition cursor-pointer"
+        }
       >
         {item}
-      </a>
+      </button>
     </li>
   ));
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const offset = 100;
+      const scrollY = window.scrollY;
+
+      for (const id of navItemsList) {
+        const section = document.getElementById(id);
+        if (section) {
+          const top = section.offsetTop - offset;
+          const bottom = top + section.offsetHeight;
+          if (scrollY >= top && scrollY < bottom) {
+            if (active !== id) setActive(id);
+            break;
+          }
+        }
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [active]);
 
   const toggleTheme = () => {
     return setTheme((prev) => !prev);

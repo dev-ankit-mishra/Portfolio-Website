@@ -3,16 +3,10 @@ import NavBar from "./NavBar";
 import { motion } from "framer-motion";
 import { Typewriter } from "react-simple-typewriter";
 import { ExternalLink } from "lucide-react";
+import { useState } from "react";
 
 export default function HeroPage() {
-  const handleDownload = () => {
-    const link = document.createElement("a");
-    link.href = resume;
-    link.download = "resume.pdf"; // Name the file as you want
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  };
+  const [showCursor, setShowCursor] = useState(true);
 
   return (
     <section id="Home" className="w-full h-screen font-Inter">
@@ -24,9 +18,10 @@ export default function HeroPage() {
           <h1 className="text-center tracking-wide text-4xl mt-14 font-bold">
             <Typewriter
               words={["Hi, I'm Ankit Mishra"]}
-              cursor
+              cursor={showCursor}
               cursorStyle="|"
               typeSpeed={80}
+              onType={() => setShowCursor(false)}
             />
           </h1>
           <h2 className="text-center tracking-wide text-2xl font-semibold">
@@ -42,7 +37,6 @@ export default function HeroPage() {
           <motion.a
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
-            onClick={handleDownload}
             className="py-3 px-6 flex justify-center items-center gap-2  text-xl font-medium border border-blue-600 text-blue-400 hover:bg-blue-800/20 hover:shadow-md hover:shadow-blue-600/30 transition duration-300  rounded-xl mt-8  cursor-pointer"
             href={resume}
             target="_blank"

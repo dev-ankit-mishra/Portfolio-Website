@@ -1,6 +1,9 @@
 export default function About() {
   return (
-    <section className="w-full h-screen bg-neutral-950" id="About">
+    <section
+      className=" scroll-mt-20 w-full h-screen bg-neutral-950"
+      id="About"
+    >
       <div className="w-full h-14">
         <h1 className="text-3xl text-white font-semibold text-center pt-2">
           About Me

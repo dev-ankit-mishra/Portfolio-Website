@@ -1,6 +1,9 @@
 export default function Skills() {
   return (
-    <section className="w-full h-screen box-border bg-slate-800" id="Skills">
+    <section
+      className="scroll-mt-16 w-full h-screen box-border bg-slate-800"
+      id="Skills"
+    >
       <h1 className="h-14 text-3xl font-semibold text-center text-white">
         Skills
       </h1>

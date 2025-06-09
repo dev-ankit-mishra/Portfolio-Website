@@ -1,6 +1,9 @@
 export default function Achievements() {
   return (
-    <section className="w-full min-h-screen bg-slate-700" id="Achievements">
+    <section
+      className="scroll-mt-20 w-full min-h-screen bg-slate-700"
+      id="Achievements"
+    >
       <h1 className="text-3xl font-semibold text-white text-center py-6">
         Achievements
       </h1>

@@ -10,6 +10,7 @@ export default {
       fontFamily: {
         sans: ['Inter', 'sans-serif'], // override default sans
       },
+      
     },
   },
   plugins: [

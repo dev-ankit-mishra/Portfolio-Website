@@ -2,7 +2,10 @@ import websiteImg from "../assets/Website.png";
 
 export default function Project() {
   return (
-    <section className="w-full min-h-screen bg-slate-800 py-8" id="Projects">
+    <section
+      className="scroll-mt-16 w-full min-h-screen bg-slate-800 py-8"
+      id="Projects"
+    >
       <h1 className="text-3xl font-semibold text-white text-center mb-6">
         Projects
       </h1>
