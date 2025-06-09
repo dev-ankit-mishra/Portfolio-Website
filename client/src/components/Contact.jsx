@@ -1,4 +1,5 @@
 import { Input } from "postcss";
+import { Send } from "lucide-react";
 import Footer from "./Footer";
 
 export default function Contact() {
@@ -40,10 +41,14 @@ export default function Contact() {
           placeholder="Type your message here..."
         />
         <button
-          className="bg-blue-600 hover:bg-blue-700 cursor-pointer text-white font-semibold p-2 rounded-md text-lg mt-4"
+          className="group flex justify-center items-center gap-2 bg-blue-600 hover:bg-blue-700 cursor-pointer text-white font-semibold p-2 rounded-md text-lg mt-4"
           type="submit"
         >
           Send Message
+          <Send
+            size={18}
+            className=" transition-transform group-hover:translate-x-1"
+          />
         </button>
       </form>
 
