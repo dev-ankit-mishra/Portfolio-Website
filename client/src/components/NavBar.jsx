@@ -26,7 +26,7 @@ export default function NavBar() {
         onClick={() => scrollToSection(item)}
         className={
           active === item
-            ? "bg-blue-500 rounded px-2"
+            ? "transition-all  duration-300 scale-105 bg-blue-600 rounded-md px-2"
             : "hover:text-blue-400 font-normal transition cursor-pointer"
         }
       >
