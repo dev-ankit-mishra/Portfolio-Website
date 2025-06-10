@@ -1,7 +1,7 @@
 export default function About() {
   return (
     <section
-      className=" scroll-mt-20 w-full h-screen bg-neutral-950"
+      className=" scroll-mt-20 w-full h-screen bg-neutral-900"
       id="About"
     >
       <div className="w-full h-14">

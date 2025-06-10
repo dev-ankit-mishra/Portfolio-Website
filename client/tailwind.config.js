@@ -10,7 +10,11 @@ export default {
       fontFamily: {
         sans: ['Inter', 'sans-serif'], // override default sans
       },
-      
+       colors: {
+        neutral: {
+          850: '#202023', // Example shade between 800 and 900
+        },
+      },
     },
   },
   plugins: [

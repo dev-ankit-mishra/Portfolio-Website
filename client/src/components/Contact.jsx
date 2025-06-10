@@ -5,7 +5,7 @@ import Footer from "./Footer";
 export default function Contact() {
   return (
     <section
-      className=" w-full h-screen relative flex flex-col px-100 py-4 gap-4 font-Inter  text-neutral-100 bg-neutral-900"
+      className=" w-full h-screen relative flex flex-col px-100 py-4 gap-4   text-neutral-100 bg-neutral-900"
       id="Contact"
     >
       <h1 className="text-4xl font-bold mt-12">Let's Connect</h1>
