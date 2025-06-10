@@ -1,42 +1,17 @@
-import { RiJavascriptFill } from "react-icons/ri";
 import { motion } from "framer-motion";
 import Tilt from "react-parallax-tilt";
 
-export default function Skills() {
-  const languagesItem = [
-    {
-      id: 1,
-      src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg",
-      label: "C",
-    },
-    {
-      id: 2,
-      src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg",
-      label: "TypeScript",
-    },
-    {
-      id: 3,
-      src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg",
-      label: "Java",
-    },
-    {
-      id: 4,
-      src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
-      label: "JavaScript",
-    },
-    {
-      id: 5,
-      src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg",
-      label: "C++",
-    },
-    {
-      id: 6,
-      src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg",
-      label: "Python",
-    },
-  ];
+import {
+  languagesItems,
+  techStackItems,
+  datbasesItems,
+  cloudDeploymentItems,
+  devToolsItems,
+  aiToolsItems,
+} from "./SkillsData";
 
-  const languages = languagesItem.map((lang) => {
+export default function Skills() {
+  const languages = languagesItems.map((lang) => {
     return (
       <motion.div
         initial={{ opacity: 0, scale: 0.9 }}
