@@ -6,8 +6,6 @@ import { ExternalLink } from "lucide-react";
 import { useState } from "react";
 
 export default function HeroPage() {
-  const [showCursor, setShowCursor] = useState(true);
-
   return (
     <section id="Home" className="w-full h-screen font-Inter">
       <NavBar />
@@ -16,16 +14,22 @@ export default function HeroPage() {
         {/* Left Section: Name and Title */}
         <div className="pl-12 w-1/2 h-full  flex flex-col gap-y-4 justify-center items-center font-Inter">
           <h1 className="text-center tracking-wide text-4xl mt-14 font-bold">
-            <Typewriter
-              words={["Hi, I'm Ankit Mishra"]}
-              cursor={showCursor}
-              cursorStyle="|"
-              typeSpeed={80}
-              onType={() => setShowCursor(false)}
-            />
+            Hi I'm Ankit Mishra
           </h1>
           <h2 className="text-center tracking-wide text-2xl font-semibold">
-            Full-Stack Developer
+            <Typewriter
+              words={[
+                "Full-Stack Developer",
+                "Open Source Enthusiast",
+                "AI Explorer",
+                "Cloud Practitioner",
+              ]}
+              cursor
+              cursorStyle="|"
+              typeSpeed={100}
+              deleteSpeed={100}
+              loop
+            />
           </h2>
 
           <p className="px-6 text-center text-lg tracking-wide leading-relaxed  font-normal mb-6 mt-1">
@@ -37,6 +41,10 @@ export default function HeroPage() {
           <motion.a
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
+            transition={{
+              type: "spring",
+              duration: 0.1,
+            }}
             className="py-3 px-6 flex justify-center items-center gap-2  text-xl font-medium border border-blue-600 text-blue-400 hover:bg-blue-800/20 hover:shadow-md hover:shadow-blue-600/30 transition duration-300  rounded-xl mt-8  cursor-pointer"
             href={resume}
             target="_blank"
