@@ -48,7 +48,7 @@ export const techStacks = techStackItems.map((lang) => {
           src={lang.src}
           alt={lang.label + "-icon"}
         />
-        <span className="text-sm text-neutral-200 mt-1">{lang.label}</span>
+        <span className="text-sm text-neutral-100 mt-1">{lang.label}</span>
       </div>
     </motion.div>
   );

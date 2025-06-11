@@ -38,7 +38,7 @@ export const databases = DatabaseItems.map((database) => {
           src={database.src}
           alt={database.label + "-icon"}
         />
-        <span className="text-sm text-neutral-200 mt-1">{database.label}</span>
+        <span className="text-sm text-neutral-100 mt-1">{database.label}</span>
       </div>
     </motion.div>
   );

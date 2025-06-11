@@ -9,7 +9,7 @@ const AIToolsItems = [
   },
 ];
 
-export const AITools = AIToolsItems.map((tool) => {
+export const aiTools = AIToolsItems.map((tool) => {
   return (
     <motion.div
       initial={{ opacity: 0, scale: 0.9 }}
@@ -23,7 +23,7 @@ export const AITools = AIToolsItems.map((tool) => {
           src={tool.src}
           alt={tool.label + "-icon"}
         />
-        <span className="text-sm text-neutral-200 mt-1">{tool.label}</span>
+        <span className="text-sm text-neutral-100 mt-1">{tool.label}</span>
       </div>
     </motion.div>
   );

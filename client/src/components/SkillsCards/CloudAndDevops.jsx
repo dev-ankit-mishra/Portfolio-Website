@@ -12,6 +12,11 @@ const cloudAndDevopsItems = [
     src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vercel/vercel-original.svg",
     label: "Vercel",
   },
+  {
+    id: 3,
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg",
+    label: "Docker",
+  },
 ];
 
 export const cloudAndDevops = cloudAndDevopsItems.map((item) => {
@@ -28,7 +33,7 @@ export const cloudAndDevops = cloudAndDevopsItems.map((item) => {
           src={item.src}
           alt={item.label + "-icon"}
         />
-        <span className="text-sm text-neutral-200 mt-1">{item.label}</span>
+        <span className="text-sm text-neutral-100 mt-1">{item.label}</span>
       </div>
     </motion.div>
   );

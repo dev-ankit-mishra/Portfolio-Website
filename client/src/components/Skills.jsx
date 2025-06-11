@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import Tilt from "react-parallax-tilt";
 import { techStacks } from "./SkillsCards/TechStack";
 import { languages } from "./SkillsCards/Languages";
-import { AITools } from "./SkillsCards/AITools";
+import { aiTools } from "./SkillsCards/AITools";
 import { cloudAndDevops } from "./SkillsCards/CloudAndDevops";
 import { databases } from "./SkillsCards/Databases";
 import { devTools } from "./SkillsCards/DevTools";
@@ -13,16 +13,25 @@ export default function Skills() {
     { id: 2, label: "Tech Stacks", content: techStacks },
     { id: 3, label: "Databases", content: databases },
     { id: 4, label: "Cloud & Devops", content: cloudAndDevops },
-    { id: 5, label: "AI Tools", content: AITools },
+    { id: 5, label: "AI Tools", content: aiTools },
     { id: 6, label: "Development Tools", content: devTools },
   ];
+
+  const bgColors = {
+    Languages: "bg-blue-950", // Slate
+    "Tech Stacks": "bg-rose-900", // Darker blue-gray
+    Databases: "bg-emerald-950", // Neutral
+    "Cloud & Devops": "bg-cyan-950", // Indigo tint
+    "AI Tools": "bg-amber-900", // Purple hint
+    "Development Tools": "bg-fuchsia-950", // Cool gray
+  };
 
   const cards = cardItems.map((card) => {
     return (
       <motion.div
-        initial={{ opacity: 0, y: 30 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1 }}
+        initial={{ opacity: 0, y: 50, scale: 0.5 }}
+        whileInView={{ opacity: 1, y: 0, scale: 1 }}
+        transition={{ duration: 1, type: "spring" }}
         viewport={{ once: false }}
       >
         <Tilt
@@ -34,11 +43,16 @@ export default function Skills() {
           gyroscope={true}
         >
           {/* your card here */}
-          <div className="w-[20rem] h-65  bg-[#1E1E1E] tracking-wide border border-white/50 rounded-2xl shadow-xl ">
-            <p className="text-xl  text-center font-[550] text-neutral-200 pt-6 ">
+          <div
+            className={`w-[20rem] h-[16.25rem] rounded-xl border border-white/50 tracking-wide 
+                          shadow-lg shadow-accent/40
+                          ${bgColors[card.label]} `}
+          >
+            <p className="text-2xl font-[515]  text-center  text-neutral-100 pt-6 ">
               {card.label}
             </p>
-            <div className="mx-auto w-24 h-1 bg-gradient-to-r from-blue-400 to-blue-600 rounded mb-1 transition-all duration-200 hover:w-20"></div>
+            <div className="mx-auto w-16 h-1 bg-gradient-to-r from-blue-400 to-blue-600 rounded-full mb-2 shadow-md transition-all duration-300 hover:w-24 hover:shadow-blue-500/50"></div>
+
             <div
               className="grid grid-cols-3 gap-y-7 py-6 px-6
            place-items-center "
@@ -55,16 +69,17 @@ export default function Skills() {
 
   return (
     <section
-      className="scroll-mt-16 w-full h-screen box-border bg-neutral-950 font-[Inter]"
+      className="scroll-mt-8 w-full h-screen box-border bg-neutral-950 font-[Inter]"
       id="Skills"
     >
       <header>
-        <h1 className="text-4xl font-semibold text-center pt-6 pb-4 tracking-wide text-neutral-200">
+        <h1 className="text-4xl font-semibold text-center pt-6 pb-2 tracking-wide text-neutral-100">
           Skills
         </h1>
+        <div className="w-16 h-1 bg-blue-500 mx-auto mt-2 rounded"></div>
       </header>
 
-      <main className="w-full h-full grid grid-cols-3 gap-y-14 place-items-center place-content-center mt-[-3rem] px-44 pb-4">
+      <main className="w-full h-full grid grid-cols-3 gap-y-12 place-items-center place-content-center mt-[-3rem] px-44 pb-4">
         {/* Languages */}
 
         {cards}
