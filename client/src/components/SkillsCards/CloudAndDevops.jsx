@@ -33,7 +33,9 @@ export const cloudAndDevops = cloudAndDevopsItems.map((item) => {
           src={item.src}
           alt={item.label + "-icon"}
         />
-        <span className="text-sm text-neutral-100 mt-1">{item.label}</span>
+        <span className="text-sm tracking-wide text-neutral-100 mt-1">
+          {item.label}
+        </span>
       </div>
     </motion.div>
   );

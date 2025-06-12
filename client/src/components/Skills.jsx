@@ -48,13 +48,13 @@ export default function Skills() {
                           shadow-lg shadow-accent/40
                           ${bgColors[card.label]} `}
           >
-            <p className="text-2xl font-[515]  text-center  text-neutral-100 pt-6 ">
+            <p className="text-[1.38rem] font-[505]  text-center  text-neutral-100 pt-5  ">
               {card.label}
             </p>
             <div className="mx-auto w-16 h-1 bg-gradient-to-r from-blue-400 to-blue-600 rounded-full mb-2 shadow-md transition-all duration-300 hover:w-24 hover:shadow-blue-500/50"></div>
 
             <div
-              className="grid grid-cols-3 gap-y-7 py-6 px-6
+              className="grid grid-cols-3 gap-y-7 py-4 px-6
            place-items-center "
             >
               {/* Replace these with icons or images */}
@@ -69,7 +69,7 @@ export default function Skills() {
 
   return (
     <section
-      className="scroll-mt-8 w-full h-screen box-border bg-neutral-950 font-[Inter]"
+      className="scroll-mt-8 w-full h-screen box-border bg-neutral-900 font-[Inter]"
       id="Skills"
     >
       <header>

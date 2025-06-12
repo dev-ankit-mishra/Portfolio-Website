@@ -13,7 +13,7 @@ export default function HeroPage() {
       <main className="w-full h-screen flex flex-row justify-center items-center  text-neutral-200  bg-neutral-950 ">
         {/* Left Section: Name and Title */}
         <div className="pl-12 w-1/2 h-full  flex flex-col gap-y-4 justify-center items-center font-Inter">
-          <h1 className="text-center tracking-wide text-4xl mt-14 font-bold">
+          <h1 className="text-center tracking-wide text-3xl mt-14 font-bold">
             Hi I'm Ankit Mishra
           </h1>
           <h2 className="text-center tracking-wide text-2xl font-semibold">
@@ -26,13 +26,13 @@ export default function HeroPage() {
               ]}
               cursor
               cursorStyle="|"
-              typeSpeed={100}
-              deleteSpeed={100}
+              typeSpeed={80}
+              deleteSpeed={80}
               loop
             />
           </h2>
 
-          <p className="px-6 text-center text-lg tracking-wide leading-relaxed  font-normal mb-6 mt-1">
+          <p className="px-6 text-center text-[1.08rem]  tracking-wide leading-relaxed  font-normal mb-6 mt-1">
             I build interactive, scalable and responsive web apps using React,
             Next.js, and Node.js — from AI-powered tools to real-time
             collaboration platforms.
@@ -43,9 +43,9 @@ export default function HeroPage() {
             whileTap={{ scale: 0.9 }}
             transition={{
               type: "spring",
-              duration: 0.1,
+              duration: 0.001,
             }}
-            className="py-3 px-6 flex justify-center items-center gap-2  text-xl font-medium border border-blue-600 text-blue-400 hover:bg-blue-800/20 hover:shadow-md hover:shadow-blue-600/30 transition duration-300  rounded-xl mt-8  cursor-pointer"
+            className="py-[0.62rem] px-8 flex justify-center items-center gap-2  text-lg font-medium border border-blue-600 text-blue-400 hover:bg-blue-800/20 hover:shadow-md hover:shadow-blue-600/30 transition duration-300  rounded-xl mt-8  cursor-pointer"
             href={resume}
             target="_blank"
           >

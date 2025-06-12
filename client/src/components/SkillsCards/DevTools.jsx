@@ -48,7 +48,9 @@ export const devTools = DevToolsItems.map((tool) => {
           src={tool.src}
           alt={tool.label + "-icon"}
         />
-        <span className="text-sm text-neutral-100 mt-1">{tool.label}</span>
+        <span className="text-sm tracking-wide text-neutral-100 mt-1">
+          {tool.label}
+        </span>
       </div>
     </motion.div>
   );

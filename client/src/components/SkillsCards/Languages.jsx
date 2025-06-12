@@ -9,13 +9,13 @@ const languagesItems = [
   },
   {
     id: 2,
-    src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg",
-    label: "TypeScript",
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg",
+    label: "Java",
   },
   {
     id: 3,
-    src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg",
-    label: "Java",
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg",
+    label: "TypeScript",
   },
   {
     id: 4,
@@ -48,7 +48,9 @@ export const languages = languagesItems.map((lang) => {
           src={lang.src}
           alt={lang.label + "-icon"}
         />
-        <span className="text-sm text-neutral-100 mt-1">{lang.label}</span>
+        <span className="text-sm tracking-wide text-neutral-100 mt-1">
+          {lang.label}
+        </span>
       </div>
     </motion.div>
   );
