@@ -1,52 +1,53 @@
-import websiteImg from "../assets/Website.png";
+import CodeImg from "../assets/image.png";
 
 export default function Project() {
   return (
     <section
-      className="scroll-mt-16 w-full min-h-screen bg-slate-800 py-8"
+      className="scroll-mt-10 w-full h-screen bg-neutral-950"
       id="Projects"
     >
-      <h1 className="text-3xl font-semibold text-white text-center mb-6">
-        Projects
-      </h1>
+      <header>
+        <h1 className="text-3xl text-center font-semibold pt-4 pb-3 text-neutral-100">
+          Major Project
+        </h1>
+        <div className="w-24 h-1 bg-blue-500 rounded-2xl mx-auto mt-2"></div>
+      </header>
+      <main className="w-full h-full flex flex-row justify-center items-center pb-20 ">
+        <div className="w-90 h-140 bg-neutral-700 rounded-xl text-neutral-100">
+          <img
+            src={CodeImg}
+            className="w-85 h-40 px-3 py-4 mx-auto rounded-3xl"
+          />
+          <h1 className="px-5 text-lg font-semibold">
+            Collaborative Code Editor
+          </h1>
+          <p className="px-5 py-2">
+            Build and edit code in real-time with others across the globe.
+          </p>
 
-      <div className="w-full flex flex-col md:flex-row flex-wrap justify-center items-start gap-8 px-4">
-        {[1, 2, 3].map((_, index) => (
-          <div
-            key={index}
-            className="w-[22rem] min-h-[34rem] rounded-2xl bg-sky-900 flex flex-col shadow-lg hover:shadow-xl transition"
-          >
-            <img className="p-4 rounded-2xl" src={websiteImg} alt="Project" />
-            <h1 className="text-lg font-medium text-white px-4 pb-2">
-              Portfolio Website
-            </h1>
-            <p className="text-md font-normal text-white text-left px-4 pb-2 leading-6">
-              This portfolio showcases my expertise in full-stack development,
-              featuring projects that highlight skills in frontend, backend, and
-              problem-solving. Each project is carefully crafted to demonstrate
-              scalable and user-friendly solutions.
-            </p>
-            <div className="flex flex-wrap px-4 py-2 gap-2">
-              <span className="text-sm rounded-xl bg-slate-800 px-3 py-1 text-white">
-                HTML
-              </span>
-              <span className="text-sm rounded-xl bg-slate-800 px-3 py-1 text-white">
-                CSS Tailwind
-              </span>
-              <span className="text-sm rounded-xl bg-slate-800 px-3 py-1 text-white">
-                JavaScript
-              </span>
-            </div>
-            <button
-              id={`project${index + 1}`}
-              type="button"
-              className="w-[90%] mx-auto my-4 h-10 rounded-xl bg-slate-800 hover:bg-slate-900 text-white"
-            >
-              View more
-            </button>
+          <h2 className="px-5 text-lg font-semibold">Key Features</h2>
+          <ul className="pl-14 pr-5 list-disc">
+            <li>Real-time code sync via WebSockets </li>
+            <li>Multi-user support with live cursors </li>
+            <li>Syntax highlighting for multiple langs</li>
+            <li>File tree sidebar and tabbed editor </li>
+            <li>Integrated terminal (coming soon)</li>
+          </ul>
+          <div className="px-5 pt-2 flex flex-wrap gap-y-2 gap-x-2 ">
+            <span class="bg-neutral-900 px-2 py-1  rounded-lg">React</span>
+            <span class="bg-neutral-900 px-2 py-1  rounded-lg">Node.js</span>
+            <span class="bg-neutral-900 px-2 py-1  rounded-lg">Express</span>
+            <span class="bg-neutral-900 px-2 py-1  rounded-lg">Monaco</span>
+            <span class="bg-neutral-900 px-2 py-1 rounded-lg">Socket.Io</span>
           </div>
-        ))}
-      </div>
+          <div className="px-5 pt-3 flex justify-between">
+            <button className="bg-blue-500 px-3 py-2 rounded-xl">
+              Live Demo
+            </button>
+            <button className="bg-blue-500 px-3 py-2 rounded-xl">Code</button>
+          </div>
+        </div>
+      </main>
     </section>
   );
 }

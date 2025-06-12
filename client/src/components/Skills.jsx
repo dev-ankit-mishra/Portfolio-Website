@@ -73,7 +73,7 @@ export default function Skills() {
       id="Skills"
     >
       <header>
-        <h1 className="text-4xl font-semibold text-center pt-6 pb-2 tracking-wide text-neutral-100">
+        <h1 className="text-3xl font-semibold text-center pt-6 pb-2 tracking-wide text-neutral-100">
           Skills
         </h1>
         <div className="w-16 h-1 bg-blue-500 mx-auto mt-2 rounded"></div>
