@@ -35,8 +35,8 @@ export default function Skills() {
         viewport={{ once: false }}
       >
         <Tilt
-          tiltMaxAngleX={10}
-          tiltMaxAngleY={10}
+          tiltMaxAngleX={20}
+          tiltMaxAngleY={20}
           perspective={1000}
           scale={1.02}
           transitionSpeed={1000}
