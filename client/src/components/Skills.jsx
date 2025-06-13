@@ -48,7 +48,7 @@ export default function Skills() {
                           shadow-lg shadow-accent/40
                           ${bgColors[card.label]} `}
           >
-            <p className="text-[1.38rem] font-[505]  text-center  text-neutral-100 pt-5  ">
+            <p className="text-[1.38rem] font-[502]  text-center  text-neutral-100 pt-5  ">
               {card.label}
             </p>
             <div className="mx-auto w-16 h-1 bg-gradient-to-r from-blue-400 to-blue-600 rounded-full mb-2 shadow-md transition-all duration-300 hover:w-24 hover:shadow-blue-500/50"></div>
