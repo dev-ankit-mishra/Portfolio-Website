@@ -35,16 +35,16 @@ export default function Skills() {
         viewport={{ once: false }}
       >
         <Tilt
-          tiltMaxAngleX={20}
-          tiltMaxAngleY={20}
+          tiltMaxAngleX={15}
+          tiltMaxAngleY={15}
           perspective={1000}
-          scale={1.02}
+          scale={1.05}
           transitionSpeed={1000}
           gyroscope={true}
         >
           {/* your card here */}
           <div
-            className={`w-[20rem] h-[16.25rem] rounded-xl border border-white/50 tracking-wide 
+            className={`w-[20rem] h-[16rem] rounded-xl border border-white/50 tracking-wide 
                           shadow-lg shadow-accent/40
                           ${bgColors[card.label]} `}
           >
