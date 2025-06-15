@@ -7,10 +7,10 @@ import { useState } from "react";
 
 export default function HeroPage() {
   return (
-    <section id="Home" className="w-full h-screen font-Inter">
+    <section id="Home" className="w-full h-screen font-Inter ">
       <NavBar />
 
-      <main className="w-full h-screen flex flex-row justify-center items-center  text-neutral-200  bg-neutral-950 ">
+      <main className="w-full h-screen flex flex-row justify-center items-center  text-neutral-200 bg-gradient-to-br from-[#0f2027] via-[#203a43] to-[#2c5364]">
         {/* Left Section: Name and Title */}
         <div className="pl-12 w-1/2 h-full  flex flex-col gap-y-4 justify-center items-center font-Inter">
           <h1 className="text-center tracking-wide text-3xl mt-14 font-bold">
@@ -38,20 +38,14 @@ export default function HeroPage() {
             collaboration platforms.
           </p>
           <div className="w-12 h-1 bg-blue-500 rounded-full mb-2"></div>
-          <motion.a
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.9 }}
-            transition={{
-              type: "spring",
-              duration: 0.001,
-            }}
-            className="py-[0.62rem] px-8 flex justify-center items-center gap-2  text-lg font-medium border border-blue-600 text-blue-400 hover:bg-blue-800/20 hover:shadow-md hover:shadow-blue-600/30 transition duration-300  rounded-xl mt-8  cursor-pointer"
+          <a
+            className="py-[0.62rem] px-8 flex justify-center items-center gap-2  text-lg font-medium border border-blue-600 text-blue-400 hover:bg-blue-700/10 hover:shadow-md hover:shadow-blue-600/30 transition-all hover:scale-105 duration-150 rounded-xl mt-8  cursor-pointer"
             href={resume}
             target="_blank"
           >
             Download Resume
             <ExternalLink className="w-5 h-5" />
-          </motion.a>
+          </a>
         </div>
 
         {/* Right Section: Profile Image */}
