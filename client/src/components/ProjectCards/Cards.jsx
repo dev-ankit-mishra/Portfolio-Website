@@ -40,7 +40,7 @@ export default function Cards() {
               return <li>{item}</li>;
             })}
           </ul>
-          <h2 className="text-xl px-4 py-2 font-semibold border-t border-neutral-600 mt-4 pt-2">
+          <h2 className="text-xl px-4 pb-3 font-semibold border-t border-neutral-600 mt-4 pt-2">
             Tech Stack
           </h2>
           <div className="px-3  flex flex-wrap gap-y-2 gap-x-2 ">
@@ -53,7 +53,7 @@ export default function Cards() {
               );
             })}
           </div>
-          <div className="px-4 pt-3 flex justify-between mt-1">
+          <div className="px-4 py-2 flex justify-between mt-1">
             <button className="bg-blue-700 px-2 py-1 text-sm rounded-md">
               Live Demo
             </button>
