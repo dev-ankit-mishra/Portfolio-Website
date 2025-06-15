@@ -69,7 +69,7 @@ export default function Skills() {
 
   return (
     <section
-      className="scroll-mt-8 w-full h-screen box-border bg-neutral-900 font-[Inter]"
+      className="scroll-mt-8 w-full h-screen box-border bg-gradient-to-br from-[#004e92] to-[#302b63]"
       id="Skills"
     >
       <header>
