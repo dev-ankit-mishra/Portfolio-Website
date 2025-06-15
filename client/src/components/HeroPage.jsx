@@ -39,7 +39,7 @@ export default function HeroPage() {
           </p>
           <div className="w-12 h-1 bg-blue-500 rounded-full mb-2"></div>
           <a
-            className="py-[0.62rem] px-8 flex justify-center items-center gap-2  text-lg font-medium border border-blue-600 text-blue-400 hover:bg-blue-700/10 hover:shadow-md hover:shadow-blue-600/30 transition-all hover:scale-105 duration-150 rounded-xl mt-8  cursor-pointer"
+            className="py-[0.75rem] px-10 flex justify-center items-center gap-2 text-lg font-medium border border-cyan-500 text-cyan-500 hover:bg-cyan-500/10 hover:shadow-md hover:shadow-cyan-500/30 transition-all hover:scale-105 duration-150 rounded-xl mt-8 cursor-pointer"
             href={resume}
             target="_blank"
           >
