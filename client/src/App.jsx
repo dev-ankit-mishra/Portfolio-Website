@@ -9,13 +9,15 @@ import Contact from "./components/Contact";
 export default function App() {
   return (
     <>
-      <HeroPage />
-      <About />
-      <Skill />
-      <MajorProject />
-      <MinorProject />
-      <Achievements />
-      <Contact />
+      <div className="scroll-smooth">
+        <HeroPage />
+        <About />
+        <Skill />
+        <MajorProject />
+        <MinorProject />
+        <Achievements />
+        <Contact />
+      </div>
     </>
   );
 }
