@@ -7,7 +7,7 @@ export const codeEditorFeatures = [
 
 export const portfolioFeatures = [
   "Responsive design (mobile/tablet/desktop)",
-  "Accessible design with keyboard support",
-  "Projects showcase with links to live demos & GitHub",
+  "Accessible design",
+  "Live demos & GitHub",
   "Light/Dark mode toggle",
 ];
