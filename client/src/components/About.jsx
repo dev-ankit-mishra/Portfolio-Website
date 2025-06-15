@@ -1,7 +1,7 @@
 export default function About() {
   return (
     <section
-      className=" scroll-mt-20 w-full h-screen bg-neutral-800"
+      className=" scroll-mt-20 w-full h-screen bg-gradient-to-br from-[#000428] to-[#004e92]"
       id="About"
     >
       <header>
