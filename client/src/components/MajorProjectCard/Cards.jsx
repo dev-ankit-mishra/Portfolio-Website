@@ -27,15 +27,15 @@ export default function Cards() {
 
   const cards = cardItems.map((card) => {
     return (
-      <div className="relative group w-md bg-gradient-to-br tracking-wide shadow-xl shadow-black/40 leading-relaxed from-gray-800 to-gray-900 rounded-2xl text-neutral-100 transition-all duration-300 p-4  hover:scale-102 hover:ring-1 hover:ring-indigo-500 hover:shadow-2xl">
+      <div className="relative group w-full max-w-md bg-gradient-to-br tracking-wide shadow-xl shadow-black/40 leading-relaxed from-gray-800 to-gray-900 rounded-2xl text-neutral-100 transition-all duration-300 p-5  hover:scale-102 hover:ring-1 hover:ring-indigo-500 hover:shadow-2xl">
         <img
           src={card.src}
-          className="w-full h-44 object-cover rounded-t-2xl"
+          className="w-full h-48 object-cover rounded-t-2xl"
         />
 
         <div className="absolute inset-0 z-0 bg-white/5 backdrop-blur-sm rounded-2xl opacity-0 group-hover:opacity-100 transition duration-200" />
 
-        <div className="relative z-10 space-y-3 mt-5">
+        <div className="relative z-10 space-y-2 mt-4">
           <h1 className=" text-2xl  font-semibold">{card.label}</h1>
           <p className=" tracking-wide leading-relaxed text text-gray-300">
             {card.desc}
@@ -46,7 +46,7 @@ export default function Cards() {
               return <li className="py-1">{item}</li>;
             })}
           </ul>
-          <div className="mt-4 flex flex-wrap gap-y-2 gap-x-3 ">
+          <div className="mt-4 flex flex-wrap gap-3 ">
             {card.tech.map((item) => {
               return (
                 <span
@@ -57,7 +57,7 @@ export default function Cards() {
               );
             })}
           </div>
-          <div className="flex justify-between mt-4">
+          <div className="flex gap-4 pt-2">
             <button className="bg-indigo-600 px-4 py-2 hover:bg-indigo-800 transition cursor-pointer rounded-lg">
               Live Demo
             </button>

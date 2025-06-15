@@ -20,11 +20,11 @@ export const codeEditorTechItems = [
   },
   {
     label: "Express",
-    bgClass: "bg-emerald-700",
+    bgClass: "bg-green-700",
   },
   {
     label: "Socket.Io",
-    bgClass: "bg-rose-700",
+    bgClass: "bg-red-700",
   },
   {
     label: "TypeScript",
