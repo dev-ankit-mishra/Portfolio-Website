@@ -1,57 +1,42 @@
 import { motion } from "framer-motion";
-import Tilt from "react-parallax-tilt";
+import { SiGit, SiGithub, SiFigma, SiPostman, SiVite } from "react-icons/si";
 
 const DevToolsItems = [
   {
     id: 1,
-    src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg",
+    icon: <SiGit className="text-3xl text-red-500" />,
     label: "Git",
   },
   {
     id: 2,
-    src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg",
+    icon: <SiGithub className="text-3xl text-white" />,
     label: "Github",
   },
   {
     id: 3,
-    src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg",
+    icon: <SiFigma className="text-3xl text-pink-500" />,
     label: "Figma",
   },
   {
     id: 4,
-    src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg",
+    icon: <SiPostman className="text-3xl text-orange-500" />,
     label: "Postman",
   },
   {
     id: 5,
-    src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vite/vite-original.svg",
+    icon: <SiVite className="text-3xl text-purple-400" />,
     label: "Vite",
-  },
-  {
-    id: 6,
-    src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg",
-    label: "VSCode",
   },
 ];
 
 export const devTools = DevToolsItems.map((tool) => {
   return (
-    <motion.div
-      initial={{ opacity: 0, scale: 0.9 }}
-      whileInView={{ opacity: 1, scale: 1 }}
-      transition={{ duration: 0.5 }}
-    >
+    <div>
       {/* single skill */}
-      <div className="flex flex-col items-center">
-        <img
-          className="w-8 h-8 hover:scale-110 transition-transform duration-300 hover:shadow-lg hover:shadow-blue-400/30 rounded-md"
-          src={tool.src}
-          alt={tool.label + "-icon"}
-        />
-        <span className="text-sm tracking-wide text-neutral-100 mt-1">
-          {tool.label}
-        </span>
+      <div className="flex flex-col items-center hover:scale-105 hover:shadow-md transition-all duration-200">
+        {tool.icon}
+        <span className="text-sm tracking-wide  mt-1">{tool.label}</span>
       </div>
-    </motion.div>
+    </div>
   );
 });
