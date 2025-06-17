@@ -1,6 +1,5 @@
-import { Section } from "lucide-react";
 import assemblyGame from "../assets/assemblyGame.png";
-import portfolio from "../assets/portfolio.png";
+import gameTenzie from "../assets/gameTenzie.png";
 
 export default function MinorProject() {
   const techStackItems = [
@@ -51,11 +50,11 @@ export default function MinorProject() {
         </h1>
         <div className="h-1 w-20 bg-blue-500 mt-1 mx-auto"></div>
       </header>
-      <main className="w-full h-full flex flex-row justify-center items-center gap-x-6 pb-28">
-        <div className="group relative w-full max-w-md rounded-2xl bg-gradient-to-br from-gray-800 to-gray-900 backdrop-blur-sm p-5 text-white shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:ring-1 hover:ring-indigo-400">
+      <main className="w-full h-full flex flex-row justify-evenly items-center gap-x-6 pb-28">
+        <div className="group relative w-full max-w-md rounded-2xl bg-gradient-to-br from-gray-800 to-gray-900 backdrop-blur-sm p-5 text-white shadow-lg transition-all duration-200 hover:scale-103 hover:shadow-2xl hover:ring-1 hover:ring-indigo-400">
           {/* Image */}
           <img
-            src={assemblyGame}
+            src={gameTenzie}
             alt="Assembly Game"
             className="w-full h-50 object-cover rounded-t-2xl mb-4"
           />
@@ -73,12 +72,12 @@ export default function MinorProject() {
           </p>
 
           {/* Quote / Subtitle */}
-          <blockquote className="mt-3 border-l-4 border-blue-400 pl-4 text-gray-400 italic text-sm">
+          <p className="mt-3 border-l-4 border-blue-400 pl-4 text-gray-400 italic text-sm">
             Save your favorite languages before Assembly takes over! <br />
             <span className="not-italic">
               Inspired by Wordle, customized for devs.
             </span>
-          </blockquote>
+          </p>
 
           {/* Tech Stack */}
           <div className="flex flex-wrap gap-2 mt-4">
@@ -107,6 +106,43 @@ export default function MinorProject() {
             >
               Code
             </a>
+          </div>
+        </div>
+        <div className="group w-md p-5 bg-gradient-to-br from-gray-800 to-gray-900 hover:scale-103 shadow-xl shadow-black/40 hover:ring-1 hover:ring-indigo-500 transition-all duration-200 rounded-2xl">
+          <img
+            src={tenzie}
+            className="w-full rounded-t-2xl h-48 object-cover"
+          />
+
+          <h1 className="text-xl font-bold tracking-tight mt-4">
+            Tenzie's Game
+          </h1>
+          <p className="text-sm leading-relaxed text-gray-300 mt-3">
+            A fast-paced dice game built with React and Vite. Match all ten dice
+            to the same number by freezing and rolling smartly — a quick
+            challenge of luck and logic.
+          </p>
+          <p className="text-sm italic tracking-wide mt-4 text-gray-400 px-4 border-l-4 border-l-indigo-500">
+            Master the dice, beat the odds.
+            <br />
+            <span className="not-italic">
+              Inspired by the classic Tenzi game, reimagined for the web.
+            </span>
+          </p>
+          <div className="text-sm flex gap-3 mt-4 font-medium tracking-tight items-center">
+            <span className="px-3 py-1 rounded-2xl bg-neutral-600">React</span>
+            <span className="px-3 py-1 rounded-2xl bg-blue-600">
+              Typescript
+            </span>
+            <span className="px-3 py-1 rounded-2xl bg-cyan-700">Css</span>
+          </div>
+          <div className="mt-6 flex gap-4 items-center font-medium">
+            <button className="py-2 px-4 rounded-lg bg-indigo-500  hover:bg-indigo-600  transition-all duration-200 cursor-pointer">
+              Live
+            </button>
+            <button className="py-2 px-4 rounded-lg bg-transparent text-gray-300  border border-gray-500 hover:bg-subtle hover:border-gray-50 hover:text-gray-50 transition-all duration-200 cursor-pointer">
+              Code
+            </button>
           </div>
         </div>
       </main>
