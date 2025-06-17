@@ -1,57 +1,56 @@
 import { motion } from "framer-motion";
 import Tilt from "react-parallax-tilt";
 
+import {
+  SiHtml5,
+  SiTailwindcss,
+  SiReact,
+  SiNodedotjs,
+  SiExpress,
+  SiNextdotjs,
+} from "react-icons/si";
+
 const techStackItems = [
   {
     id: 1,
-    src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg",
+    icon: <SiHtml5 className="text-3xl text-orange-500" />,
     label: "HTML",
   },
   {
     id: 2,
-    src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
+    icon: <SiTailwindcss className="text-3xl text-cyan-400" />,
     label: "Tailwind",
   },
   {
     id: 3,
-    src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
+    icon: <SiReact className="text-3xl text-sky-400" />,
     label: "React",
   },
   {
     id: 4,
-    src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg",
+    icon: <SiNodedotjs className="text-3xl text-green-500" />,
     label: "Node",
   },
   {
     id: 5,
-    src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg",
+    icon: <SiExpress className="text-3xl text-gray-300" />,
     label: "Express",
   },
   {
     id: 6,
-    src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg",
+    icon: <SiNextdotjs className="text-3xl text-white" />,
     label: "Next",
   },
 ];
 
 export const techStacks = techStackItems.map((lang) => {
   return (
-    <motion.div
-      initial={{ opacity: 0, scale: 0.9 }}
-      whileInView={{ opacity: 1, scale: 1 }}
-      transition={{ duration: 0.5 }}
-    >
+    <div>
       {/* single skill */}
-      <div className="flex flex-col items-center">
-        <img
-          className="w-8 h-8 hover:scale-110 transition-transform duration-300 hover:shadow-lg hover:shadow-blue-400/30 rounded-md"
-          src={lang.src}
-          alt={lang.label + "-icon"}
-        />
-        <span className="text-sm tracking-wide text-neutral-100 mt-1">
-          {lang.label}
-        </span>
+      <div className="flex flex-col items-center hover:scale-105 hover:shadow-md transition-all duration-200">
+        {lang.icon}
+        <span className="text-sm tracking-wide  mt-1">{lang.label}</span>
       </div>
-    </motion.div>
+    </div>
   );
 });
