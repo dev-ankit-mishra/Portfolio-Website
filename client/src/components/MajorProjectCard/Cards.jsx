@@ -30,7 +30,7 @@ export default function Cards() {
       <div className="relative group w-full max-w-md bg-gradient-to-br tracking-wide shadow-xl shadow-black/40 leading-relaxed from-gray-800 to-gray-900 rounded-2xl text-neutral-100 transition-all duration-300 p-5  hover:scale-102 hover:ring-1 hover:ring-indigo-500 hover:shadow-2xl">
         <img
           src={card.src}
-          className="w-full h-48 object-cover rounded-t-2xl"
+          className="w-full h-42 object-cover rounded-t-2xl"
         />
 
         <div className="absolute inset-0 z-0 bg-white/5 backdrop-blur-sm rounded-2xl opacity-0 group-hover:opacity-100 transition duration-200" />
