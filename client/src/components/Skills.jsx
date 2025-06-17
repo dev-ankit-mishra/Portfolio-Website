@@ -18,52 +18,39 @@ export default function Skills() {
   ];
 
   const bgColors = {
-    Languages: "bg-blue-950", // Slate
-    "Tech Stacks": "bg-rose-900", // Darker blue-gray
-    Databases: "bg-emerald-950", // Neutral
-    "Cloud & Devops": "bg-cyan-950", // Indigo tint
-    "AI Tools": "bg-amber-900", // Purple hint
-    "Development Tools": "bg-fuchsia-950", // Cool gray
+    Languages: "bg-gradient-to-br from-[#0a1a3d] to-[#0f2c63]", // Slate
+    "Tech Stacks": "bg-gradient-to-br from-[#0d1117] to-[#1f2937]", // Darker blue-gray
+    Databases: "bg-gradient-to-br from-[#002d2d] to-[#014f40]", // Neutral
+    "Cloud & Devops": "bg-gradient-to-br from-[#002d3d] to-[#004f73]", // Indigo tint
+    "AI Tools": "bg-gradient-to-br from-[#3a0d00] to-[#5a2000]", // Purple hint
+    "Development Tools": "bg-gradient-to-br from-[#2b0033] to-[#50005a]", // Cool gray
   };
 
   const cards = cardItems.map((card) => {
     return (
-      <motion.div
-        initial={{ opacity: 0, y: 50, scale: 0.5 }}
-        whileInView={{ opacity: 1, y: 0, scale: 1 }}
-        transition={{ duration: 1, type: "spring" }}
-        viewport={{ once: false }}
-      >
-        <Tilt
-          tiltMaxAngleX={15}
-          tiltMaxAngleY={15}
-          perspective={1000}
-          scale={1.05}
-          transitionSpeed={1000}
-          gyroscope={true}
+      <>
+        {/* your card here */}
+        <div
+          className={`w-[24rem] h-[268px] rounded-2xl  
+                    shadow-xl shadow-black/40 transition-all duration-200 
+                    hover:ring-1 hover:ring-cyan-400
+                    hover:scale-102 hover:shadow-cyan-500/20 
+                    ${bgColors[card.label]}`}
         >
-          {/* your card here */}
+          <p className="inline-block ml-8 text-[1.38rem] font-[502]  text-center  text-white pt-5 border-b border-b-indigo-400 pb-1 ">
+            {card.label}
+          </p>
+
           <div
-            className={`w-[20rem] h-[16rem] rounded-xl border border-white/50 tracking-wide 
-                          shadow-lg shadow-accent/40
-                          ${bgColors[card.label]} `}
+            className="grid grid-cols-3 gap-y-10 py-8 px-6
+           place-items-center font-medium "
           >
-            <p className="text-[1.38rem] font-[502]  text-center  text-neutral-100 pt-5  ">
-              {card.label}
-            </p>
-            <div className="mx-auto w-16 h-1 bg-gradient-to-r from-blue-400 to-blue-600 rounded-full mb-2 shadow-md transition-all duration-300 hover:w-24 hover:shadow-blue-500/50"></div>
+            {/* Replace these with icons or images */}
 
-            <div
-              className="grid grid-cols-3 gap-y-7 py-4 px-6
-           place-items-center "
-            >
-              {/* Replace these with icons or images */}
-
-              {card.content}
-            </div>
+            {card.content}
           </div>
-        </Tilt>
-      </motion.div>
+        </div>
+      </>
     );
   });
 
@@ -73,13 +60,13 @@ export default function Skills() {
       id="Skills"
     >
       <header>
-        <h1 className="text-3xl font-semibold text-center pt-6 pb-2 tracking-wide text-neutral-100">
+        <h1 className="text-3xl font-semibold text-center pt-4 pb-2 tracking-wide text-white">
           Skills
         </h1>
-        <div className="w-16 h-1 bg-blue-500 mx-auto mt-2 rounded"></div>
+        <div className="w-16 h-1 bg-cyan-400 mx-auto mt-2 rounded"></div>
       </header>
 
-      <main className="w-full h-full grid grid-cols-3 gap-y-12 place-items-center place-content-center mt-[-3rem] px-44 pb-4">
+      <main className="w-full h-full text-white grid grid-cols-3 gap-y-10 place-items-center place-content-center px-24 pb-26">
         {/* Languages */}
 
         {cards}
