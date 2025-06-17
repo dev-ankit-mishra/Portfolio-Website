@@ -9,7 +9,7 @@ export default function Achievements() {
           Achievements
         </h1>
       </header>
-      <main className="w-full h-full flex flex-col justify-center">
+      <main className="w-full h-full flex flex-col justify-center items-center">
         <h1 className=" text-center  text-2xl text-neutral-100 pb-40">
           In Progress...
         </h1>
