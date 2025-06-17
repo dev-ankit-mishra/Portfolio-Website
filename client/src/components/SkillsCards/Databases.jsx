@@ -1,47 +1,39 @@
 import { motion } from "framer-motion";
 import Tilt from "react-parallax-tilt";
 
+import { SiMysql, SiMongodb, SiPostgresql, SiFirebase } from "react-icons/si";
+
 const DatabaseItems = [
   {
     id: 1,
-    src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg",
-    label: "MySQL",
-  },
-  {
-    id: 2,
-    src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg",
+    icon: <SiMongodb className="text-3xl text-green-600" />,
     label: "MongoDB",
   },
   {
-    id: 3,
-    src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg",
+    id: 2,
+    icon: <SiPostgresql className="text-3xl text-sky-600" />,
     label: "PostgreSQL",
   },
   {
+    id: 3,
+    icon: <SiMysql className="text-3xl text-blue-400" />,
+    label: "MySQL",
+  },
+  {
     id: 4,
-    src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-original.svg",
+    icon: <SiFirebase className="text-3xl text-yellow-400" />,
     label: "Firebase",
   },
 ];
 
 export const databases = DatabaseItems.map((database) => {
   return (
-    <motion.div
-      initial={{ opacity: 0, scale: 0.9 }}
-      whileInView={{ opacity: 1, scale: 1 }}
-      transition={{ duration: 0.5 }}
-    >
+    <div>
       {/* single skill */}
-      <div className="flex flex-col items-center">
-        <img
-          className="w-8 h-8 hover:scale-110 transition-transform duration-300 hover:shadow-lg hover:shadow-blue-400/30 rounded-md"
-          src={database.src}
-          alt={database.label + "-icon"}
-        />
-        <span className="text-sm tracking-wide text-neutral-100 mt-1">
-          {database.label}
-        </span>
+      <div className="flex flex-col items-center hover:scale-105 hover:shadow-md transition-all duration-200">
+        {database.icon}
+        <span className="text-sm tracking-wide  mt-1">{database.label}</span>
       </div>
-    </motion.div>
+    </div>
   );
 });
