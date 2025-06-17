@@ -1,32 +1,24 @@
 import { motion } from "framer-motion";
 import Tilt from "react-parallax-tilt";
 
+import { SiTensorflow } from "react-icons/si";
+
 const AIToolsItems = [
   {
     id: 1,
-    src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tensorflow/tensorflow-original.svg",
+    icon: <SiTensorflow className="text-3xl text-orange-500" />,
     label: "TensorFlow",
   },
 ];
 
 export const aiTools = AIToolsItems.map((tool) => {
   return (
-    <motion.div
-      initial={{ opacity: 0, scale: 0.9 }}
-      whileInView={{ opacity: 1, scale: 1 }}
-      transition={{ duration: 0.5 }}
-    >
+    <div>
       {/* single skill */}
-      <div className="flex flex-col items-center">
-        <img
-          className="w-8 h-8 hover:scale-110 transition-transform duration-300 hover:shadow-lg hover:shadow-blue-400/30 rounded-md"
-          src={tool.src}
-          alt={tool.label + "-icon"}
-        />
-        <span className="text-sm tracking-wide text-neutral-100 mt-1">
-          {tool.label}
-        </span>
+      <div className="flex flex-col items-center hover:scale-105 hover:shadow-md transition-all duration-200">
+        {tool.icon}
+        <span className="text-sm tracking-wide  mt-1">{tool.label}</span>
       </div>
-    </motion.div>
+    </div>
   );
 });
