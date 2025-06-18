@@ -52,7 +52,7 @@ export default function NavBar() {
   ));
 
   return (
-    <nav className="w-full h-14 px-8 gap-6 text-lg tracking-wide flex items-center justify-between fixed top-0 left-0 bg-neutral-900/60 backdrop-blur-md text-white border-b border-neutral-800 z-50">
+    <nav className="w-full h-12 px-8 gap-6 text-lg tracking-wide flex items-center justify-between fixed top-0 left-0 bg-neutral-900/60 backdrop-blur-md text-white border-b border-neutral-800 z-50">
       <span>Ankit Mishra</span>
       <ul className="flex items-center gap-6">{navItems}</ul>
       <button onClick={toggleTheme} className="cursor-pointer">
