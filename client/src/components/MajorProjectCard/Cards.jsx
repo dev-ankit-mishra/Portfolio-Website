@@ -27,7 +27,11 @@ export default function Cards() {
 
   const cards = cardItems.map((card) => {
     return (
-      <div className="relative group w-full max-w-md bg-gradient-to-br tracking-wide shadow-xl shadow-black/40 leading-relaxed from-gray-800 to-gray-900 rounded-2xl text-neutral-100 transition-all duration-300 p-5  hover:scale-102 hover:ring-1 hover:ring-indigo-500 hover:shadow-2xl">
+      <div
+        className="relative group w-full max-w-md border border-white/10
+ tracking-wide shadow-xl shadow-black/40 leading-relaxed bg-gradient-to-br from-slate-900 to-gray-800
+ rounded-2xl text-neutral-100 transition-all duration-300 p-5  hover:scale-102 hover:ring-1 hover:ring-indigo-400 hover:shadow-2xl"
+      >
         <img
           src={card.src}
           className="w-full h-42 object-cover rounded-t-2xl"
