@@ -16,10 +16,10 @@ export default function MinorProject() {
   return (
     <section className="min-h-screen min-w-full bg-gradient-to-br from-[#0d0221] to-[#232526] text-white tracking-wide leading-relaxed">
       <header>
-        <h1 className="text-3xl text-center font-semibold py-3 pt-6 ">
-          Minor Project
+        <h1 className="text-3xl text-center font-bold py-3 pt-6 ">
+          Mini Project
         </h1>
-        <div className="h-1 w-20 bg-blue-500 mt-1 mx-auto"></div>
+        <div className="w-10 h-1 bg-blue-500 hover:w-24 transition-all duration-200 rounded-2xl mx-auto mt-2" />
       </header>
       <main className="w-full h-full">
         <div className="slider-container w-[80rem]  p-4 mx-auto ">
