@@ -34,7 +34,8 @@ export default function Skills() {
           className={`w-[24rem] h-[268px] rounded-2xl  
                     shadow-xl shadow-black/40 transition-all duration-200 
                     hover:ring-1 hover:ring-cyan-400
-                    hover:scale-102 hover:shadow-cyan-500/20 
+                    hover:scale-102 hover:shadow-cyan-500/20 border border-white/10
+
                     ${bgColors[card.label]}`}
         >
           <p className="inline-block ml-8 text-[1.38rem] font-[502]  text-center  text-white pt-5 border-b border-b-indigo-400 pb-1 ">
@@ -56,14 +57,14 @@ export default function Skills() {
 
   return (
     <section
-      className="scroll-mt-8 w-full h-screen box-border bg-gradient-to-br from-[#004e92] to-[#302b63]"
+      className="scroll-mt-8 w-full h-screen box-border bg-gradient-to-br from-[#1e293b] to-[#0f172a]"
       id="Skills"
     >
       <header>
-        <h1 className="text-3xl font-semibold text-center pt-6 pb-2 tracking-wide text-white">
+        <h1 className="text-3xl font-bold text-center pt-6 pb-2 tracking-wide text-white">
           Skills
         </h1>
-        <div className="w-16 h-1 bg-cyan-400 mx-auto mt-2 rounded"></div>
+        <div className="w-10 h-1 bg-blue-500 hover:w-24 transition-all duration-200 rounded-2xl mx-auto mt-2" />
       </header>
 
       <main className="w-full h-full text-white grid grid-cols-3 gap-y-10 place-items-center place-content-center px-24 pb-26">
