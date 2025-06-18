@@ -22,7 +22,7 @@ const cardItems = [
   {
     id: 2,
     src: gameTenzieImg,
-    label: "Tenzie's Game",
+    label: "Tenzie Game",
     desc: "A fast-paced dice game built with React and Vite. Match all ten dice to the same number by freezing and rolling smartly — a quick challenge of luck and logic.",
     quote: " Master the dice, beat the odds.",
     sub_title: "Inspired by the classic Tenzi game, reimagined for the web.",
@@ -53,7 +53,7 @@ export const cards = cardItems.map((item) => {
   return (
     <div
       key={item.id}
-      className="group relative w-[23.5rem] h-[35rem] rounded-2xl bg-gradient-to-br from-gray-800 to-gray-900 backdrop-blur-sm p-5 text-white shadow-lg transition-all duration-200 hover:scale-103 hover:shadow-2xl hover:ring-1 hover:ring-indigo-400"
+      className="group relative w-[23.5rem] h-[35rem] rounded-2xl bg-gradient-to-br border border-white/10 from-gray-800 to-gray-900 backdrop-blur-sm p-5 text-white shadow-lg transition-all duration-150 hover:scale-103 hover:shadow-2xl hover:ring-1 hover:ring-indigo-400"
     >
       {/* Image */}
       <img
