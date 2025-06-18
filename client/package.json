@@ -24,6 +24,8 @@
     "react-scroll": "^1.9.3",
     "react-scroll-parallax": "^3.4.5",
     "react-simple-typewriter": "^5.0.1",
+    "slick-carousel": "^1.8.1",
+    "swiper": "^11.2.8",
     "tailwind-merge": "^3.3.0"
   },
   "devDependencies": {
