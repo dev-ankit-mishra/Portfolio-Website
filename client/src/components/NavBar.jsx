@@ -37,7 +37,7 @@ export default function NavBar() {
         to={item}
         spy={true}
         smooth={true}
-        offset={-30} // your navbar height here
+        offset={-35} // your navbar height here
         duration={500}
         onSetActive={() => setActive(item)}
         className={`cursor-pointer transition-all duration-300 ${
