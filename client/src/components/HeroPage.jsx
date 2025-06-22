@@ -51,7 +51,9 @@ export default function HeroPage() {
         {/* Right Section: Profile Image */}
         <div className="w-1/2 h-full flex flex-col justify-center items-center">
           <img
-            src="https://img.freepik.com/free-vector/programming-concept-illustration_114360-1351.jpg?semt=ais_hybrid"
+            src={
+              "https://img.freepik.com/free-vector/programming-concept-illustration_114360-1351.jpg?semt=ais_hybrid"
+            }
             alt="profile-picture"
             className="w-40 h-40 md:w-60 md:h-60 rounded-full shadow-xl"
           />
