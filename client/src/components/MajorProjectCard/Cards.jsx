@@ -1,9 +1,12 @@
-import codeImg from "../../assets/image.png";
-import portfoilioImg from "../../assets/portfolio.png";
+import codeCollabImg from "../../assets/codeCollab.png";
+import portfoilioImg from "../../assets/imgPortfolio.png";
+
 import { portfolioFeatures } from "./CardFeatures";
 import { codeEditorFeatures } from "./CardFeatures";
 import { portfolioTechItems } from "./CardTechStack";
 import { codeEditorTechItems } from "./CardTechStack";
+
+import { Code2, ExternalLink } from "lucide-react";
 
 export default function Cards() {
   const cardItems = [
@@ -14,14 +17,18 @@ export default function Cards() {
       desc: "A responsive portfolio site to highlight my work, tech stack, and contact info—all in one place.",
       features: portfolioFeatures,
       tech: portfolioTechItems,
+      live: "www.ankitmishra.pro",
+      code: "https://github.com/dev-ankit-mishra/Portfolio-Website",
     },
     {
       id: 2,
-      src: codeImg,
+      src: codeCollabImg,
       label: "Collaborative Code Editor",
       desc: "A real-time code editor built for seamless collaboration and live coding with teams.",
       features: codeEditorFeatures,
       tech: codeEditorTechItems,
+      live: "/",
+      code: "https://github.com/dev-ankit-mishra/collab-code-editor",
     },
   ];
 
@@ -62,12 +69,22 @@ export default function Cards() {
             })}
           </div>
           <div className="flex gap-4 pt-2">
-            <button className="bg-indigo-600 px-4 py-2 hover:bg-indigo-800 transition cursor-pointer rounded-lg">
+            <a
+              href={card.live}
+              className="bg-indigo-600 px-4 py-2 hover:bg-indigo-800 transition cursor-pointer rounded-lg flex gap-2 items-center"
+            >
+              <ExternalLink size={16} />
               Live Demo
-            </button>
-            <button className="bg-transparent border text-indigo-400 border-indigo-500 hover:bg-indigo-600 cursor-pointer transition-all hover:text-white px-4 py-2 rounded-lg">
+            </a>
+            <a
+              href={card.code}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-transparent border text-indigo-400 border-indigo-500 hover:bg-indigo-600/20 cursor-pointer transition-all hover:text-white px-4 py-2 rounded-lg flex gap-2 items-center"
+            >
+              <Code2 size={16} />
               Code
-            </button>
+            </a>
           </div>
         </div>
       </div>
