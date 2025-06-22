@@ -11,7 +11,7 @@ export default function About() {
   return (
     <section
       id="About"
-      className="w-full h-screen bg-gradient-to-br from-[#0c0c0c] via-[#121212] to-[#1a1a1a] text-[#dbdee3] flex flex-col px-6"
+      className="w-full h-screen bg-gradient-to-br from-[#0c0c0c] via-[#121212] to-[#1a1a1a] text-gray-300 flex flex-col px-6"
     >
       <header>
         <h1 className="text-3xl font-bold text-center py-4 mt-2 text-white">
@@ -28,18 +28,17 @@ export default function About() {
           />
         </div>
         <div className="w-full h-full px-4 py-6">
-          <p className="px-2 tracking-wide leading-relaxed text-white">
+          <p className="px-2 text-white tracking-wide leading-relaxed">
             I’m <span className="font-semibold">Ankit Mishra</span>, a{" "}
             <span className="font-semibold">full-stack developer</span> with
-            strong <span className="font-semibold">DSA fundamentals</span> and a
+            strong <span className="font-semibold">DSA skills</span> and a
             passion for building{" "}
-            <span className="font-semibold">clean, user-friendly apps</span>. I
-            enjoy working with <span className="italic">React</span>,{" "}
+            <span className="font-semibold">clean, user-centric apps</span>. I
+            work with <span className="italic">React</span>,{" "}
             <span className="italic">Node.js</span>, and{" "}
-            <span className="italic">real-time APIs</span> to solve real-world
-            problems, and I’m currently exploring{" "}
-            <span className="italic">AI integration</span> and{" "}
-            <span className="italic">scalable deployments</span>.
+            <span className="italic">real-time APIs</span>, and I’m currently
+            exploring <span className="italic">AI integration</span> and{" "}
+            <span className="italic">scalable systems</span>.
           </p>
 
           <div className="relative mt-6">
@@ -50,18 +49,17 @@ export default function About() {
                   <FaGraduationCap className="text-blue-400 text-xl hover:scale-105 transition" />
                 </div>
                 <p className="pl-8 pr-2 tracking-wide leading-relaxed hover:text-white transition duration-200">
+                  <span className="font-semibold text-white">
+                    Education & Technical Foundation:
+                  </span>{" "}
                   Final-year{" "}
                   <span className="font-semibold">
                     MCA (Master of Computer Applications)
                   </span>{" "}
                   student with a strong foundation in{" "}
                   <span className="font-semibold">
-                    Data Structures and Algorithms
+                    Data Structures and Algorithms.
                   </span>
-                  , and a deep interest in{" "}
-                  <span className="italic">software development</span>,{" "}
-                  <span className="italic">system design</span>, and{" "}
-                  <span className="italic">problem-solving</span>.
                 </p>
               </li>
 
@@ -70,6 +68,9 @@ export default function About() {
                   <FaBook className="text-indigo-400 text-xl hover:scale-105 transition" />
                 </div>
                 <p className="tracking-wide leading-relaxed pl-8 pr-2 hover:text-white transition duration-200">
+                  <span className="font-semibold text-white">
+                    Academic Excellence:
+                  </span>{" "}
                   <span className="font-semibold">Academically consistent</span>{" "}
                   — secured <span className="font-semibold">93%</span> in
                   Intermediate, <span className="font-semibold">8.6 CGPA</span>{" "}
@@ -84,6 +85,9 @@ export default function About() {
                   <FaBrain className="text-purple-400 text-xl hover:scale-105 transition" />
                 </div>
                 <p className="tracking-wide leading-relaxed pl-8 pr-2 hover:text-white transition duration-200">
+                  <span className="font-semibold text-white">
+                    Problem Solving:
+                  </span>{" "}
                   Solved <span className="font-semibold">400+</span> problems on{" "}
                   <span className="italic">LeetCode</span> and hold a{" "}
                   <span className="font-semibold">
@@ -100,6 +104,9 @@ export default function About() {
                   <FaLaptopCode className="text-teal-400 text-xl hover:scale-105 transition" />
                 </div>
                 <p className="tracking-wide leading-relaxed pl-8 pr-2 hover:text-white transition duration-200">
+                  <span className="font-semibold text-white">
+                    Web Development Experience:
+                  </span>{" "}
                   Built <span className="font-semibold">responsive</span> and{" "}
                   <span className="font-semibold">accessible</span> web
                   applications using <span className="italic">React</span>,{" "}
@@ -115,13 +122,13 @@ export default function About() {
                   <FaTools className="text-yellow-400 text-xl hover:scale-105 transition" />
                 </div>
                 <p className="tracking-wide leading-relaxed pl-8 pr-2 hover:text-white transition duration-200">
+                  <span className="font-semibold text-white">
+                    Open Source & Community:
+                  </span>{" "}
                   Made <span className="font-semibold">1000+</span> GitHub
                   contributions in <span className="font-semibold">2025</span>{" "}
                   with active participation in{" "}
-                  <span className="italic">open-source projects</span>,
-                  reflecting{" "}
-                  <span className="italic">community involvement</span> and{" "}
-                  <span className="italic">engineering consistency</span>.
+                  <span className="italic">open-source projects.</span>
                 </p>
               </li>
 
@@ -130,6 +137,9 @@ export default function About() {
                   <FaRocket className="text-pink-400 text-xl hover:scale-105 transition" />
                 </div>
                 <p className="tracking-wide leading-relaxed pl-8 pr-2 hover:text-white transition duration-200">
+                  <span className="font-semibold text-white">
+                    Tech Interests & Tools:
+                  </span>
                   Passionate about <span className="italic">system design</span>
                   , <span className="italic">AI</span>,{" "}
                   <span className="italic">performance optimization</span>, and
