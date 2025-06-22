@@ -8,6 +8,7 @@ import {
   deckGame,
   movieWatchlist,
 } from "./CardsTechStack";
+import { Code2, ExternalLink } from "lucide-react";
 
 const cardItems = [
   {
@@ -18,6 +19,8 @@ const cardItems = [
     quote: "Save your favorite languages before Assembly takes over!",
     sub_title: "Inspired by Wordle, customized for devs.",
     tech: assemblyGame,
+    live: "https://end-assembly-game.netlify.app/",
+    code: "https://github.com/dev-ankit-mishra/Assembly-EndGame",
   },
   {
     id: 2,
@@ -27,6 +30,8 @@ const cardItems = [
     quote: " Master the dice, beat the odds.",
     sub_title: "Inspired by the classic Tenzi game, reimagined for the web.",
     tech: tenzieGame,
+    live: "https://gametenzie.netlify.app/",
+    code: "https://github.com/dev-ankit-mishra/TenziesGame",
   },
   {
     id: 3,
@@ -37,6 +42,8 @@ const cardItems = [
     sub_title:
       "Inspired by the timeless thrill of card flips — reimagined for the browser.",
     tech: deckGame,
+    live: "https://game-deck.netlify.app/",
+    code: "https://github.com/dev-ankit-mishra/DeckGame",
   },
   {
     id: 4,
@@ -46,6 +53,8 @@ const cardItems = [
     quote: "Discover stories. Build your list.",
     sub_title: "Search. Save. Watch — your personal movie companion.",
     tech: movieWatchlist,
+    live: "https://watchlists-movies.netlify.app/",
+    code: "https://github.com/dev-ankit-mishra/Movie-Watchlist",
   },
 ];
 
@@ -93,16 +102,20 @@ export const cards = cardItems.map((item) => {
       {/* Buttons */}
       <div className="flex gap-3 mt-6">
         <a
-          href="#"
-          className="px-4 py-2 rounded-lg bg-indigo-600 text-white font-medium shadow hover:bg-indigo-700 transition"
+          href={item.live}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="px-4 py-2 rounded-lg bg-indigo-600 text-white font-medium shadow hover:bg-indigo-700 transition flex gap-2 items-center"
         >
-          Live
+          <ExternalLink size={16} /> Live
         </a>
         <a
-          href="#"
-          className="px-4 py-2 rounded-lg border border-gray-500 text-gray-300 font-medium hover:border-white hover:text-white transition"
+          href={item.code}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="px-4 py-2 rounded-lg border border-gray-500 text-gray-300 font-medium hover:border-white hover:text-white transition flex gap-2 items-center"
         >
-          Code
+          <Code2 size={16} /> Code
         </a>
       </div>
     </div>
