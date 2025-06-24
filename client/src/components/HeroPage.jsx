@@ -22,7 +22,6 @@ export default function HeroPage() {
                 "Full-Stack Developer",
                 "Open Source Enthusiast",
                 "AI Explorer",
-                "Cloud Practitioner",
               ]}
               cursor
               cursorStyle="|"
