@@ -2,7 +2,6 @@ import coreJavaImg from "../assets/coreJavaImg.png";
 import { TbBrandLeetcode } from "react-icons/tb";
 import { FaGithub } from "react-icons/fa";
 import CountUp from "react-countup";
-import ToolTip from "./ToolTip";
 
 export default function AchievementsSection() {
   const milestones = [
@@ -76,7 +75,8 @@ export default function AchievementsSection() {
   return (
     <section
       id="Achievements"
-      className="px-6 py-10 bg-gradient-to-r from-[#0f0f0f] via-[#1a1a1a] to-[#0f0f0f]
+      className="px-6 py-10 bg-gradient-to-br from-[#1f1f1f] via-[#2a2a2a] to-[#1f1f1f]
+
 
 
  text-white"
@@ -108,7 +108,7 @@ export default function AchievementsSection() {
           <div
             key={idx}
             className="relative group bg-gradient-to-br from-zinc-900 via-neutral-900 to-black
-  max-w-sm flex items-center justify-between gap-x-6 border border-cyan-400/10 hover:shadow-cyan-500/20 hover:scale-102 shadow-md rounded-lg p-5  hover:shadow-2xl transition-all duration-200 overflow-hidden"
+                        max-w-sm flex items-center justify-between gap-x-6 border border-cyan-400/10 hover:shadow-cyan-500/20 hover:scale-102 shadow-[0_0_20px_rgba(255,255,255,0.05)] rounded-lg p-5  hover:shadow-2xl transition-all duration-200 overflow-hidden"
           >
             <div className="w-full h-full z-0 absolute bg-white/5 inset-0 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-all duration-300 " />
             <div className="w-2/3">
