@@ -10,13 +10,13 @@ export default function HeroPage() {
     <section id="Home" className="w-full h-screen font-Inter ">
       <NavBar />
 
-      <main className="w-full h-screen flex flex-row justify-center items-center  text-neutral-200 bg-gradient-to-br from-[#0f2027] via-[#203a43] to-[#2c5364]">
+      <main className="w-full h-screen md:flex md:flex-col-reverse items-center  lg:flex-row md:py-16 md:pt-24 lg:justify-evenly  text-neutral-200 bg-gradient-to-br from-[#0f2027] via-[#203a43] to-[#2c5364]">
         {/* Left Section: Name and Title */}
-        <div className="pl-12 w-1/2 h-full  flex flex-col gap-y-4 justify-center items-center font-Inter">
-          <h1 className="text-center tracking-wide text-3xl mt-14 font-bold">
+        <div className="px-4 h-full  flex flex-col gap-y-4 justify-center items-center ">
+          <h1 className="text-center tracking-wide text-2xl lg:text-3xl mt-14 font-bold">
             Hi I'm Ankit Mishra
           </h1>
-          <h2 className="text-center tracking-wide text-2xl font-semibold">
+          <h2 className="text-center tracking-wide text-lg  lg:text-2xl font-semibold">
             <Typewriter
               words={[
                 "Full-Stack Developer",
@@ -31,14 +31,14 @@ export default function HeroPage() {
             />
           </h2>
 
-          <p className="px-6 text-center text-[1.08rem]  tracking-wide leading-relaxed  font-normal mb-6 mt-1">
+          <p className="lg:px-38 md:px-10 px-4 text-center text-sm lg:text-[1.08rem]  tracking-wide leading-relaxed  font-normal mb-6 mt-1">
             I build interactive, scalable and responsive web apps using React,
             Next.js, and Node.js — from AI-powered tools to real-time
             collaboration platforms.
           </p>
           <div className="w-12 h-1 bg-blue-500 rounded-full mb-2"></div>
           <a
-            className="py-[0.75rem] px-10 flex justify-center items-center gap-2 text-lg font-medium border border-cyan-500 text-cyan-500 hover:bg-cyan-500/10 hover:shadow-md hover:shadow-cyan-500/30 transition-all hover:scale-105 duration-150 rounded-xl mt-8 cursor-pointer"
+            className="lg:py-[0.75rem] lg:px-10  px-6 py-2 flex justify-center items-center sm:text-sm md:text-base gap-2 lg:text-lg font-medium border border-cyan-500 text-cyan-500 hover:bg-cyan-500/10 hover:shadow-md hover:shadow-cyan-500/30 transition-all hover:scale-105 duration-150 rounded-lg mt-8 cursor-pointer"
             href={resume}
             target="_blank"
           >
@@ -48,7 +48,7 @@ export default function HeroPage() {
         </div>
 
         {/* Right Section: Profile Image */}
-        <div className="w-1/2 h-full flex flex-col justify-center items-center">
+        <div className="w-1/2 h-full md:flex flex-col justify-center items-center hidden">
           <img
             src={
               "https://img.freepik.com/free-vector/programming-concept-illustration_114360-1351.jpg?semt=ais_hybrid"
