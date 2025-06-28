@@ -11,24 +11,24 @@ export default function About() {
   return (
     <section
       id="About"
-      className="w-full h-screen bg-gradient-to-br from-[#0c0c0c] via-[#121212] to-[#1a1a1a] text-gray-300 flex flex-col px-6"
+      className="w-full h-fit bg-gradient-to-br from-[#0c0c0c] via-[#121212] to-[#1a1a1a] text-gray-300 flex flex-col px-4 pb-10 lg:pb-4"
     >
       <header>
-        <h1 className="text-3xl font-bold text-center py-4 mt-2 text-white">
+        <h1 className="text-3xl font-bold text-center py-4 mt-4 text-white">
           About Me
         </h1>
       </header>
       <div className="w-10 h-1 bg-blue-500 hover:w-24 transition-all duration-200 rounded-2xl mx-auto mb-1" />
       <main className="flex-1 flex ">
-        <div className="w-full h-full flex justify-center items-center">
+        <div className="w-full h-full lg:flex justify-center items-center hidden">
           <img
             src={aboutImg}
             alt="AbouImg"
             className="h-130 rounded-2xl object-cover mb-4"
           />
         </div>
-        <div className="w-full h-full px-4 py-6">
-          <p className="px-2 text-white tracking-wide leading-relaxed">
+        <div className=" text-sm pt-5 md:text-base  md:px-4 md:py-4">
+          <p className="pl-2 text-white tracking-wide leading-relaxed">
             I’m <span className="font-semibold">Ankit Mishra</span>, a{" "}
             <span className="font-semibold">full-stack developer</span> with
             strong <span className="font-semibold">DSA skills</span> and a
@@ -41,14 +41,14 @@ export default function About() {
             <span className="italic">scalable systems</span>.
           </p>
 
-          <div className="relative mt-6">
+          <div className="relative mt-4 md:mt-6">
             <div className="absolute top-0 left-8 w-0.5 bg-gray-600 h-full"></div>
-            <ul className="space-y-5 ml-10">
+            <ul className="space-y-5 ml-10 sm:text-xs md:text-base">
               <li className="relative">
-                <div className="absolute -left-6 top-2 bg-gray-700 p-2 rounded-full">
-                  <FaGraduationCap className="text-blue-400 text-xl hover:scale-105 transition" />
+                <div className="absolute -left-5.5 md:-left-6 top-2 bg-gray-700 p-2 rounded-full">
+                  <FaGraduationCap className="text-blue-400 md:text-xl hover:scale-105 transition" />
                 </div>
-                <p className="pl-8 pr-2 tracking-wide leading-relaxed hover:text-white transition duration-200">
+                <p className=" md:pl-8 pl-6  tracking-wide leading-relaxed hover:text-white transition duration-200">
                   <span className="font-semibold text-white">
                     Education & Technical Foundation:
                   </span>{" "}
@@ -64,10 +64,10 @@ export default function About() {
               </li>
 
               <li className="relative">
-                <div className="absolute -left-6 top-2 bg-gray-700 p-2 rounded-full">
-                  <FaBook className="text-indigo-400 text-xl hover:scale-105 transition" />
+                <div className="absolute -left-5.5 md:-left-6 top-2 bg-gray-700 p-2 rounded-full">
+                  <FaBook className="text-indigo-400 md:text-xl hover:scale-105 transition" />
                 </div>
-                <p className="tracking-wide leading-relaxed pl-8 pr-2 hover:text-white transition duration-200">
+                <p className="tracking-wide leading-relaxed md:pl-8 pl-6 hover:text-white transition duration-200">
                   <span className="font-semibold text-white">
                     Academic Excellence:
                   </span>{" "}
@@ -81,10 +81,10 @@ export default function About() {
               </li>
 
               <li className="relative">
-                <div className="absolute -left-6 top-2 bg-gray-700 p-2 rounded-full">
-                  <FaBrain className="text-purple-400 text-xl hover:scale-105 transition" />
+                <div className="absolute -left-5.5 md:-left-6 top-2 bg-gray-700 p-2 rounded-full">
+                  <FaBrain className="text-purple-400 md:text-xl hover:scale-105 transition" />
                 </div>
-                <p className="tracking-wide leading-relaxed pl-8 pr-2 hover:text-white transition duration-200">
+                <p className="tracking-wide leading-relaxed md:pl-8 pl-6 hover:text-white transition duration-200">
                   <span className="font-semibold text-white">
                     Problem Solving:
                   </span>{" "}
@@ -100,10 +100,10 @@ export default function About() {
               </li>
 
               <li className="relative">
-                <div className="absolute -left-6 top-2 bg-gray-700 p-2 rounded-full">
-                  <FaLaptopCode className="text-teal-400 text-xl hover:scale-105 transition" />
+                <div className="absolute -left-5.5 md:-left-6 top-2 bg-gray-700 p-2 rounded-full">
+                  <FaLaptopCode className="text-teal-400 md:text-xl hover:scale-105 transition" />
                 </div>
-                <p className="tracking-wide leading-relaxed pl-8 pr-2 hover:text-white transition duration-200">
+                <p className="tracking-wide leading-relaxed md:pl-8 pl-6 hover:text-white transition duration-200">
                   <span className="font-semibold text-white">
                     Web Development Experience:
                   </span>{" "}
@@ -118,10 +118,10 @@ export default function About() {
               </li>
 
               <li className="relative">
-                <div className="absolute -left-6 top-2 bg-gray-700 p-2 rounded-full">
-                  <FaTools className="text-yellow-400 text-xl hover:scale-105 transition" />
+                <div className="absolute -left-5.5 md:-left-6 top-2 bg-gray-700 p-2 rounded-full">
+                  <FaTools className="text-yellow-400 md:text-xl hover:scale-105 transition" />
                 </div>
-                <p className="tracking-wide leading-relaxed pl-8 pr-2 hover:text-white transition duration-200">
+                <p className="tracking-wide leading-relaxed md:pl-8 pl-6 hover:text-white transition duration-200">
                   <span className="font-semibold text-white">
                     Open Source & Community:
                   </span>{" "}
@@ -133,10 +133,10 @@ export default function About() {
               </li>
 
               <li className="relative">
-                <div className="absolute -left-6 top-2 bg-gray-700 p-2 rounded-full">
-                  <FaRocket className="text-pink-400 text-xl hover:scale-105 transition" />
+                <div className="absolute -left-5.5 md:-left-6 top-2 bg-gray-700 p-2 rounded-full">
+                  <FaRocket className="text-pink-400 md:text-xl hover:scale-105 transition" />
                 </div>
-                <p className="tracking-wide leading-relaxed pl-8 pr-2 hover:text-white transition duration-200">
+                <p className="tracking-wide leading-relaxed md:pl-8 pl-6 hover:text-white transition duration-200">
                   <span className="font-semibold text-white">
                     Tech Interests & Tools:
                   </span>
