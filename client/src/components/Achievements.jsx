@@ -8,7 +8,7 @@ export default function AchievementsSection() {
     {
       title: (
         <span>
-          <CountUp end={400} duration={5} />+
+          <CountUp enableScrollSpy end={400} duration={5} />+
         </span>
       ),
       subtitle: "LeetCode Problems Solved",
@@ -18,7 +18,7 @@ export default function AchievementsSection() {
     {
       title: (
         <span>
-          <CountUp end={1000} duration={5} />+
+          <CountUp enableScrollSpy end={1000} duration={5} />+
         </span>
       ),
       subtitle: "GitHub Contributions (2024)",
@@ -50,7 +50,7 @@ export default function AchievementsSection() {
       description: "Learned complex queries and analytics techniques.",
     },
     {
-      title: "Full-stack Developer",
+      title: "Full-Stack Developer",
       issuer: "Scrimba",
       date: "Feb 2024",
       link: "#",
