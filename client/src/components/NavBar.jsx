@@ -42,7 +42,7 @@ export default function NavBar() {
         onSetActive={() => setActive(item)}
         className={`cursor-pointer transition-all duration-300 ${
           active === item
-            ? "scale-105 bg-blue-600 rounded-md px-2"
+            ? "scale-105 bg-blue-600 rounded-md px-2 pb-0.5"
             : "hover:text-blue-400 font-normal"
         }`}
       >
@@ -52,9 +52,11 @@ export default function NavBar() {
   ));
 
   return (
-    <nav className="w-full h-12 px-8 gap-6 text-lg tracking-wide flex items-center justify-between fixed top-0 left-0 bg-neutral-900/60 backdrop-blur-md text-white border-b border-neutral-800 z-50">
+    <nav className="w-full h-12 px-3 lg:px-8 gap-2 text-base tracking-wide flex items-center justify-between fixed top-0 left-0 lg:text-lg bg-neutral-900/60 backdrop-blur-md text-white border-b border-neutral-800 z-50 ">
       <span>Ankit Mishra</span>
-      <ul className="flex items-center gap-6">{navItems}</ul>
+      <ul className="md:flex items-center hidden md:gap-4 lg:gap-6">
+        {navItems}
+      </ul>
       <button onClick={toggleTheme} className="cursor-pointer">
         {theme ? <Moon className="w-7 h-7" /> : <Sun className="w-7 h-7" />}
       </button>
