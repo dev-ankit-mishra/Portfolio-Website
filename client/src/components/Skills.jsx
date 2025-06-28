@@ -57,17 +57,17 @@ export default function Skills() {
 
   return (
     <section
-      className="scroll-mt-8 w-full h-screen box-border bg-gradient-to-br from-[#1e293b] to-[#0f172a]"
+      className="scroll-mt-8 w-full h-fit box-border bg-gradient-to-br from-[#1e293b] to-[#0f172a] pb-10"
       id="Skills"
     >
       <header>
         <h1 className="text-3xl font-bold text-center pt-6 pb-2 tracking-wide text-white">
           Skills
         </h1>
-        <div className="w-10 h-1 bg-blue-500 hover:w-24 transition-all duration-200 rounded-2xl mx-auto mt-2" />
+        <div className="w-10 h-1 bg-blue-500 hover:w-24 transition-all duration-200 rounded-2xl mx-auto mt-2 mb-6" />
       </header>
 
-      <main className="w-full h-full text-white grid grid-cols-3 gap-y-10 place-items-center place-content-center px-24 pb-26">
+      <main className=" text-white grid sm:grid-cols-1 []:grid-cols-2 lg:grid-cols-3 gap-y-10 place-items-center place-content-center">
         {/* Languages */}
 
         {cards}
