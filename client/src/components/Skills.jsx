@@ -64,7 +64,7 @@ export default function Skills() {
       id="Skills"
     >
       <header>
-        <h1 className="text-3xl font-bold text-center pt-6 pb-2 tracking-wide text-white">
+        <h1 className="text-2xl md:text-3xl font-bold text-center pt-6 pb-2 tracking-wide text-white">
           Skills
         </h1>
         <div className="w-10 h-1 bg-blue-500 hover:w-24 transition-all duration-200 rounded-2xl mx-auto mt-2 mb-6" />
