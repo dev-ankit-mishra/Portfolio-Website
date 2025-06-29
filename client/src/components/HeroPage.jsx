@@ -10,7 +10,7 @@ export default function HeroPage() {
     <section id="Home" className="w-full h-screen font-Inter ">
       <NavBar />
 
-      <main className="w-full h-screen md:flex md:flex-col-reverse items-center  lg:flex-row md:py-16 md:pt-24 lg:justify-evenly  text-neutral-200 bg-gradient-to-br from-[#0f2027] via-[#203a43] to-[#2c5364]">
+      <main className="w-full h-screen flex flex-col-reverse items-center  md:flex-row  md:justify-between  pt-32 pb-10 md:pb-0 md:pt-0 md:pr-20 md:gap-4  text-neutral-200 bg-gradient-to-br from-[#0f2027] via-[#203a43] to-[#2c5364]">
         {/* Left Section: Name and Title */}
         <div className="px-4 h-full  flex flex-col gap-y-4 justify-center items-center ">
           <h1 className="text-center tracking-wide text-2xl lg:text-3xl mt-14 font-bold">
@@ -31,7 +31,7 @@ export default function HeroPage() {
             />
           </h2>
 
-          <p className="lg:px-38 md:px-10 px-4 text-center text-sm lg:text-[1.08rem]  tracking-wide leading-relaxed  font-normal mb-6 mt-1">
+          <p className="lg:px-20 md:px-8 px-4 text-center text-sm lg:text-[1.08rem]  tracking-wide leading-relaxed  font-normal mb-6 mt-1">
             I build interactive, scalable and responsive web apps using React,
             Next.js, and Node.js — from AI-powered tools to real-time
             collaboration platforms.
@@ -48,13 +48,13 @@ export default function HeroPage() {
         </div>
 
         {/* Right Section: Profile Image */}
-        <div className="w-1/2 h-full md:flex flex-col justify-center items-center hidden">
+        <div className="md:w-1/2  flex flex-col justify-center items-center">
           <img
             src={
               "https://img.freepik.com/free-vector/programming-concept-illustration_114360-1351.jpg?semt=ais_hybrid"
             }
             alt="profile-picture"
-            className="w-40 h-40 md:w-60 md:h-60 rounded-full shadow-xl"
+            className="w-40 h-40 md:w-45 md:h-45 lg:w-60 lg:h-60 rounded-full shadow-xl"
           />
         </div>
       </main>
