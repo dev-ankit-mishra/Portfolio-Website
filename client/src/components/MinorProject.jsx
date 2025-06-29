@@ -10,7 +10,7 @@ import "swiper/css/navigation";
 
 export default function MinorProject() {
   return (
-    <section className="w-full h-screen bg-gradient-to-br from-[#0d0221] to-[#232526] text-white tracking-wide leading-relaxed">
+    <section className="w-full h-auto py-6 bg-gradient-to-br from-[#0d0221] to-[#232526] text-white tracking-wide leading-relaxed">
       <header>
         <h1 className="text-2xl md:text-3xl text-center font-bold py-3 pt-6">
           Mini Project
