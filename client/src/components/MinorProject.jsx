@@ -21,6 +21,7 @@ export default function MinorProject() {
         <div className="slider-container max-w-[92rem] mx-auto">
           <Swiper
             slidesPerView={1}
+            loop={true}
             keyboard={{ enabled: true, onlyInViewport: true, pageUpDown: true }}
             pagination={{ clickable: true }}
             navigation={true}
