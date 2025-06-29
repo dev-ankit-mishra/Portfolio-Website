@@ -10,18 +10,17 @@ import "swiper/css/navigation";
 
 export default function MinorProject() {
   return (
-    <section className="w-full bg-gradient-to-br from-[#0d0221] to-[#232526] text-white tracking-wide leading-relaxed">
+    <section className="w-full h-screen bg-gradient-to-br from-[#0d0221] to-[#232526] text-white tracking-wide leading-relaxed">
       <header>
-        <h1 className="text-3xl text-center font-bold py-3 pt-6">
+        <h1 className="text-2xl md:text-3xl text-center font-bold py-3 pt-6">
           Mini Project
         </h1>
         <div className="w-10 h-1 bg-blue-500 hover:w-24 transition-all duration-200 rounded-2xl mx-auto mt-2" />
       </header>
       <main className="w-full h-full">
-        <div className="slider-container max-w-[80rem]  py-6 mx-auto">
+        <div className="slider-container max-w-[92rem] mx-auto">
           <Swiper
-            slidesPerView={2}
-            spaceBetween={30}
+            slidesPerView={1}
             keyboard={{ enabled: true, onlyInViewport: true, pageUpDown: true }}
             pagination={{ clickable: true }}
             navigation={true}
@@ -33,6 +32,7 @@ export default function MinorProject() {
             breakpoints={{
               0: {
                 slidesPerView: 1,
+                centeredSlides: true,
               },
               640: {
                 slidesPerView: 1,
@@ -47,8 +47,8 @@ export default function MinorProject() {
           >
             {cards.map((card, index) => (
               <SwiperSlide key={index}>
-                <div className="flex items-center justify-center py-10">
-                  <div className="max-w-md w-full">{card}</div>
+                <div className="flex items-center justify-center px-10 py-10">
+                  <div>{card}</div>
                 </div>
               </SwiperSlide>
             ))}
