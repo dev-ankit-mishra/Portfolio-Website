@@ -24,10 +24,10 @@ export default function About() {
           <img
             src={aboutImg}
             alt="AbouImg"
-            className="h-130 rounded-2xl object-cover mb-4"
+            className="h-110 rounded-2xl object-cover mb-4"
           />
         </div>
-        <div className=" text-sm xl:pt-5 md:pt-10 pt-5 md:text-base  md:px-4 md:py-4">
+        <div className=" text-sm  md:pt-10 pt-5 md:text-base  md:px-4">
           <p className="pl-2 text-white tracking-wide leading-relaxed">
             I’m <span className="font-semibold">Ankit Mishra</span>, a{" "}
             <span className="font-semibold">full-stack developer</span> with
@@ -41,9 +41,9 @@ export default function About() {
             <span className="italic">scalable systems</span>.
           </p>
 
-          <div className="relative md:mt-10 xl:mt-6  mt-6 pr-4">
+          <div className="relative md:mt-8   mt-6 pr-4">
             <div className="absolute top-0 left-8 w-0.5 bg-gray-600 h-full"></div>
-            <ul className="space-y-6 md:space-y-8 xl:space-5  ml-10 sm:text-xs md:text-base">
+            <ul className="space-y-6 md:space-y-8   ml-10 sm:text-xs md:text-base">
               <li className="relative">
                 <div className="absolute -left-5.5 md:-left-6 top-2 bg-gray-700 p-2 rounded-full">
                   <FaGraduationCap className="text-blue-400 md:text-xl hover:scale-105 transition" />
