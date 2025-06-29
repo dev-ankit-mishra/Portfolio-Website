@@ -4,7 +4,8 @@
     "@tailwindcss/cli": "^4.0.1",
     "date-fns": "^4.1.0",
     "react-github-calendar": "^4.5.7",
-    "react-slick": "^0.30.3"
+    "react-slick": "^0.30.3",
+    "swiper": "^11.2.10"
   },
   "devDependencies": {
     "tailwindcss": "^3.4.17"
