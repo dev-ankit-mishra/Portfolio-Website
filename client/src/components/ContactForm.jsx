@@ -59,39 +59,43 @@ const ContactForm = () => {
       onSubmit={sendEmail}
       className="flex flex-col space-y-3 mt-6"
     >
-      <label className="text-lg">Full name</label>
+      <label className="text-sm md:text-base lg:text-lg">Full name</label>
       <input
         name="name"
         required
         autoComplete="off"
-        className="bg-neutral-800 p-2 rounded border text-white border-neutral-700 placeholder:text-neutral-400 focus:outline-none focus:ring-2 focus:ring-blue-600"
+        className="bg-neutral-800 p-2 rounded border text-white border-neutral-700 text-sm md:text-base lg:text-lg placeholder:text-neutral-400 focus:outline-none focus:ring-2 focus:ring-blue-600"
         type="text"
         placeholder="e.g., Ankit Mishra"
       />
 
-      <label className="text-lg mt-3">Email address</label>
+      <label className="text-sm md:text-base lg:text-lg mt-3">
+        Email address
+      </label>
       <input
         name="email"
         required
         autoComplete="off"
-        className="bg-neutral-800 p-2 rounded text-white border border-neutral-700 placeholder:text-neutral-400 focus:outline-none focus:ring-2 focus:ring-blue-600"
+        className="bg-neutral-800 p-2 rounded text-white border border-neutral-700 text-sm md:text-base lg:text-lg placeholder:text-neutral-400 focus:outline-none focus:ring-2 focus:ring-blue-600"
         type="email"
         placeholder="e.g., contact@ankitmishra.pro"
       />
 
-      <label className="text-lg mt-3">Your message</label>
+      <label className="text-sm md:text-base lg:text-lg mt-3">
+        Your message
+      </label>
       <textarea
         name="message"
         autoComplete="off"
         required
-        className="bg-neutral-800 p-2 rounded border text-white border-neutral-700 placeholder:text-neutral-400 focus:outline-none focus:ring-2 focus:ring-blue-600"
-        rows={4}
+        className="bg-neutral-800 p-2 rounded border text-white border-neutral-700 text-sm md:text-base lg:text-lg placeholder:text-neutral-400 focus:outline-none focus:ring-2 focus:ring-blue-600"
+        rows={3}
         placeholder="Type your message here..."
       />
 
       <button
         type="submit"
-        className={`group flex justify-center items-center gap-2 text-white font-semibold p-2 rounded-md text-lg mt-4 transition-all duration-200 ${getButtonColor()}`}
+        className={`group flex justify-center items-center gap-2 text-white font-semibold p-2 rounded-md text-sm md:text-base lg:text-lg mt-4 transition-all duration-200 cursor-pointer ${getButtonColor()}`}
         disabled={buttonState === "processing"}
       >
         {buttonText}
