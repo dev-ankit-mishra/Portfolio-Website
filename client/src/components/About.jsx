@@ -11,23 +11,23 @@ export default function About() {
   return (
     <section
       id="About"
-      className="w-full h-fit bg-gradient-to-br from-[#0c0c0c] via-[#121212] to-[#1a1a1a] text-gray-300 flex flex-col px-4 pb-10 lg:pb-4"
+      className="w-full h-fit xl:h-screen bg-gradient-to-br from-[#0c0c0c] via-[#121212] to-[#1a1a1a] text-gray-300 flex flex-col px-4  pb-10 xl:pb-0"
     >
       <header>
-        <h1 className="text-3xl font-bold text-center py-4 mt-4 text-white">
+        <h1 className="text-2xl md:text-3xl font-bold text-center py-4 mt-4 text-white">
           About Me
         </h1>
       </header>
       <div className="w-10 h-1 bg-blue-500 hover:w-24 transition-all duration-200 rounded-2xl mx-auto mb-1" />
       <main className="flex-1 flex ">
-        <div className="w-full h-full lg:flex justify-center items-center hidden">
+        <div className="w-full h-full xl:flex justify-center items-center hidden">
           <img
             src={aboutImg}
             alt="AbouImg"
             className="h-130 rounded-2xl object-cover mb-4"
           />
         </div>
-        <div className=" text-sm pt-5 md:text-base  md:px-4 md:py-4">
+        <div className=" text-sm xl:pt-5 md:pt-10 pt-5 md:text-base  md:px-4 md:py-4">
           <p className="pl-2 text-white tracking-wide leading-relaxed">
             I’m <span className="font-semibold">Ankit Mishra</span>, a{" "}
             <span className="font-semibold">full-stack developer</span> with
@@ -41,9 +41,9 @@ export default function About() {
             <span className="italic">scalable systems</span>.
           </p>
 
-          <div className="relative mt-4 md:mt-6">
+          <div className="relative md:mt-10 xl:mt-6  mt-6 pr-4">
             <div className="absolute top-0 left-8 w-0.5 bg-gray-600 h-full"></div>
-            <ul className="space-y-5 ml-10 sm:text-xs md:text-base">
+            <ul className="space-y-6 md:space-y-8 xl:space-5  ml-10 sm:text-xs md:text-base">
               <li className="relative">
                 <div className="absolute -left-5.5 md:-left-6 top-2 bg-gray-700 p-2 rounded-full">
                   <FaGraduationCap className="text-blue-400 md:text-xl hover:scale-105 transition" />
@@ -129,26 +129,6 @@ export default function About() {
                   contributions in <span className="font-semibold">2025</span>{" "}
                   with active participation in{" "}
                   <span className="italic">open-source projects.</span>
-                </p>
-              </li>
-
-              <li className="relative">
-                <div className="absolute -left-5.5 md:-left-6 top-2 bg-gray-700 p-2 rounded-full">
-                  <FaRocket className="text-pink-400 md:text-xl hover:scale-105 transition" />
-                </div>
-                <p className="tracking-wide leading-relaxed md:pl-8 pl-6 hover:text-white transition duration-200">
-                  <span className="font-semibold text-white">
-                    Tech Interests & Tools:
-                  </span>
-                  Passionate about <span className="italic">system design</span>
-                  , <span className="italic">AI</span>,{" "}
-                  <span className="italic">performance optimization</span>, and
-                  using tools like <span className="italic">Git</span>,{" "}
-                  <span className="italic">Postman</span>,{" "}
-                  <span className="italic">Docker</span>, and{" "}
-                  <span className="italic">Vite</span> to boost{" "}
-                  <span className="italic">efficiency</span> and{" "}
-                  <span className="italic">scalability</span>.
                 </p>
               </li>
             </ul>
