@@ -13,7 +13,9 @@ export default function AchievementsSection() {
       ),
       subtitle: "LeetCode Problems Solved",
       color: "text-yellow-400",
-      icon: <TbBrandLeetcode className="text-yellow-400 text-3xl mb-2" />,
+      icon: (
+        <TbBrandLeetcode className="text-yellow-400 text-2xl xl:text-3xl mb-2" />
+      ),
     },
     {
       title: (
@@ -23,7 +25,7 @@ export default function AchievementsSection() {
       ),
       subtitle: "GitHub Contributions (2024)",
       color: "text-green-400",
-      icon: <FaGithub className="text-green-400 text-3xl mb-2" />,
+      icon: <FaGithub className="text-green-400 text-2xl xl:text-3xl mb-2" />,
     },
   ];
 
@@ -91,13 +93,13 @@ export default function AchievementsSection() {
         {milestones.map((m, idx) => (
           <div
             key={idx}
-            className="bg-gradient-to-br from-zinc-900 via-neutral-900 to-black w-[13rem] lg:w-[15rem]  hover:scale-105 hover:shadow-cyan-500/20 rounded-xl shadow-lg p-6 text-center hover:shadow-2xl transition-all border border-cyan-400/20 hover:border-cyan-400"
+            className="bg-gradient-to-br from-zinc-900 via-neutral-900 to-black w-[13rem] xl:w-[15rem]  hover:scale-105 hover:shadow-cyan-500/20 rounded-xl shadow-lg p-6 text-center hover:shadow-2xl transition-all border border-cyan-400/20 hover:border-cyan-400"
           >
-            <div className="text-2xl lg:text-3xl mb-2 text-white">{m.icon}</div>
-            <h3 className={`text-xl lg:text-2xl font-bold ${m.color}`}>
+            <div className="text-2xl xl:text-3xl mb-2 text-white">{m.icon}</div>
+            <h3 className={`text-xl xl:text-2xl font-bold ${m.color}`}>
               {m.title}
             </h3>
-            <p className="mt-1 text-xs lg:text-sm text-gray-300 font-medium">
+            <p className="mt-1 text-xs xl:text-sm text-gray-300 font-medium">
               {m.subtitle}
             </p>
           </div>
