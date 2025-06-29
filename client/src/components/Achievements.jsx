@@ -75,13 +75,13 @@ export default function AchievementsSection() {
   return (
     <section
       id="Achievements"
-      className="px-6 py-10 bg-gradient-to-br from-[#1f1f1f] via-[#2a2a2a] to-[#1f1f1f]
+      className="lg:px-6 py-10 bg-gradient-to-br from-[#1f1f1f] via-[#2a2a2a] to-[#1f1f1f]
 
 
 
  text-white"
     >
-      <h2 className="text-3xl font-bold text-center mb-6">
+      <h2 className="text-2xl md:text-3xl font-bold text-center mb-6">
         Achievements & Certifications
       </h2>
       <div className="w-18 h-1 bg-blue-500 hover:w-32 transition-all duration-200 rounded-2xl mx-auto  mb-10" />
@@ -91,11 +91,13 @@ export default function AchievementsSection() {
         {milestones.map((m, idx) => (
           <div
             key={idx}
-            className="bg-gradient-to-br from-zinc-900 via-neutral-900 to-black max-w-sm  hover:scale-105 hover:shadow-cyan-500/20 rounded-xl shadow-lg p-6 text-center hover:shadow-2xl transition-all border border-cyan-400/20 hover:border-cyan-400"
+            className="bg-gradient-to-br from-zinc-900 via-neutral-900 to-black w-[13rem] lg:w-[15rem]  hover:scale-105 hover:shadow-cyan-500/20 rounded-xl shadow-lg p-6 text-center hover:shadow-2xl transition-all border border-cyan-400/20 hover:border-cyan-400"
           >
-            <div className="text-3xl mb-2 text-white">{m.icon}</div>
-            <h3 className={`text-2xl font-bold ${m.color}`}>{m.title}</h3>
-            <p className="mt-1 text-sm text-gray-300 font-medium">
+            <div className="text-2xl lg:text-3xl mb-2 text-white">{m.icon}</div>
+            <h3 className={`text-xl lg:text-2xl font-bold ${m.color}`}>
+              {m.title}
+            </h3>
+            <p className="mt-1 text-xs lg:text-sm text-gray-300 font-medium">
               {m.subtitle}
             </p>
           </div>
@@ -103,32 +105,34 @@ export default function AchievementsSection() {
       </div>
 
       {/* Certificates */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 place-items-center gap-y-10 px-20 ">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 place-items-center justify-center sm:gap-x-4 md:gap-x-2  gap-y-10 px-4 ">
         {certificates.map((cert, idx) => (
           <div
             key={idx}
             className="relative group bg-gradient-to-br from-zinc-900 via-neutral-900 to-black
-                        max-w-sm flex items-center justify-between gap-x-6 border border-cyan-400/10 hover:shadow-cyan-500/20 hover:scale-102 shadow-[0_0_20px_rgba(255,255,255,0.05)] rounded-lg p-5  hover:shadow-2xl transition-all duration-200 overflow-hidden"
+                        w-[18rem] xl:w-sm  flex items-center justify-between gap-x-6 border border-cyan-400/10 hover:shadow-cyan-500/20 hover:scale-102 shadow-[0_0_20px_rgba(255,255,255,0.05)] rounded-lg p-5  hover:shadow-2xl transition-all duration-200 overflow-hidden"
           >
             <div className="w-full h-full z-0 absolute bg-white/5 inset-0 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-all duration-300 " />
             <div className="w-2/3">
-              <h3 className="text-xl text-cyan-400  font-semibold mb-2">
+              <h3 className="text-base xl:text-xl text-cyan-400  font-semibold mb-2">
                 {cert.title}
               </h3>
-              <p className="text-sm text-gray-400 mb-2">
+              <p className="text-xs xl:text-sm text-gray-400 mb-2">
                 {cert.issuer}{" "}
-                <span className="bg-cyan-400 text-black text-xs px-2 py-0.5 rounded-full ml-2">
+                <span className="bg-cyan-400 text-black text-[0.625rem] xl:text-xs px-2 py-0.5 rounded-full ml-2">
                   {cert.date}
                 </span>
               </p>
-              <p className="text-sm text-gray-300 mb-3">{cert.description}</p>
+              <p className="text-xs xl:text-sm text-gray-300 mb-3">
+                {cert.description}
+              </p>
             </div>
 
             <img
               src={coreJavaImg}
               alt=""
               title="click to view"
-              className="w-20 h-auto  mt-2 rounded cursor-pointer brightness-95 hover:scale-102 shadow-md transition-all duration-75"
+              className="w-16 xl:w-20 h-auto  mt-2 rounded cursor-pointer brightness-95 hover:scale-102 shadow-md transition-all duration-75"
             />
           </div>
         ))}
