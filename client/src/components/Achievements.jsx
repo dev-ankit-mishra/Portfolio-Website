@@ -75,7 +75,7 @@ export default function AchievementsSection() {
   return (
     <section
       id="Achievements"
-      className="lg:px-6 py-10 bg-gradient-to-br from-[#1f1f1f] via-[#2a2a2a] to-[#1f1f1f]
+      className="lg:px-6 md:px-12  py-10 bg-gradient-to-br from-[#1f1f1f] via-[#2a2a2a] to-[#1f1f1f]
 
 
 
