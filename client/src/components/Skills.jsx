@@ -31,19 +31,22 @@ export default function Skills() {
       <>
         {/* your card here */}
         <div
-          className={`w-[24rem] h-[268px] rounded-2xl  
+          className={`w-xs  lg:w-sm  rounded-2xl  
                     shadow-xl shadow-black/40 transition-all duration-200 
                     hover:ring-1 hover:ring-cyan-400
                     hover:scale-102 hover:shadow-cyan-500/20 border border-white/10
 
                     ${bgColors[card.label]}`}
         >
-          <p className="inline-block ml-8 text-[1.38rem] font-[502]  text-center  text-white pt-5 border-b border-b-indigo-400 pb-1 ">
+          <p
+            className="inline-block ml-8 text-lg
+           lg:text-[1.38rem] font-[502]  text-center  text-white pt-5 border-b border-b-indigo-400 pb-1 "
+          >
             {card.label}
           </p>
 
           <div
-            className="grid grid-cols-3 gap-y-10 py-8 px-6
+            className="grid grid-cols-3 gap-10 md:gap-10 py-8 px-6
            place-items-center font-medium "
           >
             {/* Replace these with icons or images */}
@@ -67,7 +70,7 @@ export default function Skills() {
         <div className="w-10 h-1 bg-blue-500 hover:w-24 transition-all duration-200 rounded-2xl mx-auto mt-2 mb-6" />
       </header>
 
-      <main className=" text-white grid sm:grid-cols-1 []:grid-cols-2 lg:grid-cols-3 gap-y-10 place-items-center place-content-center">
+      <main className=" text-white grid sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-y-10 place-items-center place-content-center">
         {/* Languages */}
 
         {cards}
