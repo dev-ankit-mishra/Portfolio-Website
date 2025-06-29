@@ -35,24 +35,24 @@ export default function Cards() {
   const cards = cardItems.map((card) => {
     return (
       <div
-        className="relative group w-full max-w-md border border-white/10
+        className="relative group w-[23rem] lg:w-md border border-white/10
  tracking-wide shadow-xl shadow-black/40 leading-relaxed bg-gradient-to-br from-slate-900 to-gray-800
  rounded-2xl text-neutral-100 transition-all duration-300 p-5  hover:scale-102 hover:ring-1 hover:ring-indigo-400 hover:shadow-2xl"
       >
         <img
           src={card.src}
-          className="w-full h-42 object-cover rounded-t-2xl"
+          className="w-full h-30 lg:h-42 object-cover rounded-t-2xl"
         />
 
         <div className="absolute inset-0 z-0 bg-white/5 backdrop-blur-sm rounded-2xl opacity-0 group-hover:opacity-100 transition duration-200" />
 
         <div className="relative z-10 space-y-2 mt-4">
-          <h1 className=" text-2xl  font-semibold">{card.label}</h1>
-          <p className=" tracking-wide leading-relaxed text text-gray-300">
+          <h1 className=" text-xl lg:text-2xl  font-semibold">{card.label}</h1>
+          <p className=" tracking-wide leading-relaxed text-sm lg:text-base text-gray-300">
             {card.desc}
           </p>
 
-          <ul className=" leading-relaxed tracking-wide text-gray-400 list-disc list-inside ">
+          <ul className=" leading-relaxed text-sm lg:text-base tracking-wide text-gray-400 list-disc list-inside ">
             {card.features.map((item) => {
               return <li className="py-1">{item}</li>;
             })}
@@ -61,7 +61,7 @@ export default function Cards() {
             {card.tech.map((item) => {
               return (
                 <span
-                  className={`${item.bgClass} text-white tracking-wide  py-1 px-3 text-sm rounded-2xl`}
+                  className={`${item.bgClass} text-white tracking-wide  py-1 px-3 text-xs lg:text-sm rounded-2xl`}
                 >
                   {item.label}
                 </span>
@@ -71,7 +71,7 @@ export default function Cards() {
           <div className="flex gap-4 pt-2">
             <a
               href={card.live}
-              className="bg-indigo-600 px-4 py-2 hover:bg-indigo-800 transition cursor-pointer rounded-lg flex gap-2 items-center"
+              className="bg-indigo-600 px-4 py-2 text-sm lg:text-base  hover:bg-indigo-800 transition cursor-pointer rounded-lg flex gap-2 items-center"
             >
               <ExternalLink size={16} />
               Live Demo
@@ -80,7 +80,7 @@ export default function Cards() {
               href={card.code}
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-transparent border text-indigo-400 border-indigo-500 hover:bg-indigo-600/20 cursor-pointer transition-all hover:text-white px-4 py-2 rounded-lg flex gap-2 items-center"
+              className="bg-transparent border text-sm lg:text-base  text-indigo-400 border-indigo-500 hover:bg-indigo-600/20 cursor-pointer transition-all hover:text-white px-4 py-2 rounded-lg flex gap-2 items-center"
             >
               <Code2 size={16} />
               Code
