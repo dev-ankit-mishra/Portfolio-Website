@@ -58,16 +58,11 @@ export const movieWatchlist = [
   },
   {
     id: 2,
-    label: "CSS",
-    bgClass: "bg-yellow-400 text-black",
-  },
-  {
-    id: 3,
     label: "JavaScript",
     bgClass: "bg-gray-700 text-white",
   },
   {
-    id: 4,
+    id: 3,
     label: "OMDb API",
     bgClass: "bg-green-700 text-white",
   },

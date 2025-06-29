@@ -62,25 +62,27 @@ export const cards = cardItems.map((item) => {
   return (
     <div
       key={item.id}
-      className="group relative w-[23.5rem] h-[35rem] rounded-2xl bg-gradient-to-br border border-white/10 from-gray-800 to-gray-900 backdrop-blur-sm p-5 text-white shadow-lg transition-all duration-150 hover:scale-103 hover:shadow-2xl hover:ring-1 hover:ring-indigo-400"
+      className="group relative w-[19rem] h-[28rem] md:w-[23.5rem] md:h-[33rem] rounded-2xl bg-gradient-to-br border border-white/10 from-gray-800 to-gray-900 backdrop-blur-sm p-5 text-white shadow-lg transition-all duration-150 hover:scale-103 hover:shadow-2xl hover:ring-1 hover:ring-indigo-400"
     >
       {/* Image */}
       <img
         src={item.src}
         alt={item.label}
-        className="w-full h-50 object-cover rounded-t-2xl mb-4"
+        className="w-full h-28 md:h-40 object-cover rounded-t-2xl mb-4"
       />
 
       {/* Title */}
-      <h2 className="text-xl font-bold text-white tracking-tight">
+      <h2 className="text-lg md:text-xl font-bold text-white tracking-tight">
         {item.label}
       </h2>
 
       {/* Description */}
-      <p className="mt-2 text-gray-300 text-sm leading-relaxed">{item.desc}</p>
+      <p className="mt-2 text-gray-300 text-xs md:text-sm leading-relaxed">
+        {item.desc}
+      </p>
 
       {/* Quote / Subtitle */}
-      <p className="mt-3 border-l-4 border-blue-400 pl-4 text-gray-400 italic text-sm">
+      <p className="mt-3 border-l-4 border-blue-400 pl-4 text-gray-400 italic text-xs md:text-sm">
         {item.quote} <br />
         <span className="not-italic">{item.sub_title}</span>
       </p>
@@ -91,7 +93,7 @@ export const cards = cardItems.map((item) => {
           return (
             <span
               key={obj.id}
-              className={`${obj.bgClass} px-3 py-1 rounded-full text-sm font-medium`}
+              className={`${obj.bgClass} px-3 py-1 rounded-full text-xs md:text-sm font-medium`}
             >
               {obj.label}
             </span>
@@ -105,7 +107,7 @@ export const cards = cardItems.map((item) => {
           href={item.live}
           target="_blank"
           rel="noopener noreferrer"
-          className="px-4 py-2 rounded-lg bg-indigo-600 text-white font-medium shadow hover:bg-indigo-700 transition flex gap-2 items-center"
+          className="px-3 py-1 md:px-4 md:py-2 text-sm md:text-base rounded-lg bg-indigo-600 text-white font-medium shadow hover:bg-indigo-700 transition flex gap-2 items-center"
         >
           <ExternalLink size={16} /> Live
         </a>
@@ -113,7 +115,7 @@ export const cards = cardItems.map((item) => {
           href={item.code}
           target="_blank"
           rel="noopener noreferrer"
-          className="px-4 py-2 rounded-lg border border-gray-500 text-gray-300 font-medium hover:border-white hover:text-white transition flex gap-2 items-center"
+          className="px-3 py-1 md:px-4 md:py-2 text-sm md:text-base rounded-lg border border-gray-500 text-gray-300 font-medium hover:border-white hover:text-white transition flex gap-2 items-center"
         >
           <Code2 size={16} /> Code
         </a>

@@ -47,7 +47,7 @@ export default function MinorProject() {
           >
             {cards.map((card, index) => (
               <SwiperSlide key={index}>
-                <div className="flex items-center justify-center py-4 px-5">
+                <div className="flex items-center justify-center py-10">
                   <div className="max-w-md w-full">{card}</div>
                 </div>
               </SwiperSlide>
