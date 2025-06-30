@@ -40,7 +40,7 @@ const AIToolsItems = [
     icon: (
       <SiAnthropic className="text-xl sm:text-2xl xl:text-3xl text-[#4C5FD5]" />
     ), // Claude by Anthropic
-    label: "Claude AI",
+    label: "ClaudeAI",
     tooltip: "Conversational AI assistant developed by Anthropic",
   },
 ];
