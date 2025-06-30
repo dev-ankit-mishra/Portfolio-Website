@@ -14,7 +14,7 @@ export default function Cards() {
       id: 1,
       src: portfoilioImg,
       label: "Portfolio Website",
-      desc: "A responsive portfolio site to highlight my work, tech stack, and contact info—all in one place.",
+      desc: "A responsive portfolio site to highlight my work, skills, and contact info—all in one place.",
       features: portfolioFeatures,
       tech: portfolioTechItems,
       live: "www.ankitmishra.pro",
@@ -35,7 +35,7 @@ export default function Cards() {
   const cards = cardItems.map((card) => {
     return (
       <div
-        className="relative group w-[23rem] lg:w-md border border-white/10
+        className="relative group w-[22rem] lg:w-[25rem] border border-white/10
  tracking-wide shadow-xl shadow-black/40 leading-relaxed bg-gradient-to-br from-slate-900 to-gray-800
  rounded-2xl text-neutral-100 transition-all duration-300 p-5  hover:scale-102 hover:ring-1 hover:ring-indigo-400 hover:shadow-2xl"
       >
@@ -61,7 +61,7 @@ export default function Cards() {
             {card.tech.map((item) => {
               return (
                 <span
-                  className={`${item.bgClass} text-white tracking-wide  py-1 px-3 text-xs lg:text-sm rounded-2xl`}
+                  className={`${item.bgClass} text-white tracking-wide  py-1 px-3 text-[0.625rem] lg:text-sm rounded-2xl`}
                 >
                   {item.label}
                 </span>
