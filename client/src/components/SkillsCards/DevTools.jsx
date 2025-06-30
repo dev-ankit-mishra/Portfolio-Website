@@ -5,31 +5,35 @@ import ToolTip from "../ToolTip";
 const DevToolsItems = [
   {
     id: 1,
-    icon: <SiGit className="text-2xl xl:text-3xl text-red-500" />,
+    icon: <SiGit className="text-xl sm:text-2xl xl:text-3xl text-red-500" />,
     label: "Git",
     tooltip: "Version control system to track code changes",
   },
   {
     id: 2,
-    icon: <SiGithub className="text-2xl xl:text-3xl text-white" />,
+    icon: <SiGithub className="text-xl sm:text-2xl xl:text-3xl text-white" />,
     label: "Github",
     tooltip: "Code hosting platform for collaboration",
   },
   {
     id: 3,
-    icon: <SiFigma className="text-2xl xl:text-3xl text-pink-500" />,
+    icon: <SiFigma className="text-xl sm:text-2xl xl:text-3xl text-pink-500" />,
     label: "Figma",
     tooltip: "Design and prototyping tool",
   },
   {
     id: 4,
-    icon: <SiPostman className="text-2xl xl:text-3xl text-orange-500" />,
+    icon: (
+      <SiPostman className="text-xl sm:text-2xl xl:text-3xl text-orange-500" />
+    ),
     label: "Postman",
     tooltip: "API testing and documentation tool",
   },
   {
     id: 5,
-    icon: <SiVite className="text-2xl xl:text-3xl text-purple-400" />,
+    icon: (
+      <SiVite className="text-xl sm:text-2xl xl:text-3xl text-purple-400" />
+    ),
     label: "Vite",
     tooltip: "Fast frontend build tool",
   },
@@ -42,7 +46,7 @@ export const devTools = DevToolsItems.map((tool) => {
       <ToolTip text={tool.tooltip}>
         <div className="flex flex-col items-center hover:scale-105 hover:shadow-md transition-all duration-200">
           {tool.icon}
-          <span className="xl:text-sm text-xs tracking-wide  mt-1">
+          <span className="xl:text-sm sm:text-xs text-[0.625rem]  tracking-wide  mt-1">
             {tool.label}
           </span>
         </div>
