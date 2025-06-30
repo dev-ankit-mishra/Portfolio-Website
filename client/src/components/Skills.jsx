@@ -43,7 +43,7 @@ export default function Skills() {
 
   const renderCard = (card) => (
     <div
-      className={`w-[18rem] sm:w-xs  xl:w-sm  rounded-2xl  
+      className={`w-[16rem]  [@media(max-width:400px)]:w-[18rem] sm:w-xs  xl:w-[23rem]  rounded-2xl  
                     shadow-xl shadow-black/40 transition-all duration-200 
                     hover:ring-1 hover:ring-cyan-400
                     hover:scale-102 hover:shadow-cyan-500/20 border border-white/10
@@ -51,14 +51,14 @@ export default function Skills() {
                     ${bgColors[card.label]}`}
     >
       <p
-        className="inline-block ml-8 text-lg
+        className="inline-block ml-8 text-base sm:text-lg
                                 xl:text-[1.38rem] font-[502]  text-center  text-white pt-5 border-b border-b-indigo-400 pb-1 "
       >
         {card.label}
       </p>
 
       <div
-        className="grid grid-cols-3 gap-10 md:gap-10 py-8 px-6
+        className="grid grid-cols-3 gap-10 md:gap-8 md:py-8 md:px-6 py-5 px-5
                               place-items-center font-medium "
       >
         {/* Replace these with icons or images */}
@@ -70,7 +70,7 @@ export default function Skills() {
 
   return (
     <section
-      className="scroll-mt-8 w-full  md:h-auto px-4 py-6 md:py-10 box-border bg-gradient-to-br from-[#1e293b] to-[#0f172a] pb-12"
+      className="scroll-mt-8 w-full  md:h-auto xl:h-screen px-2  md:px-6 py-6 md:py-6 box-border bg-gradient-to-br from-[#1e293b] to-[#0f172a] pb-12 "
       id="Skills"
     >
       <header>
@@ -80,8 +80,8 @@ export default function Skills() {
         <div className="w-10 h-1 bg-blue-500 hover:w-24 transition-all duration-200 rounded-2xl mx-auto mt-2 mb-8" />
       </header>
 
-      <main className="text-white h-full py-28 px-4">
-        <div className="">
+      <main className="text-white h-full  px-2">
+        <div className="mx-auto">
           {isMobile ? (
             <Swiper
               effect="cards"
