@@ -24,30 +24,34 @@ export default function AchievementsSection() {
     return (
       <div
         key={idx}
-        className="relative group bg-gradient-to-br from-zinc-900 via-neutral-900 to-black
-                        w-[18rem] xl:w-sm  flex items-center justify-between gap-x-6 border border-cyan-400/10 hover:shadow-cyan-500/20 hover:scale-102 shadow-[0_0_20px_rgba(255,255,255,0.05)] rounded-lg p-5  hover:shadow-2xl transition-all duration-200 overflow-hidden"
+        className={`
+        relative group w-[18rem] xl:w-sm flex items-center justify-between gap-x-6 
+        border rounded-lg p-5 shadow-md overflow-hidden transition-all duration-200
+        bg-gradient-to-br bg-[#f7f7f7]
+        dark:from-zinc-900 dark:via-neutral-900 dark:to-black 
+        hover:scale-[1.02] hover:shadow-2xl hover:ring-2 hover:ring-cyan-400/30
+      `}
       >
-        <div className="w-full h-full z-0 absolute bg-white/5 inset-0 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-all duration-300 " />
+        <div className="w-full h-full z-0 absolute bg-white/5 inset-0 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-all duration-300" />
         <div className="w-2/3">
-          <h3 className="text-base xl:text-xl text-cyan-400  font-semibold mb-2">
+          <h3 className="text-base xl:text-xl text-cyan-900 dark:text-cyan-400 font-semibold mb-2">
             {cert.title}
           </h3>
-          <p className="text-xs xl:text-sm text-gray-400 mb-2">
-            {cert.issuer}{" "}
-            <span className="bg-cyan-400 text-black text-[0.625rem] xl:text-xs px-2 py-0.5 rounded-full ml-2">
+          <p className="text-xs xl:text-sm text-gray-700 dark:text-gray-400 mb-2">
+            {cert.issuer}
+            <span className="bg-cyan-500 text-black text-[0.625rem] xl:text-xs px-2 py-0.5 rounded-full ml-2">
               {cert.date}
             </span>
           </p>
-          <p className="text-xs xl:text-sm text-gray-300 mb-3">
+          <p className="text-xs xl:text-sm text-gray-800 dark:text-gray-300 mb-3">
             {cert.description}
           </p>
         </div>
-
         <img
           src={coreJavaImg}
           alt=""
           title="click to view"
-          className="w-16 xl:w-20 h-auto  mt-2 rounded cursor-pointer brightness-95 hover:scale-102 shadow-md transition-all duration-75"
+          className="w-16 xl:w-20 h-auto mt-2 rounded cursor-pointer brightness-95 hover:scale-105 shadow-md transition-all duration-75"
         />
       </div>
     );
@@ -126,11 +130,12 @@ export default function AchievementsSection() {
   return (
     <section
       id="Achievements"
-      className="lg:px-6 md:px-12 py-16  sm:py-10 bg-gradient-to-br from-[#1f1f1f] via-[#2a2a2a] to-[#1f1f1f]
-
-
-
- text-white"
+      className="
+    lg:px-6 md:px-12 py-16 sm:py-10
+    bg-gradient-to-br from-[#e2e8f0] to-[#f1f5f9] 
+    dark:from-[#1f1f1f] dark:via-[#2a2a2a] dark:to-[#1f1f1f]
+    text-gray-800 dark:text-white
+  "
     >
       <h2 className="text-2xl md:text-3xl font-bold text-center mb-6">
         Achievements & Certifications
@@ -142,13 +147,20 @@ export default function AchievementsSection() {
         {milestones.map((m, idx) => (
           <div
             key={idx}
-            className="bg-gradient-to-br from-zinc-900 via-neutral-900 to-black w-[13rem] xl:w-[15rem]  hover:scale-105 hover:shadow-cyan-500/20 rounded-xl shadow-lg p-6 text-center hover:shadow-2xl transition-all border border-cyan-400/20 hover:border-cyan-400"
+            className={`
+    w-[13rem] xl:w-[15rem] rounded-xl shadow-md p-6 text-center 
+    transition-all duration-200 border hover:scale-105 hover:shadow-xl
+           bg-gradient-to-br bg-[#f1f1f1]
+
+    dark:from-zinc-900 dark:to-black 
+    border-cyan-400/20 hover:border-cyan-400
+  `}
           >
-            <div className="text-2xl xl:text-3xl mb-2 text-white">{m.icon}</div>
+            <div className="text-2xl xl:text-3xl mb-2">{m.icon}</div>
             <h3 className={`text-xl xl:text-2xl font-bold ${m.color}`}>
               {m.title}
             </h3>
-            <p className="mt-1 text-xs xl:text-sm text-gray-300 font-medium">
+            <p className="mt-1 text-xs xl:text-sm text-gray-700 dark:text-gray-300 font-medium">
               {m.subtitle}
             </p>
           </div>
@@ -157,7 +169,7 @@ export default function AchievementsSection() {
 
       {/* Certificates */}
 
-      <main className="mx-auto sm:py-0 py-8 ">
+      <main className="mx-auto sm:py-0 py-4 ">
         {isMobile ? (
           <Swiper
             pagination={true}
@@ -174,7 +186,7 @@ export default function AchievementsSection() {
                 key={idx}
                 className="flex justify-center items-center h-auto" // Ensures card is centered
               >
-                <div className=" flex items-center justify-center ">
+                <div className=" flex items-center justify-center py-12">
                   {renderCard(cert, idx)}
                 </div>
               </SwiperSlide>
