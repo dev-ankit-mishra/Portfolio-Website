@@ -43,7 +43,7 @@ export default function Skills() {
 
   const renderCard = (card) => (
     <div
-      className={`min-w-[10rem]  w-[18rem]   sm:w-xs  xl:w-[23rem]  rounded-2xl  
+      className={`w-[16rem]     sm:w-xs  xl:w-[23rem]  rounded-2xl  
                     shadow-xl shadow-black/40 transition-all duration-200 
                     hover:ring-1 hover:ring-cyan-400
                     hover:scale-102 hover:shadow-cyan-500/20 border border-white/10
@@ -81,7 +81,7 @@ export default function Skills() {
       </header>
 
       <main className="text-white h-full  px-2">
-        <div className="mx-auto">
+        <div className="w-[18rem] mx-auto">
           {isMobile ? (
             <Swiper
               effect="cards"
