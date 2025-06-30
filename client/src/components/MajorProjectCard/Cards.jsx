@@ -17,7 +17,7 @@ export default function Cards() {
       desc: "A responsive portfolio site to highlight my work, skills, and contact info—all in one place.",
       features: portfolioFeatures,
       tech: portfolioTechItems,
-      live: "www.ankitmishra.pro",
+      live: "https://www.ankitmishra.pro",
       code: "https://github.com/dev-ankit-mishra/Portfolio-Website",
     },
     {
@@ -35,52 +35,90 @@ export default function Cards() {
   const cards = cardItems.map((card) => {
     return (
       <div
-        className="relative group w-[22rem] lg:w-[25rem] border border-white/10
- tracking-wide shadow-xl shadow-black/40 leading-relaxed bg-gradient-to-br from-slate-900 to-gray-800
- rounded-2xl text-neutral-100 transition-all duration-300 p-5  hover:scale-102 hover:ring-1 hover:ring-indigo-400 hover:shadow-2xl"
+        key={card.id}
+        className={`
+    relative group w-[22rem] lg:w-[25rem] border rounded-2xl p-5 transition-all duration-300
+    hover:scale-[1.02] hover:ring-2 hover:ring-indigo-400 hover:shadow-2xl
+    shadow-md
+    bg-gradient-to-br from-[#f3e8ff] to-[#ede9fe] 
+    dark:from-slate-900 dark:to-gray-800 dark:border-white/10
+    text-gray-800 dark:text-gray-100
+  `}
       >
         <img
           src={card.src}
           className="w-full h-30 lg:h-42 object-cover rounded-t-2xl"
         />
 
-        <div className="absolute inset-0 z-0 bg-white/5 backdrop-blur-sm rounded-2xl opacity-0 group-hover:opacity-100 transition duration-200" />
+        <div className="absolute inset-0 z-0 bg-black/5 dark:bg-white/5 backdrop-blur-sm rounded-2xl opacity-0 group-hover:opacity-100 transition duration-200" />
 
         <div className="relative z-10 space-y-2 mt-4">
-          <h1 className=" text-xl lg:text-2xl  font-semibold">{card.label}</h1>
-          <p className=" tracking-wide leading-relaxed text-sm lg:text-base text-gray-300">
+          <h1 className="text-xl lg:text-2xl font-semibold">{card.label}</h1>
+          <p className="tracking-wide leading-relaxed text-sm lg:text-base text-gray-600 dark:text-gray-300">
             {card.desc}
           </p>
 
-          <ul className=" leading-relaxed text-sm lg:text-base tracking-wide text-gray-400 list-disc list-inside ">
-            {card.features.map((item) => {
-              return <li className="py-1">{item}</li>;
-            })}
+          <ul className="leading-relaxed text-sm lg:text-base tracking-wide text-gray-500 dark:text-gray-400 list-disc list-inside">
+            {card.features.map((item, index) => (
+              <li className="py-1" key={index}>
+                {item}
+              </li>
+            ))}
           </ul>
-          <div className="mt-4 flex flex-wrap gap-3 ">
-            {card.tech.map((item) => {
-              return (
-                <span
-                  className={`${item.bgClass} text-white tracking-wide  py-1 px-3 text-[0.625rem] lg:text-sm rounded-2xl`}
-                >
-                  {item.label}
-                </span>
-              );
-            })}
+
+          <div className="mt-4 flex flex-wrap gap-3">
+            {card.tech.map((item, index) => (
+              <span
+                key={index}
+                className={`${item.bgClass} text-white tracking-wide py-1 px-3 text-[0.625rem] lg:text-sm rounded-2xl`}
+              >
+                {item.label}
+              </span>
+            ))}
           </div>
+
           <div className="flex gap-4 pt-2">
             <a
               href={card.live}
-              className="bg-indigo-600 px-4 py-2 text-sm lg:text-base  hover:bg-indigo-800 transition cursor-pointer rounded-lg flex gap-2 items-center"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="
+    bg-indigo-500 hover:bg-indigo-600 
+    text-white 
+    text-sm lg:text-base 
+    px-4 py-2 
+    rounded-lg 
+    shadow-md 
+    transition-all 
+    duration-200 
+    flex items-center gap-2
+    dark:bg-indigo-600 dark:hover:bg-indigo-700
+  "
             >
               <ExternalLink size={16} />
               Live Demo
             </a>
+
             <a
               href={card.code}
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-transparent border text-sm lg:text-base  text-indigo-400 border-indigo-500 hover:bg-indigo-600/20 cursor-pointer transition-all hover:text-white px-4 py-2 rounded-lg flex gap-2 items-center"
+              className="
+    border border-indigo-400 
+    text-indigo-600 
+    hover:text-white 
+    hover:bg-indigo-500 
+    text-sm lg:text-base 
+    px-4 py-2 
+    rounded-lg 
+    transition-all 
+    duration-200 
+    flex items-center gap-2
+    dark:text-indigo-400 
+    dark:border-indigo-500 
+    dark:hover:bg-indigo-600/20 
+    dark:hover:text-white
+  "
             >
               <Code2 size={16} />
               Code
