@@ -62,7 +62,18 @@ export const cards = cardItems.map((item) => {
   return (
     <div
       key={item.id}
-      className="group relative w-[19rem] h-[28rem] lg:w-[23.5rem] lg:h-[33rem] rounded-2xl bg-gradient-to-br border border-white/10 from-gray-800 to-gray-900 backdrop-blur-sm p-5 text-white shadow-lg transition-all duration-150 hover:scale-103 hover:shadow-2xl hover:ring-1 hover:ring-indigo-400"
+      className={`
+    group relative w-[19rem] h-[28rem] lg:w-[23.5rem] lg:h-[33rem] 
+    rounded-2xl p-5 shadow-md transition-all duration-300
+    hover:scale-[1.03] hover:shadow-xl hover:ring-2 hover:ring-indigo-400
+
+    bg-gradient-to-br 
+    from-[#fef9f7]  to-[#dbeafe] 
+    dark:from-slate-900 dark:to-gray-800 dark:border dark:border-white/10
+
+    text-gray-800 dark:text-white hover:bg-gradient-to-tr hover:from-[#fdf6ff] hover:to-[#dbeafe]
+
+  `}
     >
       {/* Image */}
       <img
@@ -72,33 +83,32 @@ export const cards = cardItems.map((item) => {
       />
 
       {/* Title */}
-      <h2 className="text-lg lg:text-xl font-bold text-white tracking-tight">
+      <h2 className="text-lg lg:text-xl font-bold tracking-tight text-gray-900 dark:text-white">
         {item.label}
       </h2>
 
       {/* Description */}
-      <p className="mt-2 text-gray-300 text-xs lg:text-sm leading-relaxed">
+      <p className="mt-2 text-gray-700 dark:text-gray-300 text-xs lg:text-sm leading-relaxed">
         {item.desc}
       </p>
 
       {/* Quote / Subtitle */}
-      <p className="mt-3 border-l-4 border-blue-400 pl-4 text-gray-400 italic text-xs lg:text-sm">
-        {item.quote} <br />
+      <p className="mt-3 border-l-4 border-blue-400 pl-4 italic text-blue-800 dark:text-blue-300 text-xs lg:text-sm">
+        {item.quote}
+        <br />
         <span className="not-italic">{item.sub_title}</span>
       </p>
 
       {/* Tech Stack */}
       <div className="flex flex-wrap gap-2 mt-4">
-        {item.tech.map((obj) => {
-          return (
-            <span
-              key={obj.id}
-              className={`${obj.bgClass} px-3 py-1 rounded-full text-xs lg:text-sm font-medium`}
-            >
-              {obj.label}
-            </span>
-          );
-        })}
+        {item.tech.map((obj) => (
+          <span
+            key={obj.id}
+            className={`${obj.bgClass} px-3 py-1 rounded-full text-xs lg:text-sm font-medium text-white`}
+          >
+            {obj.label}
+          </span>
+        ))}
       </div>
 
       {/* Buttons */}
@@ -115,7 +125,7 @@ export const cards = cardItems.map((item) => {
           href={item.code}
           target="_blank"
           rel="noopener noreferrer"
-          className="px-3 py-1 lg:px-4 lg:py-2 text-sm lg:text-base rounded-lg border border-gray-500 text-gray-300 font-medium hover:border-white hover:text-white transition flex gap-2 items-center"
+          className="px-3 py-1 lg:px-4 lg:py-2 text-sm lg:text-base rounded-lg border border-indigo-500 text-indigo-600 hover:bg-indigo-100 dark:border-gray-500 dark:text-gray-300 dark:hover:border-white dark:hover:text-white transition flex gap-2 items-center"
         >
           <Code2 size={16} /> Code
         </a>
