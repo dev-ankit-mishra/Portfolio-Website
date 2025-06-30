@@ -157,7 +157,7 @@ export default function AchievementsSection() {
 
       {/* Certificates */}
 
-      <main className="mx-auto sm:py-0 py-12 ">
+      <main className="mx-auto sm:py-0 py-8 ">
         {isMobile ? (
           <Swiper
             pagination={true}
