@@ -43,7 +43,7 @@ export default function Skills() {
 
   const renderCard = (card) => (
     <div
-      className={`w-[15rem]    sm:w-xs  xl:w-[23rem]  rounded-2xl  
+      className={`w-[15rem] sm:w-[18rem]   md:w-xs  xl:w-[23rem]  rounded-2xl  
                     shadow-xl shadow-black/40 transition-all duration-200 
                     hover:ring-1 hover:ring-cyan-400
                     hover:scale-102 hover:shadow-cyan-500/20 border border-white/10
@@ -70,7 +70,7 @@ export default function Skills() {
 
   return (
     <section
-      className="scroll-mt-8 w-full  md:h-auto xl:h-screen px-2  md:px-6 py-6 md:py-6 box-border bg-gradient-to-br from-[#1e293b] to-[#0f172a] pb-12 "
+      className="scroll-mt-8 w-full  md:h-auto xl:h-screen  md:px-6 py-4 md:py-6 box-border bg-gradient-to-br from-[#1e293b] to-[#0f172a] pb-12 "
       id="Skills"
     >
       <header>
@@ -80,30 +80,28 @@ export default function Skills() {
         <div className="w-10 h-1 bg-blue-500 hover:w-24 transition-all duration-200 rounded-2xl mx-auto mt-2 mb-8" />
       </header>
 
-      <main className="text-white h-full">
-        <div className="w-[15rem] mx-auto">
-          {isMobile ? (
-            <Swiper
-              effect="cards"
-              grabCursor={true}
-              loop={true}
-              autoplay={{
-                delay: 4000,
-                disableOnInteraction: false,
-              }}
-              modules={[EffectCards, Autoplay]}
-              className="mySwiper"
-            >
-              {cardItems.map((card) => (
-                <SwiperSlide key={card.id}>{renderCard(card)}</SwiperSlide>
-              ))}
-            </Swiper>
-          ) : (
-            <div className="grid sm:grid-cols-2 [@media(min-width:1080px)]:grid-cols-3 gap-10 place-items-center">
-              {cardItems.map((card) => renderCard(card))}
-            </div>
-          )}
-        </div>
+      <main className="text-white py-20 md:py-2 h-full">
+        {isMobile ? (
+          <Swiper
+            effect="cards"
+            grabCursor={true}
+            loop={true}
+            autoplay={{
+              delay: 4000,
+              disableOnInteraction: false,
+            }}
+            modules={[EffectCards, Autoplay]}
+            className="mySwiper w-[15rem] sm:w-[18rem] mx-auto"
+          >
+            {cardItems.map((card) => (
+              <SwiperSlide key={card.id}>{renderCard(card)}</SwiperSlide>
+            ))}
+          </Swiper>
+        ) : (
+          <div className="grid sm:grid-cols-2 [@media(min-width:1080px)]:grid-cols-3 gap-10 place-items-center">
+            {cardItems.map((card) => renderCard(card))}
+          </div>
+        )}
       </main>
     </section>
   );
