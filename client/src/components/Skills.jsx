@@ -43,7 +43,7 @@ export default function Skills() {
 
   const renderCard = (card) => (
     <div
-      className={`max-w-[16rem]   sm:w-xs  xl:w-[23rem]  rounded-2xl  
+      className={` [@media:max-width:500px]:min-w-[12rem]  w-[18rem]   sm:w-xs  xl:w-[23rem]  rounded-2xl  
                     shadow-xl shadow-black/40 transition-all duration-200 
                     hover:ring-1 hover:ring-cyan-400
                     hover:scale-102 hover:shadow-cyan-500/20 border border-white/10
