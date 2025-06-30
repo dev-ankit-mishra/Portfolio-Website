@@ -16,7 +16,7 @@ export default function Skills() {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    const updateScreen = () => setIsMobile(window.innerWidth < 768);
+    const updateScreen = () => setIsMobile(window.innerWidth < 640);
     updateScreen();
     window.addEventListener("resize", updateScreen);
     return () => window.removeEventListener("resize", updateScreen);
@@ -43,7 +43,7 @@ export default function Skills() {
 
   const renderCard = (card) => (
     <div
-      className={`w-[16rem]     sm:w-xs  xl:w-[23rem]  rounded-2xl  
+      className={`w-[15rem]    sm:w-xs  xl:w-[23rem]  rounded-2xl  
                     shadow-xl shadow-black/40 transition-all duration-200 
                     hover:ring-1 hover:ring-cyan-400
                     hover:scale-102 hover:shadow-cyan-500/20 border border-white/10
@@ -80,8 +80,8 @@ export default function Skills() {
         <div className="w-10 h-1 bg-blue-500 hover:w-24 transition-all duration-200 rounded-2xl mx-auto mt-2 mb-8" />
       </header>
 
-      <main className="text-white h-full  px-2">
-        <div className="w-[16rem] mx-auto">
+      <main className="text-white h-full">
+        <div className="w-[15rem] mx-auto">
           {isMobile ? (
             <Swiper
               effect="cards"
