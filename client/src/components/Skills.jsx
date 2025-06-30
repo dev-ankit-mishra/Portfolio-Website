@@ -81,7 +81,7 @@ export default function Skills() {
       </header>
 
       <main className="text-white h-full  px-2">
-        <div className="w-[18rem] mx-auto">
+        <div className="w-[16rem] mx-auto">
           {isMobile ? (
             <Swiper
               effect="cards"
@@ -92,7 +92,7 @@ export default function Skills() {
                 disableOnInteraction: false,
               }}
               modules={[EffectCards, Autoplay]}
-              className="mySwiper max-w-sm mx-auto"
+              className="mySwiper"
             >
               {cardItems.map((card) => (
                 <SwiperSlide key={card.id}>{renderCard(card)}</SwiperSlide>
