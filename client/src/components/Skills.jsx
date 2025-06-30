@@ -43,7 +43,7 @@ export default function Skills() {
 
   const renderCard = (card) => (
     <div
-      className={`w-[16rem]  [@media(max-width:400px)]:w-[18rem] sm:w-xs  xl:w-[23rem]  rounded-2xl  
+      className={`max-w-[16rem]   sm:w-xs  xl:w-[23rem]  rounded-2xl  
                     shadow-xl shadow-black/40 transition-all duration-200 
                     hover:ring-1 hover:ring-cyan-400
                     hover:scale-102 hover:shadow-cyan-500/20 border border-white/10
@@ -52,13 +52,13 @@ export default function Skills() {
     >
       <p
         className="inline-block ml-8 text-base sm:text-lg
-                                xl:text-[1.38rem] font-[502]  text-center  text-white pt-5 border-b border-b-indigo-400 pb-1 "
+                                xl:text-[1.38rem] font-[502]    text-white pt-5 border-b border-b-indigo-400 pb-1 "
       >
         {card.label}
       </p>
 
       <div
-        className="grid grid-cols-3 gap-10 md:gap-8 md:py-8 md:px-6 py-5 px-5
+        className="grid grid-cols-3 gap-8  md:py-8 md:px-6 py-6 px-8
                               place-items-center font-medium "
       >
         {/* Replace these with icons or images */}
