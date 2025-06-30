@@ -10,13 +10,19 @@ import "swiper/css/navigation";
 
 export default function MinorProject() {
   return (
-    <section className="w-full h-auto py-6 bg-gradient-to-br from-[#0d0221] to-[#232526] text-white tracking-wide leading-relaxed">
+    <section
+      className="w-full h-auto py-6 
+                 bg-gradient-to-br from-white/80 to-blue-100 
+                 dark:from-[#0d0221] dark:to-[#232526] 
+                 text-gray-800 dark:text-white tracking-wide leading-relaxed"
+    >
       <header>
         <h1 className="text-2xl md:text-3xl text-center font-bold py-3 pt-6">
           Mini Project
         </h1>
         <div className="w-10 h-1 bg-blue-500 hover:w-24 transition-all duration-200 rounded-2xl mx-auto mt-2" />
       </header>
+
       <main className="w-full h-full">
         <div className="slider-container max-w-[92rem] mx-auto">
           <Swiper
@@ -38,11 +44,11 @@ export default function MinorProject() {
               640: {
                 slidesPerView: 1,
               },
-              1024: {
+              768: {
                 slidesPerView: 2,
               },
               1280: {
-                slidesPerView: 3, // Tailwind 'xl'
+                slidesPerView: 3,
               },
             }}
           >
