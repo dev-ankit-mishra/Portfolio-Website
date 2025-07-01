@@ -186,7 +186,7 @@ export default function AchievementsSection() {
                 key={idx}
                 className="flex justify-center items-center h-auto" // Ensures card is centered
               >
-                <div className=" flex items-center justify-center py-12">
+                <div className=" flex items-center justify-center pt-6 pb-12">
                   {renderCard(cert, idx)}
                 </div>
               </SwiperSlide>
