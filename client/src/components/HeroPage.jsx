@@ -1,4 +1,4 @@
-import resume from "../assets/resume.pdf";
+import resume from "../assets/ankitmishrafinal.pdf";
 import NavBar from "./NavBar";
 import { motion } from "framer-motion";
 import { Typewriter } from "react-simple-typewriter";
