@@ -58,23 +58,31 @@ const ContactForm = () => {
       onSubmit={sendEmail}
       className="flex flex-col space-y-3 mt-6"
     >
-      <label className="text-sm md:text-base lg:text-lg text-gray-700 dark:text-white">
+      <label
+        for="name"
+        className="text-sm md:text-base lg:text-lg text-gray-700 dark:text-white"
+      >
         Full name
       </label>
       <input
         name="name"
         required
+        id="name"
         autoComplete="off"
         className="bg-white dark:bg-neutral-800 p-2 rounded border border-gray-300 dark:border-neutral-700 text-gray-800 dark:text-white text-sm md:text-base lg:text-lg placeholder:text-gray-400 dark:placeholder:text-neutral-400 focus:outline-none focus:ring-2 focus:ring-blue-600"
         type="text"
         placeholder="e.g., Ankit Mishra"
       />
 
-      <label className="text-sm md:text-base lg:text-lg mt-3 text-gray-700 dark:text-white">
+      <label
+        for="email"
+        className="text-sm md:text-base lg:text-lg mt-3 text-gray-700 dark:text-white"
+      >
         Email address
       </label>
       <input
         name="email"
+        id="email"
         required
         autoComplete="off"
         className="bg-white dark:bg-neutral-800 p-2 rounded border border-gray-300 dark:border-neutral-700 text-gray-800 dark:text-white text-sm md:text-base lg:text-lg placeholder:text-gray-400 dark:placeholder:text-neutral-400 focus:outline-none focus:ring-2 focus:ring-blue-600"
@@ -82,12 +90,16 @@ const ContactForm = () => {
         placeholder="e.g., contact@ankitmishra.pro"
       />
 
-      <label className="text-sm md:text-base lg:text-lg mt-3 text-gray-700 dark:text-white">
+      <label
+        for="message"
+        className="text-sm md:text-base lg:text-lg mt-3 text-gray-700 dark:text-white"
+      >
         Your message
       </label>
       <textarea
         name="message"
         autoComplete="off"
+        id="message"
         required
         className="bg-white dark:bg-neutral-800 p-2 rounded border border-gray-300 dark:border-neutral-700 text-gray-800 dark:text-white text-sm md:text-base lg:text-lg placeholder:text-gray-400 dark:placeholder:text-neutral-400 focus:outline-none focus:ring-2 focus:ring-blue-600"
         rows={3}
