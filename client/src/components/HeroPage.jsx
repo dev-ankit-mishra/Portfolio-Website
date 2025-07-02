@@ -57,7 +57,7 @@ export default function HeroPage() {
         <div className="md:w-1/2  flex flex-col justify-center items-center">
           <img
             src={heroImg}
-            alt="profile-picture"
+            alt="profile picture a man sitting on chair and writing code"
             className="w-40 h-40 md:w-45 md:h-45 lg:w-60 lg:h-60 rounded-full shadow-xl"
           />
         </div>
