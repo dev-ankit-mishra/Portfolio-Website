@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { Typewriter } from "react-simple-typewriter";
 import { ExternalLink } from "lucide-react";
 import { useState } from "react";
+import heroImg from "../assets/heroimage.png";
 
 export default function HeroPage() {
   return (
@@ -55,9 +56,7 @@ export default function HeroPage() {
         {/* Right Section: Profile Image */}
         <div className="md:w-1/2  flex flex-col justify-center items-center">
           <img
-            src={
-              "https://img.freepik.com/free-vector/programming-concept-illustration_114360-1351.jpg?semt=ais_hybrid"
-            }
+            src={heroImg}
             alt="profile-picture"
             className="w-40 h-40 md:w-45 md:h-45 lg:w-60 lg:h-60 rounded-full shadow-xl"
           />
