@@ -24,7 +24,7 @@ export default function About() {
         <div className="w-full h-full xl:flex justify-center items-center hidden">
           <img
             src={aboutImg}
-            alt="AboutImg"
+            alt="Image of a person coding "
             className="h-110 rounded-2xl object-cover mb-4 shadow-lg"
           />
         </div>
