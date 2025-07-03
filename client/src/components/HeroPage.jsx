@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { Typewriter } from "react-simple-typewriter";
 import { ExternalLink } from "lucide-react";
 import { useState } from "react";
-import heroImg from "../assets/heroimage.png";
+import heroImg from "../assets/heroimage.webp";
 
 export default function HeroPage() {
   return (
