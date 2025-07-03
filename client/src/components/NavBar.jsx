@@ -33,6 +33,29 @@ export default function NavBar() {
 
   const toggleTheme = useCallback(() => setTheme((prev) => !prev), []);
 
+  function renderListItem(item) {
+    return (
+      <li key={item} className="w-full text-center py-1">
+        <Link
+          to={item}
+          spy={true}
+          smooth={true}
+          offset={-120}
+          duration={500}
+          onSetActive={() => setActive(item)}
+          className={`block w-full cursor-pointer px-4 py-2 transition-all duration-300 ${
+            active === item
+              ? "scale-105 bg-blue-600 text-white rounded-md"
+              : "hover:text-blue-500 text-gray-900 dark:text-gray-200"
+          }`}
+          aria-current={active === item ? "page" : undefined}
+        >
+          {item}
+        </Link>
+      </li>
+    );
+  }
+
   return (
     <nav
       className="fixed top-0 left-0 z-50 w-full h-12 px-3 lg:px-8 flex items-center justify-between 
@@ -43,28 +66,7 @@ export default function NavBar() {
       <span className="font-semibold text-lg">Ankit Mishra</span>
 
       <ul className="hidden md:flex items-center gap-4 lg:gap-6">
-        {navItems.map((item) => (
-          <li key={item}>
-            <Link
-              to={item}
-              spy
-              smooth
-              offset={-40}
-              duration={500}
-              onSetActive={() => setActive(item)}
-              className={`cursor-pointer transition-all duration-300 ${
-                active === item
-                  ? "scale-105 bg-blue-600 text-white rounded-md px-2 pb-0.5"
-                  : "hover:text-blue-500 text-gray-900 dark:text-gray-200"
-              }`}
-              component="a"
-              href={`#${item}`} // 🔥 This adds the crawlable href
-              aria-current={active === item ? "page" : undefined}
-            >
-              {item}
-            </Link>
-          </li>
-        ))}
+        {navItems.map((item) => renderListItem(item))}
       </ul>
 
       <div>
@@ -90,26 +92,7 @@ export default function NavBar() {
             {isOpen && (
               <div className="absolute top-12 right-0 z-50 w-auto rounded bg-white/80 dark:bg-neutral-900/70 backdrop-blur-md shadow-lg border border-neutral-300 dark:border-neutral-800 text-black dark:text-white">
                 <ul className="flex flex-col items-center justify-center py-1">
-                  {navItems.map((item) => (
-                    <li key={item} className="w-full text-center py-1">
-                      <Link
-                        to={item}
-                        spy={true}
-                        smooth={true}
-                        offset={-120}
-                        duration={500}
-                        onSetActive={() => setActive(item)}
-                        className={`block w-full cursor-pointer px-4 py-2 transition-all duration-300 ${
-                          active === item
-                            ? "scale-105 bg-blue-600 text-white rounded-md"
-                            : "hover:text-blue-500 text-gray-900 dark:text-gray-200"
-                        }`}
-                        aria-current={active === item ? "page" : undefined}
-                      >
-                        {item}
-                      </Link>
-                    </li>
-                  ))}
+                  {navItems.map((item) => renderListItem(item))}
                 </ul>
               </div>
             )}
