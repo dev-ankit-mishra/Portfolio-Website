@@ -53,6 +53,7 @@ export default function Skills() {
 
   const renderCard = (card) => (
     <div
+      key={card.label}
       className={`w-[15rem] sm:w-[18rem] md:w-xs xl:w-[23rem] rounded-2xl  
                 shadow-xl transition-all duration-200 
                 
@@ -104,7 +105,9 @@ export default function Skills() {
           </Swiper>
         ) : (
           <div className="grid sm:grid-cols-2 [@media(min-width:1080px)]:grid-cols-3 gap-10 place-items-center">
-            {cardItems.map((card) => renderCard(card))}
+            {cardItems.map((card) => (
+              <div key={card.id}>{renderCard(card)}</div>
+            ))}
           </div>
         )}
       </main>

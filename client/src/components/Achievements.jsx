@@ -1,4 +1,4 @@
-import coreJavaImg from "../assets/coreJavaImg.png";
+import coreJavaImg from "../assets/coreJavaImg.webp";
 import { TbBrandLeetcode } from "react-icons/tb";
 import { FaGithub } from "react-icons/fa";
 import CountUp from "react-countup";
@@ -49,6 +49,7 @@ export default function AchievementsSection() {
         </div>
         <img
           src={coreJavaImg}
+          loading="lazy"
           alt="Certificate of Core Java"
           title="click to view"
           className="w-16 xl:w-20 h-auto mt-2 rounded cursor-pointer brightness-95 hover:scale-105 shadow-md transition-all duration-75"

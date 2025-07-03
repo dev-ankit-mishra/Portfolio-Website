@@ -59,7 +59,7 @@ const ContactForm = () => {
       className="flex flex-col space-y-3 mt-6"
     >
       <label
-        for="name"
+        htmlFor="name"
         className="text-sm md:text-base lg:text-lg text-gray-700 dark:text-white"
       >
         Full name
@@ -75,7 +75,7 @@ const ContactForm = () => {
       />
 
       <label
-        for="email"
+        htmlFor="email"
         className="text-sm md:text-base lg:text-lg mt-3 text-gray-700 dark:text-white"
       >
         Email address
@@ -91,7 +91,7 @@ const ContactForm = () => {
       />
 
       <label
-        for="message"
+        htmlFor="message"
         className="text-sm md:text-base lg:text-lg mt-3 text-gray-700 dark:text-white"
       >
         Your message

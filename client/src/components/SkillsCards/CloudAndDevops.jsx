@@ -1,5 +1,3 @@
-import { motion } from "framer-motion";
-import Tilt from "react-parallax-tilt";
 import ToolTip from "../ToolTip";
 import {
   SiNetlify,
@@ -39,7 +37,7 @@ const cloudAndDevopsItems = [
     tooltip: "Cloud platform for hosting web services and static sites",
   },
   {
-    id: 4,
+    id: 5,
     icon: (
       <SiGithubactions className="text-xl sm:text-2xl xl:text-3xl text-gray-950" />
     ),
@@ -50,7 +48,7 @@ const cloudAndDevopsItems = [
 
 export const cloudAndDevops = cloudAndDevopsItems.map((item) => {
   return (
-    <div>
+    <div key={item.id}>
       {/* single skill */}
       <ToolTip text={item.tooltip}>
         <div className="flex flex-col items-center hover:scale-105 hover:shadow-md transition-all duration-200">

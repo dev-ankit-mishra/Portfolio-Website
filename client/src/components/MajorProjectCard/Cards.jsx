@@ -1,5 +1,5 @@
-import codeCollabImg from "../../assets/codeCollab.png";
-import portfoilioImg from "../../assets/imgPortfolio.png";
+import codeCollabImg from "../../assets/codeCollab.webp";
+import portfoilioImg from "../../assets/imgPortfolio.webp";
 
 import { portfolioFeatures } from "./CardFeatures";
 import { codeEditorFeatures } from "./CardFeatures";
@@ -46,6 +46,7 @@ export default function Cards() {
   `}
       >
         <img
+          loading="lazy"
           src={card.src}
           alt={card.label + " website image"}
           className="w-full h-30 lg:h-42 object-cover rounded-t-2xl"

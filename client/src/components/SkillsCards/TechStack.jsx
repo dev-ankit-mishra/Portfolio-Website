@@ -1,5 +1,3 @@
-import { motion } from "framer-motion";
-import Tilt from "react-parallax-tilt";
 import ToolTip from "../ToolTip";
 
 import {
@@ -62,7 +60,7 @@ const techStackItems = [
 
 export const techStacks = techStackItems.map((lang) => {
   return (
-    <div>
+    <div key={lang.id}>
       {/* single skill */}
       <ToolTip text={lang.tooltip}>
         <div className="flex flex-col items-center hover:scale-105 hover:shadow-md transition-all duration-200">

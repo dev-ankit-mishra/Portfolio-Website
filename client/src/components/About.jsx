@@ -1,4 +1,4 @@
-import aboutImg from "../assets/aboutImg.png";
+import aboutImg from "../assets/aboutImg.webp";
 import {
   FaGraduationCap,
   FaBook,
@@ -23,6 +23,7 @@ export default function About() {
         {/* Image */}
         <div className="w-full h-full xl:flex justify-center items-center hidden">
           <img
+            loading="lazy"
             src={aboutImg}
             alt="Image of a person coding "
             className="h-110 rounded-2xl object-cover mb-4 shadow-lg"

@@ -1,5 +1,3 @@
-import { motion } from "framer-motion";
-import Tilt from "react-parallax-tilt";
 import ToolTip from "../ToolTip";
 
 import { SiMysql, SiMongodb, SiPostgresql, SiFirebase } from "react-icons/si";
@@ -39,7 +37,7 @@ const DatabaseItems = [
 
 export const databases = DatabaseItems.map((database) => {
   return (
-    <div>
+    <div key={database.id}>
       {/* single skill */}
       <ToolTip text={database.tooltip}>
         <div className="flex flex-col items-center hover:scale-105 hover:shadow-md transition-all duration-200">

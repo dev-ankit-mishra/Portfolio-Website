@@ -1,7 +1,7 @@
-import gameDeckImg from "../../assets/gameDeck.png";
-import movieWatchListImg from "../../assets/movieWatchList.png";
-import assemblyGameImg from "../../assets/assemblyGame.png";
-import gameTenzieImg from "../../assets/gameTenzie.png";
+import gameDeckImg from "../../assets/gameDeck.webp";
+import movieWatchListImg from "../../assets/movieWatchList.webp";
+import assemblyGameImg from "../../assets/assemblyGame.webp";
+import gameTenzieImg from "../../assets/gameTenzie.webp";
 import {
   assemblyGame,
   tenzieGame,
@@ -77,6 +77,7 @@ export const cards = cardItems.map((item) => {
     >
       {/* Image */}
       <img
+        loading="lazy"
         src={item.src}
         alt={item.label}
         className="w-full h-28 lg:h-40 object-cover rounded-t-2xl mb-4"

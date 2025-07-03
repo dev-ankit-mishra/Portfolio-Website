@@ -1,4 +1,3 @@
-import { motion } from "framer-motion";
 import { SiGit, SiGithub, SiFigma, SiPostman, SiVite } from "react-icons/si";
 import ToolTip from "../ToolTip";
 
@@ -41,7 +40,7 @@ const DevToolsItems = [
 
 export const devTools = DevToolsItems.map((tool) => {
   return (
-    <div>
+    <div key={tool.id}>
       {/* single skill */}
       <ToolTip text={tool.tooltip}>
         <div className="flex flex-col items-center hover:scale-105 hover:shadow-md transition-all duration-200">

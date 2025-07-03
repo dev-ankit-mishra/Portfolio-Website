@@ -1,6 +1,3 @@
-import { motion } from "framer-motion";
-import Tilt from "react-parallax-tilt";
-
 import {
   SiC,
   SiCplusplus,
@@ -60,8 +57,9 @@ const languagesItems = [
 
 export const languages = languagesItems.map((lang) => {
   return (
-    <div>
+    <div key={lang.id}>
       {/* single skill */}
+
       <ToolTip text={lang.tooltip}>
         <div className="flex flex-col items-center hover:scale-105 hover:shadow-md transition-all duration-200">
           {lang.icon}
