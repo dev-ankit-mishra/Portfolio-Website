@@ -22,6 +22,7 @@ export default function Footer() {
           href="https://github.com/dev-ankit-mishra"
           target="_blank"
           rel="noopener noreferrer"
+          aria-label="GitHub Profile"
         >
           <FaGithub
             size={24}
@@ -33,6 +34,7 @@ export default function Footer() {
           href="https://www.linkedin.com/in/ankit-mishra-44a179225/"
           target="_blank"
           rel="noopener noreferrer"
+          aria-label="LinkedIn Profile"
         >
           <FaLinkedin
             size={24}
