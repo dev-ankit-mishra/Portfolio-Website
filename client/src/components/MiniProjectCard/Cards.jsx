@@ -107,7 +107,7 @@ export const cards = cardItems.map((item) => {
         {item.tech.map((obj) => (
           <span
             key={obj.id}
-            className={`${obj.bgClass} px-3 py-1 rounded-full text-xs lg:text-sm font-medium text-white`}
+            className={`${obj.bgClass} px-3 py-1 rounded-full text-xs lg:text-sm font-medium `}
           >
             {obj.label}
           </span>
