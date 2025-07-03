@@ -42,7 +42,7 @@ export const deckGame = [
   {
     id: 2,
     label: "HTML",
-    bgClass: "bg-orange-600 text-white",
+    bgClass: "bg-orange-800 text-white",
   },
   {
     id: 3,
@@ -54,7 +54,7 @@ export const movieWatchlist = [
   {
     id: 1,
     label: "HTML",
-    bgClass: "bg-orange-600 text-white",
+    bgClass: "bg-orange-800 text-white",
   },
   {
     id: 2,
