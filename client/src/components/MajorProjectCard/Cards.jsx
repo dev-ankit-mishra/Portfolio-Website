@@ -17,7 +17,7 @@ export default function Cards() {
       desc: "A responsive portfolio site to highlight my work, skills, and contact info—all in one place.",
       features: portfolioFeatures,
       tech: portfolioTechItems,
-      live: "https://www.ankitmishra.pro",
+      live: "https://ankitmishra.pro",
       code: "https://github.com/dev-ankit-mishra/Portfolio-Website",
     },
     {
