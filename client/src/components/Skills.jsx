@@ -7,10 +7,11 @@ import { databases } from "./SkillsCards/Databases";
 import { devTools } from "./SkillsCards/DevTools";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-import { EffectCards, Autoplay } from "swiper/modules";
-
 import "swiper/css";
-import "swiper/css/effect-cards";
+import "swiper/css/pagination";
+
+// import required modules
+import { Pagination, Autoplay } from "swiper/modules";
 
 export default function Skills() {
   const [isMobile, setIsMobile] = useState(false);
@@ -54,7 +55,7 @@ export default function Skills() {
   const renderCard = (card) => (
     <div
       key={card.label}
-      className={`w-[15rem] sm:w-[18rem] md:w-xs xl:w-[23rem] rounded-2xl  
+      className={`w-[16rem] sm:w-[18rem] md:w-xs xl:w-[23rem] rounded-2xl  
                 shadow-xl transition-all duration-200 
                 
                 hover:ring-1 hover:ring-cyan-400
@@ -89,18 +90,21 @@ export default function Skills() {
       <main className="text-gray-900 dark:text-white py-20 md:py-2 h-full">
         {isMobile ? (
           <Swiper
-            effect="cards"
-            grabCursor={true}
+            pagination={true}
+            modules={[Pagination, Autoplay]}
             loop={true}
             autoplay={{
               delay: 4000,
               disableOnInteraction: false,
             }}
-            modules={[EffectCards, Autoplay]}
-            className="mySwiper w-[15rem] sm:w-[18rem] mx-auto"
+            className="mySwiper w-[20rem] mx-auto"
           >
             {cardItems.map((card) => (
-              <SwiperSlide key={card.id}>{renderCard(card)}</SwiperSlide>
+              <SwiperSlide key={card.id}>
+                <div className=" flex items-center justify-center pt-6 pb-12">
+                  {renderCard(card)}
+                </div>
+              </SwiperSlide>
             ))}
           </Swiper>
         ) : (
