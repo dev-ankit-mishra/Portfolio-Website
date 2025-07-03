@@ -1,22 +1,13 @@
 import { Moon, Sun, Menu, X } from "lucide-react";
 import { useState, useEffect, useCallback, useMemo } from "react";
-import { Link } from "react-scroll";
+import { Link, Events, scrollSpy } from "react-scroll";
 
 export default function NavBar() {
   const [isMobile, setIsMobile] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
-
-  useEffect(() => {
-    const updateScreen = () => setIsMobile(window.innerWidth < 640);
-    updateScreen();
-    window.addEventListener("resize", updateScreen);
-    return () => window.removeEventListener("resize", updateScreen);
-  }, []);
-
   const [theme, setTheme] = useState(() => {
     return localStorage.getItem("theme") === "light" ? false : true;
   });
-
   const [active, setActive] = useState("Home");
 
   const navItems = useMemo(
@@ -25,11 +16,28 @@ export default function NavBar() {
   );
 
   useEffect(() => {
+    const updateScreen = () => setIsMobile(window.innerWidth < 640);
+    updateScreen();
+    window.addEventListener("resize", updateScreen);
+    return () => window.removeEventListener("resize", updateScreen);
+  }, []);
+
+  useEffect(() => {
     const root = document.documentElement;
     const isDark = theme;
     root.classList.toggle("dark", isDark);
     localStorage.setItem("theme", isDark ? "dark" : "light");
   }, [theme]);
+
+  useEffect(() => {
+    Events.scrollEvent.register("begin", () => {});
+    Events.scrollEvent.register("end", () => {});
+    scrollSpy.update();
+    return () => {
+      Events.scrollEvent.remove("begin");
+      Events.scrollEvent.remove("end");
+    };
+  }, []);
 
   const toggleTheme = useCallback(() => setTheme((prev) => !prev), []);
 
@@ -40,7 +48,7 @@ export default function NavBar() {
           to={item}
           spy={true}
           smooth={true}
-          offset={-120}
+          offset={isMobile ? -120 : -60}
           duration={500}
           onSetActive={() => setActive(item)}
           className={`block w-full cursor-pointer px-4 py-2 transition-all duration-300 ${
@@ -72,7 +80,7 @@ export default function NavBar() {
       <div>
         <button
           onClick={toggleTheme}
-          className="p-1 rounded-full hover:scale-110 transition-transform duration-200 pr-4"
+          className="p-1 rounded-full hover:scale-110 transition-transform duration-200 pr-4 md:pr-0"
           aria-label={`Switch to ${theme ? "light" : "dark"} mode`}
         >
           {theme ? <Sun className="w-6 h-6" /> : <Moon className="w-6 h-6" />}
