@@ -6,6 +6,7 @@ import { useState, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
+import CoreJava from "../assets/CoreJava.pdf";
 
 // import required modules
 import { Pagination, Autoplay } from "swiper/modules";
@@ -47,15 +48,22 @@ export default function AchievementsSection() {
             {cert.description}
           </p>
         </div>
-        <img
-          src={coreJavaImg}
-          width="1193"
-          height="870"
-          loading="lazy"
-          alt="Certificate of Core Java"
-          title="click to view"
-          className="w-16 xl:w-20 h-auto mt-2 rounded cursor-pointer brightness-95 hover:scale-105 shadow-md transition-all duration-75"
-        />
+        <a
+          href={CoreJava}
+          target="_blank"
+          rel="noopener noreferer"
+          aria-label="Certificate Page"
+        >
+          <img
+            src={coreJavaImg}
+            width="1193"
+            height="870"
+            loading="lazy"
+            alt="Certificate of Core Java"
+            title="click to view"
+            className="w-16 xl:w-20 h-auto mt-2 rounded cursor-pointer brightness-95 hover:scale-105 shadow-md transition-all duration-75"
+          />
+        </a>
       </div>
     );
   };
