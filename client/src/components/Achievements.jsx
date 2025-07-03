@@ -49,6 +49,8 @@ export default function AchievementsSection() {
         </div>
         <img
           src={coreJavaImg}
+          width="1193"
+          height="870"
           loading="lazy"
           alt="Certificate of Core Java"
           title="click to view"

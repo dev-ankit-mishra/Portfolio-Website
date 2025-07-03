@@ -47,6 +47,8 @@ export default function Cards() {
       >
         <img
           loading="lazy"
+          width="1024"
+          height="1024"
           src={card.src}
           alt={card.label + " website image"}
           className="w-full h-30 lg:h-42 object-cover rounded-t-2xl"

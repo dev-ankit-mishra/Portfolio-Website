@@ -25,6 +25,8 @@ export default function About() {
           <img
             loading="lazy"
             src={aboutImg}
+            width="1024"
+            height="1024"
             alt="Image of a person coding "
             className="h-110 rounded-2xl object-cover mb-4 shadow-lg"
           />

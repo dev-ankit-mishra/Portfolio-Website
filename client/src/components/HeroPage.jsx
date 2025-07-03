@@ -56,6 +56,8 @@ export default function HeroPage() {
           <img
             loading="lazy"
             src={heroImg}
+            width="240"
+            height="240"
             alt="profile picture a man sitting on chair and writing code"
             className="w-40 h-40 md:w-45 md:h-45 lg:w-60 lg:h-60 rounded-full shadow-xl"
           />

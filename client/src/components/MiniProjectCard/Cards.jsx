@@ -78,6 +78,8 @@ export const cards = cardItems.map((item) => {
       {/* Image */}
       <img
         loading="lazy"
+        width="1024"
+        height="1024"
         src={item.src}
         alt={item.label}
         className="w-full h-28 lg:h-40 object-cover rounded-t-2xl mb-4"
