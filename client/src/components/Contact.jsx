@@ -1,5 +1,9 @@
-import Footer from "./Footer";
-import ContactForm from "./ContactForm";
+import { lazy, Suspense } from "react";
+
+const ContactForm = lazy(() => {
+  return import("./ContactForm");
+});
+const Footer = lazy(() => import("./Footer"));
 
 export default function Contact() {
   return (
@@ -26,10 +30,14 @@ export default function Contact() {
           opportunities to be part of your vision. Whether you have a question
           or just want to say hi — I’ll try my best to get back to you!
         </p>
-        <ContactForm />
+        <Suspense fallback={<h2>Loading...</h2>}>
+          <ContactForm />
+        </Suspense>
       </main>
 
-      <Footer />
+      <Suspense fallback={<div>Loading footer...</div>}>
+        <Footer />
+      </Suspense>
     </section>
   );
 }
