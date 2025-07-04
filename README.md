@@ -33,9 +33,13 @@ A modern, responsive portfolio website built with React, Tailwind CSS, and Frame
 
 ## 📸 Screenshots
 
-```markdown
-![Homepage Preview](.client/src/assets/portfolioimg.png)
+![Homepage Preview](.client/src/assets/imgportfolio.png)
 
+```
+
+## 🧪 How to Run Locally
+
+```bash
 # 1. Clone the repository
 git clone https://github.com/dev-ankit-mishra/Portfolio-Website.git
 
