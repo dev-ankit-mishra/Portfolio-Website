@@ -33,7 +33,7 @@ A modern, responsive portfolio website built with React, Tailwind CSS, and Frame
 
 ## 📸 Screenshots
 
-![Homepage Preview](.client/src/assets/imgportfolio.webp)
+![Homepage Preview](/client/src/assets/imgportfolio.webp)
 
 ```
 
