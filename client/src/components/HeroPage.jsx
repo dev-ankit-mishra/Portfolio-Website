@@ -2,7 +2,7 @@ import resume from "../assets/ankitmishrafinal.pdf";
 import NavBar from "./NavBar";
 import { Typewriter } from "react-simple-typewriter";
 import { ExternalLink } from "lucide-react";
-import heroImg from "../assets/heroimage.webp";
+import heroImg from "../assets/ankitmishraimg.webp";
 
 export default function HeroPage() {
   return (
@@ -19,9 +19,9 @@ export default function HeroPage() {
           <h2 className="text-center tracking-wide text-lg lg:text-2xl font-semibold text-gray-700 dark:text-gray-300">
             <Typewriter
               words={[
+                "Software Engineer",
                 "Full-Stack Developer",
-                "Open Source Enthusiast",
-                "AI Explorer",
+                "Open Source Contributor",
               ]}
               cursor
               cursorStyle="|"
@@ -52,15 +52,17 @@ export default function HeroPage() {
         </div>
 
         {/* Right Section: Profile Image */}
-        <div className="md:w-1/2  flex flex-col justify-center items-center">
-          <img
-            loading="lazy"
-            src={heroImg}
-            width="240"
-            height="240"
-            alt="profile picture a man sitting on chair and writing code"
-            className="w-40 h-40 md:w-45 md:h-45 lg:w-60 lg:h-60 rounded-full shadow-xl"
-          />
+        <div className="md:w-1/2 flex flex-col justify-center items-center">
+          <div className="p-[3px] rounded-full bg-gradient-to-tr from-cyan-400 to-blue-600 shadow-[0_0_10px_rgba(0,255,255,0.4)] transition-all ">
+            <img
+              loading="lazy"
+              src={heroImg}
+              width="240"
+              height="240"
+              alt="profile picture a man sitting on chair and writing code"
+              className="w-40 h-40 md:w-45 md:h-45 lg:w-60 lg:h-60 rounded-full shadow-xl object-cover transition duration-300 hover:scale-105"
+            />
+          </div>
         </div>
       </main>
     </section>
