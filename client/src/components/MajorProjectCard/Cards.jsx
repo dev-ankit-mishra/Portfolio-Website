@@ -1,5 +1,5 @@
 import codeCollabImg from "../../assets/codeCollab.webp";
-import portfoilioImg from "../../assets/imgPortfolio.webp";
+import portfoilioImg from "../../assets/personalWeb.webp";
 
 import { portfolioFeatures } from "./CardFeatures";
 import { codeEditorFeatures } from "./CardFeatures";
@@ -14,7 +14,7 @@ export default function Cards() {
       id: 1,
       src: portfoilioImg,
       label: "Portfolio Website",
-      desc: "A responsive portfolio site to highlight my work, skills, and contact info—all in one place.",
+      desc: "A responsive portfolio site to highlight my work, skills, and contact—all in one place.",
       features: portfolioFeatures,
       tech: portfolioTechItems,
       live: "https://ankitmishra.pro",
@@ -27,7 +27,7 @@ export default function Cards() {
       desc: "A real-time code editor built for seamless collaboration and live coding with teams.",
       features: codeEditorFeatures,
       tech: codeEditorTechItems,
-      live: "/",
+      live: "https://codevspace.netlify.app",
       code: "https://github.com/dev-ankit-mishra/collab-code-editor",
     },
   ];
@@ -51,7 +51,7 @@ export default function Cards() {
           height="1024"
           src={card.src}
           alt={card.label + " website image"}
-          className="w-full h-30 lg:h-42 object-cover rounded-t-2xl"
+          className="w-full h-26 lg:h-36 object-cover rounded-t-2xl"
         />
 
         <div className="absolute inset-0 z-0 bg-black/5 dark:bg-white/5 backdrop-blur-sm rounded-2xl opacity-0 group-hover:opacity-100 transition duration-200" />
