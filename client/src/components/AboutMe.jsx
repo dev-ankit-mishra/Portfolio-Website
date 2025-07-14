@@ -67,7 +67,7 @@ export const aboutMe = [
     label: "Open Source & Community:",
     desc: (
       <>
-        Made <span className="font-semibold">1000+</span> GitHub contributions
+        Made <span className="font-semibold">1200+</span> GitHub contributions
         in <span className="font-semibold">2025</span> with active participation
         in <span className="italic">open-source projects.</span>
       </>

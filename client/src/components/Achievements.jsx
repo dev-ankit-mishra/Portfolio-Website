@@ -40,10 +40,10 @@ export default function AchievementsSection() {
     {
       title: (
         <span>
-          <CountUp enableScrollSpy end={1000} duration={5} />+
+          <CountUp enableScrollSpy end={1200} duration={5} />+
         </span>
       ),
-      subtitle: "GitHub Contributions (2024)",
+      subtitle: "GitHub Contributions (2025)",
       color: "text-green-400",
       icon: <FaGithub className="text-green-400 text-2xl xl:text-3xl mb-2" />,
     },
