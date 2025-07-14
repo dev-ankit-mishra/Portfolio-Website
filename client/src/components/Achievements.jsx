@@ -7,6 +7,9 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import CoreJava from "../assets/CoreJava.pdf";
+import frontend from "../assets/Front-End.webp";
+import dsaImg from "../assets/dsaImg.webp";
+import dsa from "../assets/dsa.pdf";
 
 // import required modules
 import { Pagination, Autoplay } from "swiper/modules";
@@ -20,53 +23,6 @@ export default function AchievementsSection() {
     window.addEventListener("resize", updateScreen);
     return () => window.removeEventListener("resize", updateScreen);
   }, []);
-
-  const renderCard = (cert, idx) => {
-    return (
-      <div
-        key={idx}
-        className={`
-        relative group w-[18rem] xl:w-sm flex items-center justify-between gap-x-6 
-        border rounded-lg p-5 shadow-md overflow-hidden transition-all duration-200
-        bg-gradient-to-br bg-[#f7f7f7]
-        dark:from-zinc-900 dark:via-neutral-900 dark:to-black 
-        hover:scale-[1.02] hover:shadow-2xl hover:ring-2 hover:ring-cyan-400/30
-      `}
-      >
-        <div className="w-full h-full z-0 absolute bg-white/5 inset-0 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-all duration-300" />
-        <div className="w-2/3">
-          <h3 className="text-base xl:text-xl text-cyan-900 dark:text-cyan-400 font-semibold mb-2">
-            {cert.title}
-          </h3>
-          <p className="text-xs xl:text-sm text-gray-700 dark:text-gray-400 mb-2">
-            {cert.issuer}
-            <span className="bg-cyan-500 text-black text-[0.625rem] xl:text-xs px-2 py-0.5 rounded-full ml-2">
-              {cert.date}
-            </span>
-          </p>
-          <p className="text-xs xl:text-sm text-gray-800 dark:text-gray-300 mb-3">
-            {cert.description}
-          </p>
-        </div>
-        <a
-          href={CoreJava}
-          target="_blank"
-          rel="noopener noreferer"
-          aria-label="Certificate Page"
-        >
-          <img
-            src={coreJavaImg}
-            width="1193"
-            height="870"
-            loading="lazy"
-            alt="Certificate of Core Java"
-            title="click to view"
-            className="w-16 xl:w-20 h-auto mt-2 rounded cursor-pointer brightness-95 hover:scale-105 shadow-md transition-all duration-75"
-          />
-        </a>
-      </div>
-    );
-  };
 
   const milestones = [
     {
@@ -97,46 +53,91 @@ export default function AchievementsSection() {
     {
       title: "Front-End Developer",
       issuer: "HackerRank",
-      date: "Apr 2024",
-      link: "#",
+      date: "July 2025",
+      link: frontend,
+      src: frontend,
       description: "Built responsive UIs using HTML, CSS, and React.",
     },
     {
       title: "DSA",
       issuer: "PW-Skills",
-      date: "Jan 2024",
-      link: "#",
+      date: "July 2025",
+      link: dsa,
+      src: dsaImg,
       description: "Solved problems using core data structures and algorithms.",
     },
     {
       title: "SQL Intermediate",
       issuer: "HackerRank",
-      date: "Mar 2024",
-      link: "#",
+      date: "July 2025",
+      link: frontend,
+      src: frontend,
       description: "Wrote advanced SQL queries and analytical functions.",
-    },
-    {
-      title: "Full-Stack Developer",
-      issuer: "Scrimba",
-      date: "Feb 2024",
-      link: "#",
-      description: "Built full-stack apps using MERN stack technologies.",
     },
     {
       title: "Core Java",
       issuer: "Internshala",
-      date: "May 2024",
-      link: "#",
+      date: "May 2023",
+      link: CoreJava,
+      src: coreJavaImg,
       description: "Learned OOP, collections, and Java fundamentals.",
     },
     {
       title: "React Basics",
       issuer: "HackerRank",
       date: "May 2024",
-      link: "#",
+      link: frontend,
+      src: frontend,
       description: "Built UI components using props and state.",
     },
   ];
+
+  const renderCard = (cert, idx) => {
+    return (
+      <div
+        key={idx}
+        className={`
+        relative group w-[18rem] xl:w-sm flex items-center justify-between gap-x-6 
+        border rounded-lg p-5 shadow-md overflow-hidden transition-all duration-200
+        bg-gradient-to-br bg-[#f7f7f7]
+        dark:from-zinc-900 dark:via-neutral-900 dark:to-black 
+        hover:scale-[1.02] hover:shadow-2xl hover:ring-2 hover:ring-cyan-400/30
+      `}
+      >
+        <div className="w-full h-full z-0 absolute bg-white/5 inset-0 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-all duration-300" />
+        <div className="w-2/3">
+          <h3 className="text-base xl:text-xl text-cyan-900 dark:text-cyan-400 font-semibold mb-2">
+            {cert.title}
+          </h3>
+          <p className="text-xs xl:text-sm text-gray-700 dark:text-gray-400 mb-2">
+            {cert.issuer}
+            <span className="bg-cyan-500 text-black text-[0.625rem] xl:text-xs px-2 py-0.5 rounded-full ml-2">
+              {cert.date}
+            </span>
+          </p>
+          <p className="text-xs xl:text-sm text-gray-800 dark:text-gray-300 mb-3">
+            {cert.description}
+          </p>
+        </div>
+        <a
+          href={cert.link}
+          target="_blank"
+          rel="noopener noreferer"
+          aria-label="Certificate Page"
+        >
+          <img
+            src={cert.src}
+            width="1193"
+            height="870"
+            loading="lazy"
+            alt={cert.title + " Certificate"}
+            title="click to view"
+            className="w-16 xl:w-20 h-auto mt-2 rounded cursor-pointer object-cover brightness-95 hover:scale-105 shadow-md transition-all duration-75"
+          />
+        </a>
+      </div>
+    );
+  };
 
   return (
     <section
