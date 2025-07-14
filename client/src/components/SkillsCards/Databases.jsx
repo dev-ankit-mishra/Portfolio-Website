@@ -1,6 +1,12 @@
 import ToolTip from "../ToolTip";
 
-import { SiMysql, SiMongodb, SiPostgresql, SiFirebase } from "react-icons/si";
+import {
+  SiMysql,
+  SiMongodb,
+  SiPostgresql,
+  SiFirebase,
+  SiSupabase,
+} from "react-icons/si";
 
 const DatabaseItems = [
   {
@@ -23,15 +29,15 @@ const DatabaseItems = [
     id: 3,
     icon: <SiMysql className="text-xl sm:text-2xl xl:text-3xl text-blue-400" />,
     label: "MySQL",
-    tooltip: "Popular relational database for web apps",
+    tooltip: "Relational database",
   },
   {
     id: 4,
     icon: (
-      <SiFirebase className="text-xl sm:text-2xl xl:text-3xl text-yellow-400" />
+      <SiSupabase className="text-xl sm:text-2xl xl:text-3xl text-green-600" />
     ),
-    label: "Firebase",
-    tooltip: "Google's real-time database and hosting platform",
+    label: "Supabase",
+    tooltip: "Open-source backend with Postgres, auth, real-time, and storage.",
   },
 ];
 
