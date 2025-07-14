@@ -1,8 +1,8 @@
 export const codeEditorFeatures = [
   "Real-time code sync via WebSockets",
   "Syntax highlighting for multiple langs",
-  "File tree sidebar and tabbed editor ",
-  "Integrated terminal (coming soon)",
+  "Authentication using Supabase",
+  "User-specific data storage using MongoDB",
 ];
 
 export const portfolioFeatures = [
