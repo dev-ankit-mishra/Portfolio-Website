@@ -1,4 +1,4 @@
-import resume from "../assets/ankitmishrafinal.pdf";
+import resume from "../assets/softwareEngineer.pdf";
 import NavBar from "./NavBar";
 import { Typewriter } from "react-simple-typewriter";
 import { ExternalLink } from "lucide-react";
