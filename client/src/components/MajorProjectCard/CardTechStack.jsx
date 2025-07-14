@@ -1,7 +1,7 @@
 export const portfolioTechItems = [
   {
     label: "React",
-    bgClass: "bg-blue-600", // React blue
+    bgClass: "bg-cyan-700", // React blue
   },
   {
     label: "JavaScript",
@@ -27,7 +27,7 @@ export const portfolioTechItems = [
 export const codeEditorTechItems = [
   {
     label: "React",
-    bgClass: "bg-blue-600", // React blue
+    bgClass: "bg-cyan-700", // React blue
   },
   {
     label: "Node.js",
@@ -39,11 +39,7 @@ export const codeEditorTechItems = [
   },
   {
     label: "Socket.Io",
-    bgClass: "bg-indigo-600", // Socket.io dark purple/blue
-  },
-  {
-    label: "TypeScript",
-    bgClass: "bg-blue-800", // TypeScript darker blue
+    bgClass: "bg-red-700", // Socket.io dark purple/blue
   },
   {
     label: "MongoDB",
@@ -52,5 +48,9 @@ export const codeEditorTechItems = [
   {
     label: "Supabase",
     bgClass: "bg-lime-700", // Supabase greenish tone
+  },
+  {
+    label: "TypeScript",
+    bgClass: "bg-blue-800", // TypeScript darker blue
   },
 ];

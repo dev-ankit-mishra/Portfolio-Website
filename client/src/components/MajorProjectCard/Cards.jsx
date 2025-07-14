@@ -100,7 +100,7 @@ export default function Cards() {
   "
             >
               <ExternalLink size={16} />
-              Live Demo
+              Live
             </a>
 
             <a
