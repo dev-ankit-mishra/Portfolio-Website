@@ -44,7 +44,7 @@ export default function MinorProject() {
               640: {
                 slidesPerView: 1,
               },
-              768: {
+              720: {
                 slidesPerView: 2,
               },
               1280: {
