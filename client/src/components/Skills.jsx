@@ -28,7 +28,6 @@ export default function Skills() {
     { id: 2, label: "Tech Stacks", content: techStacks },
     { id: 3, label: "Databases", content: databases },
     { id: 4, label: "Cloud & Devops", content: cloudAndDevops },
-    { id: 5, label: "AI Tools", content: aiTools },
     { id: 6, label: "Development Tools", content: devTools },
   ];
 
@@ -108,7 +107,7 @@ export default function Skills() {
             ))}
           </Swiper>
         ) : (
-          <div className="grid sm:grid-cols-2 [@media(min-width:1080px)]:grid-cols-3 gap-10 place-items-center">
+          <div className="grid sm:grid-cols-2 [@media(min-width:1080px)]:grid-cols-3 gap-y-10 place-items-center">
             {cardItems.map((card) => (
               <div key={card.id}>{renderCard(card)}</div>
             ))}
