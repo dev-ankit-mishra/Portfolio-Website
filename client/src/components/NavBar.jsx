@@ -16,7 +16,7 @@ export default function NavBar() {
   );
 
   useEffect(() => {
-    const updateScreen = () => setIsMobile(window.innerWidth < 640);
+    const updateScreen = () => setIsMobile(window.innerWidth < 768);
     updateScreen();
     window.addEventListener("resize", updateScreen);
     return () => window.removeEventListener("resize", updateScreen);
@@ -73,7 +73,7 @@ export default function NavBar() {
     >
       <span className="font-semibold text-lg">Ankit Mishra</span>
 
-      <ul className="hidden md:flex items-center gap-4 lg:gap-6">
+      <ul className="hidden md:flex items-center font-medium  lg:gap-4">
         {navItems.map((item) => renderListItem(item))}
       </ul>
 
@@ -99,7 +99,7 @@ export default function NavBar() {
 
             {isOpen && (
               <div className="absolute top-12 right-0 z-50 w-auto rounded bg-white/80 dark:bg-neutral-900/70 backdrop-blur-md shadow-lg border border-neutral-300 dark:border-neutral-800 text-black dark:text-white">
-                <ul className="flex flex-col items-center justify-center py-1">
+                <ul className="flex flex-col items-center justify-center py-1 px-2">
                   {navItems.map((item) => renderListItem(item))}
                 </ul>
               </div>
