@@ -27,7 +27,9 @@ const DatabaseItems = [
   },
   {
     id: 3,
-    icon: <SiMysql className="text-xl sm:text-2xl xl:text-3xl text-blue-400" />,
+    icon: (
+      <SiMysql className="text-xl sm:text-2xl xl:text-3xl text-blue-800 dark:text-blue-300" />
+    ),
     label: "MySQL",
     tooltip: "Relational database",
   },

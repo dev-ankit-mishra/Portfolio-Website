@@ -21,21 +21,23 @@ const techStackItems = [
   {
     id: 2,
     icon: (
-      <SiTailwindcss className="text-xl sm:text-2xl xl:text-3xl text-cyan-400" />
+      <SiTailwindcss className="text-xl sm:text-2xl xl:text-3xl text-cyan-700 dark:text-cyan-400" />
     ),
     label: "Tailwind",
     tooltip: "Utility-first CSS framework for rapid UI development",
   },
   {
     id: 3,
-    icon: <SiReact className="text-xl sm:text-2xl xl:text-3xl text-sky-400" />,
+    icon: (
+      <SiReact className="text-xl sm:text-2xl xl:text-3xl text-sky-700 dark:text-sky-400" />
+    ),
     label: "React",
     tooltip: "Build dynamic user interfaces with components",
   },
   {
     id: 4,
     icon: (
-      <SiNodedotjs className="text-xl sm:text-2xl xl:text-3xl text-green-500" />
+      <SiNodedotjs className="text-xl sm:text-2xl xl:text-3xl text-green-600" />
     ),
     label: "Node",
     tooltip: "JavaScript runtime for backend development",
@@ -43,7 +45,7 @@ const techStackItems = [
   {
     id: 5,
     icon: (
-      <SiExpress className="text-xl sm:text-2xl xl:text-3xl text-gray-300" />
+      <SiExpress className="text-xl sm:text-2xl xl:text-3xl text-gray-800 dark:text-gray-400" />
     ),
     label: "Express",
     tooltip: "Minimalist Node.js framework for APIs",
@@ -51,7 +53,7 @@ const techStackItems = [
   {
     id: 6,
     icon: (
-      <SiNextdotjs className="text-xl sm:text-2xl xl:text-3xl text-white" />
+      <SiNextdotjs className="text-xl sm:text-2xl xl:text-3xl text-neutral-800 dark:text-white" />
     ),
     label: "Next",
     tooltip: "React framework for SSR and static websites",

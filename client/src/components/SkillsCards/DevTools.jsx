@@ -10,7 +10,9 @@ const DevToolsItems = [
   },
   {
     id: 2,
-    icon: <SiGithub className="text-xl sm:text-2xl xl:text-3xl text-white" />,
+    icon: (
+      <SiGithub className="text-xl sm:text-2xl xl:text-3xl text-gray-800 dark:text-white" />
+    ),
     label: "Github",
     tooltip: "Code hosting platform for collaboration",
   },

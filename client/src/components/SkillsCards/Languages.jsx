@@ -17,7 +17,9 @@ const languagesItems = [
   },
   {
     id: 2,
-    icon: <FaJava className="text-xl sm:text-2xl xl:text-3xl  text-red-600" />,
+    icon: (
+      <FaJava className="text-xl sm:text-2xl xl:text-3xl  text-red-600 dark:text-red-300" />
+    ),
     label: "Java",
     tooltip: "Object-oriented programming for cross-platform apps",
   },
@@ -32,7 +34,7 @@ const languagesItems = [
   {
     id: 4,
     icon: (
-      <SiJavascript className="text-xl sm:text-2xl xl:text-3xl text-yellow-400" />
+      <SiJavascript className="text-xl sm:text-2xl xl:text-3xl text-yellow-500" />
     ),
     label: "JavaScript",
     tooltip: "The language of the web",
@@ -48,7 +50,7 @@ const languagesItems = [
   {
     id: 6,
     icon: (
-      <SiPython className="text-xl sm:text-2xl xl:text-3xl text-yellow-300" />
+      <SiPython className="text-xl sm:text-2xl xl:text-3xl text-yellow-500" />
     ),
     label: "Python",
     tooltip: "High-level language for AI, automation, and more",
