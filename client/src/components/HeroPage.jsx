@@ -52,15 +52,16 @@ export default function HeroPage() {
         </div>
 
         {/* Right Section: Profile Image */}
-        <div className="md:w-1/2 flex flex-col justify-center items-center">
-          <div className="p-[3px] rounded-full bg-gradient-to-tr from-cyan-400 to-blue-600 shadow-[0_0_10px_rgba(0,255,255,0.4)] transition-all ">
+        <div className=" md:w-1/2 flex flex-col justify-center items-center relative">
+          <div className="absolute w-72 h-72 bg-cyan-200/5 rounded-full blur-lg z-0" />
+          <div className="p-[3px] rounded-full bg-gradient-to-tr from-cyan-400 to-blue-600 shadow-[0_0_10px_rgba(0,255,255,0.4)] animate-pulse-slow transition-all">
             <img
               loading="lazy"
               src={heroImg}
               width="240"
               height="240"
               alt="profile picture a man sitting on chair and writing code"
-              className="w-40 h-40 md:w-45 md:h-45 lg:w-60 lg:h-60 rounded-full shadow-xl object-cover transition duration-300 hover:scale-105"
+              className="w-40 h-40 md:w-45 md:h-45 lg:w-60 lg:h-60 rounded-full shadow-xl shadow-cyan-500/30 object-cover transition duration-300 hover:scale-105 "
             />
           </div>
         </div>
