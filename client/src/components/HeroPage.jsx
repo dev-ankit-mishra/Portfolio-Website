@@ -53,7 +53,6 @@ export default function HeroPage() {
 
         {/* Right Section: Profile Image */}
         <div className=" md:w-1/2 flex flex-col justify-center items-center relative">
-          <div className="absolute w-72 h-72 bg-cyan-200/5 rounded-full blur-lg z-0" />
           <div className="p-[3px] rounded-full bg-gradient-to-tr from-cyan-400 to-blue-600 shadow-[0_0_10px_rgba(0,255,255,0.4)] animate-pulse-slow transition-all">
             <img
               loading="lazy"
