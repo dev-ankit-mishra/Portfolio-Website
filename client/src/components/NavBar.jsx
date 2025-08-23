@@ -94,7 +94,11 @@ export default function NavBar() {
               aria-label={isOpen ? "Close menu" : "Open menu"}
               aria-expanded={isOpen}
             >
-              {isOpen ? <X size={28} /> : <Menu size={28} />}
+              {isOpen ? (
+                <X size={28} className="cursor-pointer" />
+              ) : (
+                <Menu size={28} className="cursor-pointer" />
+              )}
             </button>
 
             {isOpen && (
