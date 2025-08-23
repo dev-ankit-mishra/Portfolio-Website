@@ -43,7 +43,7 @@ export default function NavBar() {
 
   function renderListItem(item) {
     return (
-      <li key={item} className="w-full text-center py-1">
+      <li key={item} className="w-full text-left md:text-center py-1">
         <Link
           to={item}
           spy={true}
