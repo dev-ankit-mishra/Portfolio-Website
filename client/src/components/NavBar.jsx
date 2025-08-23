@@ -73,7 +73,7 @@ export default function NavBar() {
     >
       <span className="font-semibold text-lg">Ankit Mishra</span>
 
-      <ul className="hidden md:flex items-center font-medium  lg:gap-4">
+      <ul className="hidden md:flex items-center font-medium  lg:gap-3 lg:text-base">
         {navItems.map((item) => renderListItem(item))}
       </ul>
 
