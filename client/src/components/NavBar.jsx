@@ -80,7 +80,7 @@ export default function NavBar() {
       <div>
         <button
           onClick={toggleTheme}
-          className="p-1 rounded-full hover:scale-110 transition-transform duration-200 pr-4 md:pr-0"
+          className="p-1 rounded-full hover:scale-110 transition-transform duration-200 pr-4 md:pr-0 cursor-pointer"
           aria-label={`Switch to ${theme ? "light" : "dark"} mode`}
         >
           {theme ? <Sun className="w-6 h-6" /> : <Moon className="w-6 h-6" />}
@@ -90,15 +90,11 @@ export default function NavBar() {
           <>
             <button
               onClick={() => setIsOpen((prev) => !prev)}
-              className="text-2xl text-black dark:text-white focus:outline-none"
+              className="text-2xl text-black dark:text-white focus:outline-none cursor-pointer"
               aria-label={isOpen ? "Close menu" : "Open menu"}
               aria-expanded={isOpen}
             >
-              {isOpen ? (
-                <X size={28} className="cursor-pointer" />
-              ) : (
-                <Menu size={28} className="cursor-pointer" />
-              )}
+              {isOpen ? <X size={28} /> : <Menu size={28} />}
             </button>
 
             {isOpen && (
