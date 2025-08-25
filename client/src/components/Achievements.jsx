@@ -10,6 +10,11 @@ import CoreJava from "../assets/CoreJava.pdf";
 import frontend from "../assets/Front-End.webp";
 import dsaImg from "../assets/dsaImg.webp";
 import dsa from "../assets/dsa.pdf";
+import restApi from "../assets/restApi.pdf";
+import restApiImg from "../assets/restApiImg.webp";
+import sql from "../assets/sql.pdf";
+import sqlImg from "../assets/sqlImg.webp";
+import react from "../assets/react.webp";
 
 // import required modules
 import { Pagination, Autoplay } from "swiper/modules";
@@ -52,7 +57,7 @@ export default function AchievementsSection() {
   const certificates = [
     {
       title: "Front-End Developer",
-      issuer: "HackerRank",
+      issuer: "Scrimba",
       date: "July 2025",
       link: frontend,
       src: frontend,
@@ -67,12 +72,12 @@ export default function AchievementsSection() {
       description: "Solved problems using core data structures and algorithms.",
     },
     {
-      title: "SQL Intermediate",
+      title: "SQL Basics",
       issuer: "HackerRank",
       date: "July 2025",
-      link: frontend,
-      src: frontend,
-      description: "Wrote advanced SQL queries and analytical functions.",
+      link: sql,
+      src: sqlImg,
+      description: "Wrote basics SQL queries and analytical functions.",
     },
     {
       title: "Core Java",
@@ -83,12 +88,20 @@ export default function AchievementsSection() {
       description: "Learned OOP, collections, and Java fundamentals.",
     },
     {
-      title: "React Basics",
-      issuer: "HackerRank",
-      date: "May 2024",
-      link: frontend,
-      src: frontend,
+      title: "React",
+      issuer: "Scrimba",
+      date: "Apri 2025",
+      link: react,
+      src: react,
       description: "Built UI components using props and state.",
+    },
+    {
+      title: "Rest API Intemediate",
+      issuer: "HackerRank",
+      date: "Aug 2025",
+      link: restApi,
+      src: restApiImg,
+      description: "Passed the HackerRank skill certification test.",
     },
   ];
 
