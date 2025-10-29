@@ -44,22 +44,24 @@ export default function NavBar() {
   function renderListItem(item) {
     return (
       <li key={item} className="w-full text-left md:text-center py-1">
-        <Link
-          to={item}
-          spy={true}
-          smooth={true}
-          offset={isMobile ? -120 : -60}
-          duration={500}
-          onSetActive={() => setActive(item)}
-          className={`block w-full cursor-pointer px-4 py-2 transition-all duration-300 ${
-            active === item
-              ? "scale-105 bg-blue-600 text-white rounded-md"
-              : "hover:text-blue-500 text-gray-900 dark:text-gray-200"
-          }`}
-          aria-current={active === item ? "page" : undefined}
-        >
-          {item}
-        </Link>
+        <a href={`#${item.toLowerCase()}`}>
+          <Link
+            to={item}
+            spy={true}
+            smooth={true}
+            offset={isMobile ? -120 : -60}
+            duration={500}
+            onSetActive={() => setActive(item)}
+            className={`block w-full cursor-pointer px-4 py-2 transition-all duration-300 ${
+              active === item
+                ? "scale-105 bg-blue-600 text-white rounded-md"
+                : "hover:text-blue-500 text-gray-900 dark:text-gray-200"
+            }`}
+            aria-current={active === item ? "page" : undefined}
+          >
+            {item}
+          </Link>
+        </a>
       </li>
     );
   }
