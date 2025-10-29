@@ -13,7 +13,7 @@ export const portfolioTechItems = [
   },
   {
     label: "EmailJS",
-    bgClass: "bg-pink-500", // Differentiated from others
+    bgClass: "bg-pink-700", // Differentiated from others
   },
   {
     label: "Netlify",
