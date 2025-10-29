@@ -3,23 +3,45 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      rel="preload"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      as="style"
+    />
+
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
       rel="stylesheet"
+      media="print"
+      onload="this.media='all'"
     />
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
+
+    <style>
+      body {
+        font-family: "Open Sans", Arial, sans-serif;
+      }
+    </style>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+
     <title>Ankit Mishra</title>
+
+
     <meta
       name="description"
       content="Ankit Mishra is a full-stack developer skilled in React, Node.js, and DevOps. Final-year MCA student with 400+ LeetCode problems solved and 1000+ GitHub contributions."
     />
-
-    <meta property="og:title" content="Ankit Mishra | Full-Stack Developer" />
+    <meta
+      property="og:title"
+      content="Ankit Mishra | Full-Stack Developer"
+    />
     <meta
       property="og:description"
       content="React, Node.js developer and MCA student with strong DSA background. 400+ LeetCode problems solved."
