@@ -18,11 +18,7 @@ export default function HeroPage() {
 
           <h2 className="text-center tracking-wide text-lg lg:text-2xl font-semibold text-gray-700 dark:text-gray-300">
             <Typewriter
-              words={[
-                "Software Engineer",
-                "Full-Stack Developer",
-                "Open Source Contributor",
-              ]}
+              words={["Software Engineer", "Full-Stack Developer"]}
               cursor
               cursorStyle="|"
               typeSpeed={80}
