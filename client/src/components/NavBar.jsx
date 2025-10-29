@@ -42,9 +42,15 @@ export default function NavBar() {
   const toggleTheme = useCallback(() => setTheme((prev) => !prev), []);
 
   function renderListItem(item) {
+    const sectionId = item.toLowerCase(); // Convert "Home" → "home"
+
     return (
       <li key={item} className="w-full text-left md:text-center py-1">
-        <a href={`#${item.toLowerCase()}`}>
+        <a
+          href={`#${sectionId}`}
+          aria-label={`Go to ${item} section`}
+          className="block w-full"
+        >
           <Link
             to={item}
             spy={true}
@@ -58,6 +64,7 @@ export default function NavBar() {
                 : "hover:text-blue-500 text-gray-900 dark:text-gray-200"
             }`}
             aria-current={active === item ? "page" : undefined}
+            role="link"
           >
             {item}
           </Link>

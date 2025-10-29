@@ -6,7 +6,7 @@ import heroImg from "../assets/ankitmishraimg.webp";
 
 export default function HeroPage() {
   return (
-    <section id="Home" className=" w-full h-screen font-Inter ">
+    <section id="home" className=" w-full h-screen font-Inter ">
       <NavBar />
 
       <main className="w-full h-screen flex flex-col-reverse items-center  md:flex-row  md:justify-between  pt-32 pb-10 md:pb-0 md:pt-0 md:pr-20 md:gap-4  text-neutral-200 bg-gradient-to-br dark:from-[#0f2027] dark:via-[#203a43] dark:to-[#2c5364] from-[#f8fafc] to-[#e2e8f0]">

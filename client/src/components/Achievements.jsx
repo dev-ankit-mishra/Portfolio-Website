@@ -154,7 +154,7 @@ export default function AchievementsSection() {
 
   return (
     <section
-      id="Achievements"
+      id="achievements"
       className="
     lg:px-6 md:px-12 py-16 sm:py-10
     bg-gradient-to-br from-[#e2e8f0] to-[#f1f5f9] 

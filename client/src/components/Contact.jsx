@@ -8,7 +8,7 @@ const Footer = lazy(() => import("./Footer"));
 export default function Contact() {
   return (
     <section
-      id="Contact"
+      id="contact"
       className="
         w-full h-fit xl:h-screen flex flex-col gap-4 
         text-gray-800 dark:text-neutral-100 
