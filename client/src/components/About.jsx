@@ -4,7 +4,7 @@ import { aboutMe } from "./AboutMe";
 export default function About() {
   return (
     <section
-      id="about"
+      id="About"
       className="w-full h-fit xl:h-screen bg-white text-gray-800 dark:bg-gradient-to-br dark:from-[#0c0c0c] dark:via-[#121212] dark:to-[#1a1a1a] dark:text-gray-300 flex flex-col px-4 pb-10 xl:pb-0 transition-colors duration-300"
     >
       <header>

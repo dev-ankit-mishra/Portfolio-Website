@@ -3,7 +3,7 @@ import Cards from "./MajorProjectCard/Cards";
 export default function Project() {
   return (
     <section
-      id="projects"
+      id="Projects"
       className="w-full py-6 
                  bg-white dark:bg-gradient-to-br 
                  dark:from-[#1e1b4b] dark:via-[#312e81] dark:to-[#1e1b4b]"

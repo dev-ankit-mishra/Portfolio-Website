@@ -75,7 +75,7 @@ export default function Skills() {
 
   return (
     <section
-      id="skills"
+      id="Skills"
       className="scroll-mt-8 w-full md:h-auto xl:h-screen md:px-6 py-4 md:py-6 box-border 
                  bg-gray-100 dark:bg-gradient-to-br dark:from-[#1e293b] dark:to-[#0f172a] pb-12"
     >

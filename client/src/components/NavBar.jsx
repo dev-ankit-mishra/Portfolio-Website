@@ -42,33 +42,24 @@ export default function NavBar() {
   const toggleTheme = useCallback(() => setTheme((prev) => !prev), []);
 
   function renderListItem(item) {
-    const sectionId = item.toLowerCase(); // Convert "Home" → "home"
-
     return (
       <li key={item} className="w-full text-left md:text-center py-1">
-        <a
-          href={`#${sectionId}`}
-          aria-label={`Go to ${item} section`}
-          className="block w-full"
+        <Link
+          to={item}
+          spy={true}
+          smooth={true}
+          offset={isMobile ? -120 : -60}
+          duration={500}
+          onSetActive={() => setActive(item)}
+          className={`block w-full cursor-pointer px-4 py-2 transition-all duration-300 ${
+            active === item
+              ? "scale-105 bg-blue-600 text-white rounded-md"
+              : "hover:text-blue-500 text-gray-900 dark:text-gray-200"
+          }`}
+          aria-current={active === item ? "page" : undefined}
         >
-          <Link
-            to={item}
-            spy={true}
-            smooth={true}
-            offset={isMobile ? -120 : -60}
-            duration={500}
-            onSetActive={() => setActive(item)}
-            className={`block w-full cursor-pointer px-4 py-2 transition-all duration-300 ${
-              active === item
-                ? "scale-105 bg-blue-600 text-white rounded-md"
-                : "hover:text-blue-500 text-gray-900 dark:text-gray-200"
-            }`}
-            aria-current={active === item ? "page" : undefined}
-            role="link"
-          >
-            {item}
-          </Link>
-        </a>
+          {item}
+        </Link>
       </li>
     );
   }
