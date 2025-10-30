@@ -27,7 +27,7 @@ export default function Skills() {
     { id: 1, label: "Languages", content: languages },
     { id: 2, label: "Tech Stacks", content: techStacks },
     { id: 3, label: "Databases", content: databases },
-    { id: 4, label: "Cloud & Devops", content: cloudAndDevops },
+    { id: 4, label: "Cloud", content: cloudAndDevops },
     { id: 6, label: "Development Tools", content: devTools },
   ];
 
