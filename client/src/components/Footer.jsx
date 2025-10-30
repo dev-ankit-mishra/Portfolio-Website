@@ -11,10 +11,10 @@ export default function Footer() {
       <p className="text-xs md:text-sm">© 2025 Ankit Mishra Development.</p>
 
       <a
-        href="mailto:contact@ankitmishra.pro"
+        href="mailto:developer.ankitmishra@gmail.com"
         className="text-sm hidden md:block hover:text-blue-500 dark:hover:text-blue-400 transition-colors"
       >
-        contact@ankitmishra.pro
+        developer.ankitmishra@gmail.com
       </a>
 
       <div className="flex justify-center items-center gap-4">
