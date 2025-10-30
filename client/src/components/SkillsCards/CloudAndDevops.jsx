@@ -40,14 +40,14 @@ const cloudAndDevopsItems = [
     label: "Render",
     tooltip: "Cloud platform for hosting web services and static sites",
   },
-  // {
-  //   id: 5,
-  //   icon: (
-  //     <SiGithubactions className="text-xl sm:text-2xl xl:text-3xl text-gray-950 dark:text-gray-300" />
-  //   ),
-  //   label: "Actions",
-  //   tooltip: "CI/CD workflows for automating GitHub project tasks",
-  // },
+  {
+    id: 5,
+    icon: (
+      <SiGithubactions className="text-xl sm:text-2xl xl:text-3xl text-gray-950 dark:text-gray-300" />
+    ),
+    label: "Actions",
+    tooltip: "CI/CD workflows for automating GitHub project tasks",
+  },
 ];
 
 export const cloudAndDevops = cloudAndDevopsItems.map((item) => {
